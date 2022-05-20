@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useEffect,useRef} from "react";
 import Navbar from '../../components/navbar'
 import Insta from "../../assets/insta.svg";
 import XImg from "../../assets/X.svg";
@@ -7,14 +7,46 @@ import tedXGeu from "../../assets/tedxgeu.svg";
 import About from "../../assets/aboutimg.svg";
 import Speaker from "../../assets/speaker.svg";
 import { Parallax , ParallaxProvider} from "react-scroll-parallax";
+import {gsap} from 'gsap'
+import {ScrollTrigger} from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 function Home() {
-     
+    const ref4 = useRef(null);
+    useEffect(() => {
+      const element = ref4.current;
+      let secttion = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".home-page-wrapper",
+          start: "center center",
+          end: "bottom",
+          scrub: true,
+          pin: true,
+          // duration:14000
+        },
+      });
+      secttion
+        .from(".home-second-img", { opacity: 0, scale: 0.1  })
+        .to(".home-second-img", { opacity: 1, scale: 1.1 })
+        // .from(".home-second-img", { x: 0 })
+        // .to(".home-second-img", { x: -350, duration: 3, delay: 2 })
+        // .from(".right-text-block", { opacity: 0, y: 30, duration: 5 })
+        // .to(".right-text-block", { opacity: 1, y: -60, duration: 5 })
+        // .to(".right-text-block", { opacity: 0, duration: 3 })
+        // .to(".video-anim", { x: +300, delay: 2, duration: 5 })
+        // .from(".right-text-block2", { opacity: 0, y: 30, duration: 3 })
+        // .to(".right-text-block2", { opacity: 1, y: -60, duration: 3 })
+        // .to(".right-text-block2", { opacity: 0, duration: 3 })
+        // .to(".video-anim", { x: -40, delay: 1, duration: 3 });
+  
+       
+    }, []);
 
   return (
-    <>
-        <Navbar/>
-      <div className="home-page-first">
+    <ParallaxProvider>
+    <Navbar/>
+    <div className="home-page-first">
         <div className="home-first-img">
           <img src={XImg} alt="" />
         </div>
@@ -37,7 +69,10 @@ function Home() {
           </div>
         </div>
       </div>
+        <div className="home-page-wrapper">
       <div className="home-page-second">
+
+        
         <div className="home-second-text">
           <h1>TED <span>X</span></h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vel autem aperiam sapiente amet aliquam iste modi dolor fuga ducimus culpa perspiciatis doloremque enim nihil, quo quos quasi atque eligendi maiores iusto molestiae animi alias ratione. Rerum repudiandae aspernatur numquam.</p>
@@ -45,6 +80,7 @@ function Home() {
         </div>
         <div className="home-second-img">
           <img src={tedXGeu} alt="" />
+        </div>
         </div>
       </div>
       <div className="home-about-section">
@@ -103,14 +139,13 @@ function Home() {
               <img src={Insta} alt="" />
             </a>
           </div>
-
         </div>
         </div>
         <div className="footer-bottom-text">
           <p>This independent TEDx event is operated under license from TED. Copyright Stichting TEDxGraphicEra, 2021. All Rights Reserved. </p>
         </div>
       </div>
-    </>
+    </ParallaxProvider>
   );
 }
 
