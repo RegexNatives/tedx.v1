@@ -1,27 +1,47 @@
 import { useState } from "react";
 // import logo from './logo.svg'
 import "./App.css";
-
+import { useEffect, useRef } from "react";
 import Insta from "./assets/insta.svg";
 import XImg from "./assets/X.svg";
 import logo from "./assets/logo.svg";
 import tedXGeu from "./assets/tedxgeu.svg";
 import About from "./assets/aboutimg.svg";
-import Speaker from "./assets/speaker.svg";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import Speaker from "./assets/speaker.svg"; 
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { gsap } from "gsap";
+gsap.registerPlugin(ScrollTrigger);
 function App() {
-  const particlesInit = async (main) => {
-    console.log(main);
+  const ref4 = useRef(null);
+  useEffect(() => {
+    const element = ref4.current;
+    let secttion = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".home-page-wrapper",
+        start: "center center",
+        end: "bottom",
+        scrub: true,
+        pin: true,
+        // duration:14000
+      },
+    });
+    secttion
+      .from(".home-second-img", { opacity: 0, scale: 0.1  })
+      .to(".home-second-img", { opacity: 1, scale: 1.1 })
+      // .from(".home-second-img", { x: 0 })
+      // .to(".home-second-img", { x: -350, duration: 3, delay: 2 })
+      // .from(".right-text-block", { opacity: 0, y: 30, duration: 5 })
+      // .to(".right-text-block", { opacity: 1, y: -60, duration: 5 })
+      // .to(".right-text-block", { opacity: 0, duration: 3 })
+      // .to(".video-anim", { x: +300, delay: 2, duration: 5 })
+      // .from(".right-text-block2", { opacity: 0, y: 30, duration: 3 })
+      // .to(".right-text-block2", { opacity: 1, y: -60, duration: 3 })
+      // .to(".right-text-block2", { opacity: 0, duration: 3 })
+      // .to(".video-anim", { x: -40, delay: 1, duration: 3 });
 
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    await loadFull(tsParticles);
-  };
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
+     
+  }, []);
+   
   return (
     <>
       <div className="navabr">
@@ -37,8 +57,7 @@ function App() {
           </ul>
         </div>
       </div>
-      <Particles id="tsparticles" url="http://foo.bar/particles.json" init={particlesInit} loaded={particlesLoaded} />
-      <div className="home-page-first">
+     <div className="home-page-first">
         <div className="home-first-img">
           <img src={XImg} alt="" />
         </div>
@@ -61,7 +80,10 @@ function App() {
           </div>
         </div>
       </div>
+        <div className="home-page-wrapper">
       <div className="home-page-second">
+
+        
         <div className="home-second-text">
           <h1>TED <span>X</span></h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vel autem aperiam sapiente amet aliquam iste modi dolor fuga ducimus culpa perspiciatis doloremque enim nihil, quo quos quasi atque eligendi maiores iusto molestiae animi alias ratione. Rerum repudiandae aspernatur numquam.</p>
@@ -69,6 +91,7 @@ function App() {
         </div>
         <div className="home-second-img">
           <img src={tedXGeu} alt="" />
+        </div>
         </div>
       </div>
       <div className="home-about-section">
