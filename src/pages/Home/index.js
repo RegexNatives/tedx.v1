@@ -6,6 +6,8 @@ import logo from "../../assets/logo.svg";
 import tedXGeu from "../../assets/tedxgeu.svg";
 import About from "../../assets/aboutimg.svg";
 import Speaker from "../../assets/speaker.svg";
+import { Parallax , ParallaxProvider} from "react-scroll-parallax";
+
 function Home() {
      
 

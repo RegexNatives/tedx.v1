@@ -8,22 +8,16 @@ import logo from "./assets/logo.svg";
 import tedXGeu from "./assets/tedxgeu.svg";
 import About from "./assets/aboutimg.svg";
 import Speaker from "./assets/speaker.svg";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import { BrowserRouter } from 'react-router-dom';
+import { Parallax , ParallaxProvider} from "react-scroll-parallax";
+{/* <div className="App">
+            <BrowserRouter>
+                <Navigation />
+            </BrowserRouter>
+        </div> */}
 function App() {
-  const particlesInit = async (main) => {
-    console.log(main);
-
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    await loadFull(tsParticles);
-  };
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
   return (
-    <>
+    <ParallaxProvider>
       <div className="navabr">
         <div className="logo">
           <img src={logo} alt="" />
@@ -37,7 +31,6 @@ function App() {
           </ul>
         </div>
       </div>
-      <Particles id="tsparticles" url="http://foo.bar/particles.json" init={particlesInit} loaded={particlesLoaded} />
       <div className="home-page-first">
         <div className="home-first-img">
           <img src={XImg} alt="" />
@@ -61,6 +54,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Parallax speed={-10}>
       <div className="home-page-second">
         <div className="home-second-text">
           <h1>TED <span>X</span></h1>
@@ -71,6 +65,7 @@ function App() {
           <img src={tedXGeu} alt="" />
         </div>
       </div>
+      </Parallax>
       <div className="home-about-section">
         <div className="about-section-text">
           <h1>About this event</h1>
@@ -127,14 +122,13 @@ function App() {
               <img src={Insta} alt="" />
             </a>
           </div>
-
         </div>
         </div>
         <div className="footer-bottom-text">
           <p>This independent TEDx event is operated under license from TED. Copyright Stichting TEDxGraphicEra, 2021. All Rights Reserved. </p>
         </div>
       </div>
-    </>
+    </ParallaxProvider>
   );
 }
 
