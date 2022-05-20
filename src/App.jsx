@@ -8,6 +8,7 @@ import logo from "./assets/logo.svg";
 import tedXGeu from "./assets/tedxgeu.svg";
 import About from "./assets/aboutimg.svg";
 import Speaker from "./assets/speaker.svg"; 
+import Geu from "./assets/geu.webp"; 
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { gsap } from "gsap";
 gsap.registerPlugin(ScrollTrigger);
@@ -19,7 +20,7 @@ function App() {
       scrollTrigger: {
         trigger: ".home-page-wrapper",
         start: "center center",
-        end: "bottom",
+        end: "center",
         scrub: true,
         pin: true,
         // duration:14000
@@ -27,19 +28,25 @@ function App() {
     });
     secttion
       .from(".home-second-img", { opacity: 0, scale: 0.1  })
-      .to(".home-second-img", { opacity: 1, scale: 1.1 })
-      // .from(".home-second-img", { x: 0 })
-      // .to(".home-second-img", { x: -350, duration: 3, delay: 2 })
-      // .from(".right-text-block", { opacity: 0, y: 30, duration: 5 })
-      // .to(".right-text-block", { opacity: 1, y: -60, duration: 5 })
-      // .to(".right-text-block", { opacity: 0, duration: 3 })
-      // .to(".video-anim", { x: +300, delay: 2, duration: 5 })
-      // .from(".right-text-block2", { opacity: 0, y: 30, duration: 3 })
-      // .to(".right-text-block2", { opacity: 1, y: -60, duration: 3 })
-      // .to(".right-text-block2", { opacity: 0, duration: 3 })
-      // .to(".video-anim", { x: -40, delay: 1, duration: 3 });
+      .to(".home-second-img", { opacity: 1, scale: 1.1 }) 
+  }, []);
 
-     
+
+  const ref5 = useRef(null);
+  useEffect(() => {
+    const element = ref4.current;
+    let secttion1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".home-anim-wrap",
+        start: "center center",
+        end: "center",
+        scrub: true,
+        pin: true, 
+      },
+    });
+    secttion1
+      .from(".home-second-img", { opacity: 0, scale: 0.1  })
+      .to(".home-second-img", { opacity: 1, scale: 1.1 }) 
   }, []);
    
   return (
@@ -93,6 +100,16 @@ function App() {
           <img src={tedXGeu} alt="" />
         </div>
         </div>
+        
+      </div>
+
+
+    <div className="home-anim-wrap">
+      
+   
+      <div className="home-demo-anim">
+        <img src={Geu} alt="" />
+      </div>
       </div>
       <div className="home-about-section">
         <div className="about-section-text">
