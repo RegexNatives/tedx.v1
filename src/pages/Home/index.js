@@ -1,43 +1,17 @@
-import { useState } from "react";
-// import logo from './logo.svg'
-import "./App.css";
+import React,{useState} from "react";
+import Navbar from '../../components/navbar'
+import Insta from "../../assets/insta.svg";
+import XImg from "../../assets/X.svg";
+import logo from "../../assets/logo.svg";
+import tedXGeu from "../../assets/tedxgeu.svg";
+import About from "../../assets/aboutimg.svg";
+import Speaker from "../../assets/speaker.svg";
+function Home() {
+     
 
-import Insta from "./assets/insta.svg";
-import XImg from "./assets/X.svg";
-import logo from "./assets/logo.svg";
-import tedXGeu from "./assets/tedxgeu.svg";
-import About from "./assets/aboutimg.svg";
-import Speaker from "./assets/speaker.svg";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
-function App() {
-  const particlesInit = async (main) => {
-    console.log(main);
-
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    await loadFull(tsParticles);
-  };
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
   return (
     <>
-      <div className="navabr">
-        <div className="logo">
-          <img src={logo} alt="" />
-        </div>
-        <div className="nav-links">
-          <ul>
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
-          </ul>
-        </div>
-      </div>
-      <Particles id="tsparticles" url="http://foo.bar/particles.json" init={particlesInit} loaded={particlesLoaded} />
+        <Navbar/>
       <div className="home-page-first">
         <div className="home-first-img">
           <img src={XImg} alt="" />
@@ -138,4 +112,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
