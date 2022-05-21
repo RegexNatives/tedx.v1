@@ -217,14 +217,14 @@ body{
           animation: anim1 10s linear;
         } */
         #anim11,#anim4_2,#anim7_2,#anim5_2,#anim10,#anim9,#anim8,#anim7,#anim6,#anim5,#anim4,#anim3,#anim2,#anim1{
-          animation: anim1 13s linear; animation-fill-mode: forwards;
+          animation: anim2 13s infinite; animation-fill-mode: forwards; 
         }
         #anim2,#anim10,#anim7_2{
           /* animation-delay: s; */
          animation-delay: 3s;
         }
-        #anim11{animation: anim1 10s linear;animation-fill-mode: forwards;}
-        #anim6,#anim5_2{animation: anim1 5s linear;animation-fill-mode: forwards;}
+        #anim11{animation: anim2 10s infinite; }
+        #anim6,#anim5_2{animation: anim2 5s infinite; }
         @keyframes anim1 {
           from {
             transform: translate(0%);
@@ -234,5 +234,20 @@ body{
             transform: translate(10%,-10%);
           }
         } 
+        @keyframes anim2 {
+          0%{
+            opacity: 0;
+          }
+          25%{
+            opacity: 1;
+             
+          }
+          50%{
+            transform: translate(10%,-10%);
+          }
+          100%{
+            opacity: 0;
+          }
+        }
         .home-about-section{padding-top: 50px;}
         .home-about-section{min-height: 100vh;}

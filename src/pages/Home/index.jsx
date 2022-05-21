@@ -33,8 +33,12 @@ function Home() {
         },
       });
       secttion
+      .from(".home-second-text",{scale:3.8,opacity:0.05,duration:1.5,ease:"power3.inOut"})
+      .to(".home-second-text",{scale:1,opacity:1})
+      .from(".home-second-text",{x:500})
+      .to(".home-second-text",{x:0})
         .from(".home-second-img", { opacity: 0, scale: 0.1  })
-        .to(".home-second-img", { opacity: 1, scale: 1 })
+        .to(".home-second-img", { opacity: 1, scale: 1 ,duration:4.5,ease:"power3.inOut"})
         // .from(".home-second-img", { x: 0 })
         // .to(".home-second-img", { x: -350, duration: 3, delay: 2 })
         // .from(".right-text-block", { opacity: 0, y: 30, duration: 5 })
