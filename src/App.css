@@ -114,3 +114,35 @@ body{
       color: #FFFFFF;
       
       opacity: 0.7;}
+
+.x-graphi-era-right{
+  clip-path: polygon(60% 0, 100% 50%, 60% 99%, 0% 100%, 0 50%, 0% 0%);
+  background-color:white;
+  width:40vw;
+  height: 100vh;
+}
+
+.x-graphi-era-left{
+  clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 40% 99%, 0% 50%, 40% 0);
+  background-color:white;
+  width:40vw;
+  height: 100vh;
+}
+
+.x-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.x-triangle-top{
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  background-color:white;
+  height: 40vh;
+  width: 20vw;
+}
+.x-triangle-down{
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color:white;
+  height: 40vh;
+  width: 20vw;
+}
