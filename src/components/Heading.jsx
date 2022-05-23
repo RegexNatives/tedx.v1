@@ -7,9 +7,7 @@ const Heading = ({heading,content})=>{
                 <div className="red-marker"></div>
                 <h1>{heading}</h1>
             </div>
-            <p>
-                {content}
-            </p>
+            <div dangerouslySetInnerHTML={{__html:content}}></div>
         </div>
     )
 }
