@@ -611,21 +611,25 @@ body {
   line-height: 27px;
   width: 490px;
   color: rgba(255, 255, 255, 0.7);margin-top: 21px;margin-bottom: 46px;}
-  .first-section-btn button:nth-child(1){background: #B8171A;
+  .first-section-btn button:nth-child(1){
+    cursor: pointer;
+    background: #B8171A;
     /* Main Red */
     font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height */
-padding: 16px 31px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    padding: 16px 31px;
 
-color: #FFFFFF;
+    color: #FFFFFF;
     
     border: 1px solid #B8171A;
-    border-radius: 15px;}
+    border-radius: 15px;
+  }
     .first-section-btn button:nth-child(2){
+      cursor: pointer;
       border: 1px solid #B8171A;
       border-radius: 15px;
       font-family: 'Poppins';
