@@ -28,6 +28,7 @@ function Home() {
                     
                     </div>
                 </div>
+                <Second/>
                 <Speakers />
             </div>
             <Footer />
