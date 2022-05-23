@@ -102,8 +102,8 @@ function Home() {
 
   return (
     <ParallaxProvider>
+      {/* <div className="cont"> */}
       <div className="cont">
-
         <Navbar />
         <div className="home-page-first">
           <div className="home-first-img">
@@ -146,61 +146,65 @@ function Home() {
               </p>
               <button>Book</button>
             </div>
+
+
             <div className="home-second-img">
               <img src={tedXGeu} alt="" />
             </div>
           </div>
         </div>
-        {/* <Parallax speed={-30}> */}
-        <div className="home-about-section">
-          <div className="about-section-text">
-            <h1>About this event</h1>
-            <p>
-              In the spirit of ideas worth spreading, TEDx is a program for local,
-              self-organized events that bring people together to share a TED-like
-              experience. At a TEDx event, TEDTalks video and live speakers
-              combine to spark deep discussion and connection. These local,
-              self-organized events are branded with TEDx, where x = an
-              independently organized TED event. The TED Conference provides
-              general guidance for the TEDx program, but individual TEDx events
-              are self-organized.
-            </p>
-          </div>
-          <About />
+      </div>
+      {/* <Parallax speed={-30}> */}
+      <div className="home-about-section">
+        <div className="about-section-text">
+          <h1>About this event</h1>
+          <p>
+            In the spirit of ideas worth spreading, TEDx is a program for local,
+            self-organized events that bring people together to share a TED-like
+            experience. At a TEDx event, TEDTalks video and live speakers
+            combine to spark deep discussion and connection. These local,
+            self-organized events are branded with TEDx, where x = an
+            independently organized TED event. The TED Conference provides
+            general guidance for the TEDx program, but individual TEDx events
+            are self-organized.
+          </p>
         </div>
-        {/* </Parallax> */}
 
-        {/* <Parallax speed={30}> */}
+        <About />
+      </div>
+      {/* </Parallax> */}
 
-        {/* <div className="video-section">
+      {/* <Parallax speed={30}> */}
+
+      {/* <div className="video-section">
         <video src={Video} autoPlay loop muted playsInline />
       </div> */}
-        <div className="video-animation">
-          <div class="block">
-            <div class="dot">
-              <video src={Video} autoPlay loop muted playsInline />
-            </div>
-            <div className="horixon-text">
-              <h1 className="horizon-text-h1">H&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RIZON</h1>
-            </div>
-            <div class="text-container">
-              <p class="text">TED <span>X</span>&nbsp;&nbsp; GRAPHIC ERA</p>
-            </div>
+      <div className="video-animation">
+        <div class="block">
+          <div class="dot">
+            <video src={Video} autoPlay loop muted playsInline />
+          </div>
+          <div className="horixon-text">
+            <h1 className="horizon-text-h1">H&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RIZON</h1>
+          </div>
+          <div class="text-container">
+            <p class="text">TED <span>X</span>&nbsp;&nbsp; GRAPHIC ERA</p>
           </div>
         </div>
-        <div className="video-base"></div>
-        {/* </Parallax> */}
-        {/* <Parallax speed={30}> */}
-        <div className="speakers">
-          <h1>Speakers</h1>
-          <div className="speaker-card">
-            {speakers.map((speaker) => (
-              <img src={Speaker} alt="" />
-            ))}
-          </div>
-        </div>
-        {/* </Parallax> */}
       </div>
+      <div className="video-base"></div>
+      {/* </Parallax> */}
+      {/* <Parallax speed={30}> */}
+      <div className="speakers">
+        <h1>Speakers</h1>
+        <div className="speaker-card">
+          {speakers.map((speaker) => (
+            <img src={Speaker} alt="" />
+          ))}
+        </div>
+      </div>
+      {/* </Parallax> */}
+      {/* </div> */}
 
       <Footer />
 
