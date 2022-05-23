@@ -7,13 +7,14 @@ import {
     Navigate,
   } from "react-router-dom";
 import Home from "../pages/Home";
+import {routesData} from '../constants/routes'
 
 export default function Navigation(){
     return(
         <Routes>
-            <Route path="/" element={<Home />} />
-            {/* <Route path="/team" element={<Home />} /> */}
-            <Route path="/speakers" element={<Home />} />
+            {routesData.map((route, index) => (
+                <Route key={index} path={route.path} element={<route.Component />} />
+            ))}
         </Routes>
     )
 }

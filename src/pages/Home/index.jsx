@@ -2,21 +2,14 @@ import React, { useEffect, useRef } from "react";
 import Navbar from "../../components/navbar";
 import Insta from "../../assets/insta.svg";
 import XImg from "../../assets/X.svg";
-import logo from "../../assets/logo.svg";
 import tedXGeu from "../../assets/tedxgeu.svg";
 import Video from "../../assets/main.mp4";
-import About from "../../assets/final.svg";
-import Anim1 from "../../assets/anim1.svg";
-import Anim2 from "../../assets/anim2.svg";
-import Anim3 from "../../assets/anim3.svg";
-import Anim4 from "../../assets/anim4.svg";
-import Anim5 from "../../assets/anim5.svg";
-import Anim6 from "../../assets/anim6.svg";
 import Speaker from "../../assets/speaker.svg";
 import { Parallax , ParallaxProvider} from "react-scroll-parallax";
 import {gsap} from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import {speakers} from '../../constants/speaker'
+import Footer from '../../components/footer'
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -556,50 +549,8 @@ function Home() {
         </div>
       </div>
       {/* </Parallax> */}
+      <Footer/>
 
-      <div className="footer">
-        <div className="footer-content">
-          <div className="footer-logo">
-            <img src={logo} alt="" />
-            <h1>HORIZON</h1>
-            <div className="footer-links">
-              <ul>
-                <li>Home</li>
-                <li>Home</li>
-                <li>Home</li>
-              </ul>
-            </div>
-          </div>
-          <div className="copyright">
-           <h1> Developed and designed by &lt;Dhairya Marwah/&gt;</h1>
-          </div>
-          <div className="footer-get">
-            <h1>Get in touch</h1>
-            <p>tedxgraphicera@gmail.com</p>
-            <h1>Get Updated</h1>
-            <div className="social-links">
-              <a href="">
-                <img src={Insta} alt="" />
-              </a>
-              <a href="">
-                <img src={Insta} alt="" />
-              </a>
-              <a href="">
-                <img src={Insta} alt="" />
-              </a>
-              <a href="">
-                <img src={Insta} alt="" />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="footer-bottom-text">
-          <p>
-            This independent TEDx event is operated under license from TED.
-            Copyright Stichting TEDxGraphicEra, 2022. All Rights Reserved under REGEX NATIVES.{" "}
-          </p>
-        </div>
-      </div>
     </ParallaxProvider>
   );
 }
