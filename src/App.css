@@ -218,13 +218,14 @@ body {
 .speaker-card {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  /* width: 90%; */
   margin: 0 auto;
   justify-content: space-around;
   align-items: center;
 }
 .speaker-card img {
-  margin-bottom: 65px;
+  margin-bottom: 30px;
+  margin-top:30px
 }
 .footer {
   padding-top: 50px;
@@ -570,3 +571,114 @@ body {
 .home-page-button{
   padding: 10 10;
 }
+.social-links>a{
+  height:20px
+}
+.red-marker{
+  height:40px;
+  width:10px;
+  margin-top:5px;
+  margin-right:15px;
+  background-color:#b8171a
+}
+.speaker-heading{
+  display: flex;
+  flex-direction: row;
+}
+.speaker-heading>h1{
+  font-size:36px;
+  font-weight:600;
+  margin-bottom:20px;
+  color:white
+}
+.speakers-component>p{
+  font-size:16px;
+  color:white
+}
+.speaker-card-container{}
+.first-secction-text {color: #fff;}
+.first-secction-text h1{color: #B8171A;font-family: Arial, Helvetica, sans-serif;font-weight: bold;font-size: 3.9rem;}
+.first-secction-text h2{font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;margin-top: 15px;
+  font-size: 37px;
+  line-height: 118%;}
+.first-secction-text span{position: relative;top: -30px;font-size: 39px;left: -15px;font-family: Arial, Helvetica, sans-serif;}
+.first-secction-text p{font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  width: 490px;
+  color: rgba(255, 255, 255, 0.7);margin-top: 21px;margin-bottom: 46px;}
+  .first-section-btn button:nth-child(1){background: #B8171A;
+    /* Main Red */
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+padding: 16px 31px;
+
+color: #FFFFFF;
+    
+    border: 1px solid #B8171A;
+    border-radius: 15px;}
+    .first-section-btn button:nth-child(2){
+      border: 1px solid #B8171A;
+      border-radius: 15px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height */
+
+      background-color: transparent;
+      padding: 16px 20px;margin-left: 20px;
+      /* Main Red */
+
+      color: #B8171A;
+    }
+    .first-section{min-height: 100vh;display: flex;padding-top: 150px;}
+
+    .social-links>a{
+      height:20px
+    }
+    .red-marker{
+      height:40px;
+      width:10px;
+      margin-top:5px;
+      margin-right:15px;
+      background-color:#b8171a
+    }
+    .speaker-heading{
+      display: flex;
+      flex-direction: row;
+    }
+    .speaker-heading>h1{
+      font-size:36px;
+      font-weight:600;
+      margin-bottom:20px;
+      color:white
+    }
+    .speakers-component>p{
+      font-size:16px;
+      color:white
+    }
+    .speaker-card-container{
+      margin-top:40px
+    }
+    .speaker-card-content{
+      display: flex;
+      flex-direction: column;
+    }
+    .speaker-card-content>h3{
+      color:white;
+      font-size:24px;
+    }
+    .speaker-card-content>p{
+      color:white;
+      font-size:16px;
+    }
