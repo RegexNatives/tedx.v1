@@ -7,6 +7,8 @@ import Speakers from "../../components/Speakers";
 import Footer from "../../components/footer";
 import Contact from "../../components/Contact";
 import Second from "../../components/Second";
+import About from "../../components/About";
+import Heading from "../../components/Heading";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,6 +30,13 @@ function Home() {
                     <div className="first-section-img">
                     
                     </div>
+                </div>
+                <div className="home-about-section">
+                    <Heading 
+                        heading={'About this event'}
+                        content={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velautem aperiam sapiente amet aliquam iste modi dolor fugaducimusculpa perspiciatis doloremque enim nihil, quo quos quasi atqueeligendi maiores iusto molestiae animi alias ratione. Rerumrepudiandae aspernatur numquam.'}
+                    />
+                    <About />
                 </div>
                 <Speakers />
                 <Contact/>
