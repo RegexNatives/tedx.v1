@@ -110,7 +110,7 @@ function Home() {
             <br /> Graphic Era University
           </h1>
           <button>Book</button>
-          <div className="social-links">
+          {/* <div className="social-links">
             <a href="">
               <img src={Insta} alt="" />
             </a>
@@ -123,7 +123,7 @@ function Home() {
             <a href="">
               <img src={Insta} alt="" />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="home-page-wrapper">
