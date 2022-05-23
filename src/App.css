@@ -591,7 +591,7 @@ body {
   margin-bottom:20px;
   color:white
 }
-.speakers-component>p{
+.speakers-component>p,.speakers-component>div{
   font-size:16px;
   color:white
 } 
