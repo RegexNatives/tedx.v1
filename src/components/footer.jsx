@@ -1,6 +1,9 @@
 import React from "react";
 import logo from '../assets/logo.svg'
 import Insta from '../assets/insta.svg'
+import Linkedin from '../assets/Linkedin.svg';
+import Twitter from '../assets/Twitter.svg';
+import Facebook from '../assets/facebook.svg';
 
 const Footer = () => {
     return(
@@ -28,8 +31,14 @@ const Footer = () => {
             <p>tedxgraphicera@gmail.com</p>
             <h1>Get Updated</h1>
             <div className="social-links">
-              <a href="">
+              <a href="#">
                 <img src={Insta} alt="" />
+              </a>
+              <a href="#">
+                <img src={Twitter} alt="" />
+              </a>
+              <a href="#">
+                <img src={Linkedin} alt="" />
               </a>
             </div>
           </div>
