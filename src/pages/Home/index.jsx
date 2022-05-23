@@ -5,6 +5,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Speakers from "../../components/Speakers";
 import Footer from "../../components/footer";
+import Contact from "../../components/Contact";
 import Second from "../../components/Second";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -29,6 +30,7 @@ function Home() {
                     </div>
                 </div>
                 <Speakers />
+                <Contact/>
             </div>
             <Footer />
         </>
