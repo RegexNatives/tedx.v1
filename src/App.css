@@ -62,7 +62,6 @@ body {
   width: 340px;
 }
 .nav-links ul li {
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   cursor: pointer;
@@ -110,6 +109,13 @@ body {
   line-height: 68px;
   top: -34px;
   right: 14px;
+  font-weight:600
+}
+.home-first-text>h1{
+  color:#B8171A;
+  font-family: "HelveticaNeueLTStd", Sans-serif !important;
+  font-size:48px;
+  font-weight:600
 }
 .home-first-text {
   flex-grow: 2;
@@ -162,10 +168,10 @@ body {
 }
 .home-second-text,
 .about-section-text p {
-  font-weight: 400;
-  font-size: 24px;
+  font-weight: 300;
+  font-size: 20px;
   text-align: left;
-  line-height: 29px;
+  line-height: 30px;
   margin-bottom: 34px;
   margin-top: 14px;
 }
@@ -186,9 +192,12 @@ body {
   margin-top: 60px;
   margin-left:10%;
 }
+.home-first-img{
+  margin-left:0
+}
 .about-section-text h1 {
   font-weight: 600;
-  font-size: 64px;
+  font-size: 48px;
   line-height: 77px;
 }
 .about-section-img svg:nth-child(1) {

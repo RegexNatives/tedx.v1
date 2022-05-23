@@ -1,4 +1,5 @@
 import Home from "../pages/Home";
+import HomeOld from "../pages/Home/index-old";
 export const routesData = [
     {
         path: '/',
@@ -6,8 +7,8 @@ export const routesData = [
         Component : Home
     },
     {
-        path: '/team',
-        name: 'team',
-        Component : Home
+        path: '/old-home',
+        name: 'old',
+        Component : HomeOld
     }
 ]
