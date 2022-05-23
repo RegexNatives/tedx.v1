@@ -11,7 +11,9 @@ gsap.registerPlugin(ScrollTrigger);
 function Home() {
     return(
         <>
-            <Navbar />
+            <div className="cont">
+                <Navbar />
+            </div>
             <Footer />
         </>
     )

@@ -9,7 +9,7 @@ function Navbar(){
             </div>
             <div className="nav-links">
                 <ul className='nav-links-list'>
-                    <li>Home</li>
+                    <li>About</li>
                     <li>Speakers</li>
                     <li>Team</li>
                     <li>Contact</li>

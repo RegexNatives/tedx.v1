@@ -14,6 +14,7 @@
   /* font-family: 'San Francisco', sans-serif; */
   /* font-family: 'Helvetica', sans-serif; */
   /* font-family: 'Helvetica Neue LT Std', sans-serif; */
+  
 } 
 .cont {
   margin: 0 10%;
@@ -65,7 +66,7 @@ body {
   font-style: normal;
   font-weight: 400;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 29px;
 }
 
@@ -234,7 +235,7 @@ body {
 .footer-content {
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  /* width: 90%; */
   margin: 0 auto;
 }
 .footer-bottom-text {
@@ -243,7 +244,7 @@ body {
 }
 .footer-logo h1 {
   font-weight: 900;
-  font-size: 32px;
+  font-size: 36px;
   line-height: 38px;
   padding-top: 30px;
   border-top: 1px solid #fff;
@@ -253,6 +254,7 @@ body {
   margin-top: 30px;
   text-align: left;
   padding-left: 24px;
+  font-size: 16px;
 }
 .footer-links li {
   margin-bottom: 7px;
@@ -263,7 +265,7 @@ body {
 .footer-get h1 {
   font-style: normal;
   font-weight: 900;
-  font-size: 32px;
+  font-size: 24px;
   margin-bottom: 16px;
   line-height: 38px;
 }
@@ -563,6 +565,7 @@ body {
 }
 .nav-links-list>li{
   padding: 10px;
+  font-size: 16px;
 }
 .home-page-button{
   padding: 10 10;

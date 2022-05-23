@@ -13,7 +13,7 @@ const Footer = () => {
             <h1>HORIZON</h1>
             <div className="footer-links">
               <ul>
-                <li>Home</li>
+                <li>About</li>
                 <li>Speakers</li>
                 <li>Team</li>
                 <li>Contact</li>
@@ -28,15 +28,6 @@ const Footer = () => {
             <p>tedxgraphicera@gmail.com</p>
             <h1>Get Updated</h1>
             <div className="social-links">
-              <a href="">
-                <img src={Insta} alt="" />
-              </a>
-              <a href="">
-                <img src={Insta} alt="" />
-              </a>
-              <a href="">
-                <img src={Insta} alt="" />
-              </a>
               <a href="">
                 <img src={Insta} alt="" />
               </a>
