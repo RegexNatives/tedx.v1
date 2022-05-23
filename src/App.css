@@ -956,6 +956,7 @@ body {
   }
   .first-section{
     min-width: 10vh;
+    padding-top: 70px;
   }
   .navabr {
     flex-direction: column;
