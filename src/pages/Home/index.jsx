@@ -114,7 +114,8 @@ function Home() {
               TED <span>X</span>
               <br /> Graphic Era University
             </h1>
-            <button>Book</button>
+            <button >Book</button>
+            {/* <button >Speakers</button> */}
             {/* <div className="social-links">
             <a href="">
               <img src={Insta} alt="" />

@@ -8,12 +8,12 @@ function Navbar(){
                 <img src={logo} alt="logo" />
             </div>
             <div className="nav-links">
-            <ul>
-                <li>Home</li>
-                <li>Home</li>
-                <li>Home</li>
-                <li>Home</li>
-            </ul>
+                <ul className='nav-links-list'>
+                    <li>Home</li>
+                    <li>Speakers</li>
+                    <li>Team</li>
+                    <li>Contact</li>
+                </ul>
             </div>
         </div>
     )
