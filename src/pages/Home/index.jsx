@@ -27,6 +27,10 @@ function Home() {
                             <button>Speakers</button>
                         </div>
                     </div>
+                    <div className="red-container"></div>
+                    <div className="first-section-img">
+                    
+                    </div>
                     {/* <div className="first-section-img">
                     </div> */}
                 </div>

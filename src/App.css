@@ -154,7 +154,7 @@ body {
   display: flex;
   justify-content: space-around;
   width: 96%;
-  margin: 0 auto;
+  margin: 0 0;
   align-items: center;
 }
 .about-section-text {
@@ -728,12 +728,12 @@ body {
   /* background: #303030; */
   box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-  width: 80%;
-  margin: 0 auto;
+  width: 90%;
+  /* margin: 0 auto; */
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
-  padding-left: 60px;
+  /* padding-left: 60px; */
   padding-top: 60px;
   padding-bottom: 80px;
 }
@@ -768,7 +768,7 @@ body {
   padding: 16px 0;
   line-height: 25px;
 
-  color: rgba(0, 0, 0, 0.7);
+  /* color: rgba(0, 0, 0, 0.7); */
 }
 .contact-form-input input {
   height: 52px;
@@ -790,18 +790,24 @@ body {
 .contact-form-container {
   color: rgba(255, 255, 255, 0.7) !important;
 }
+.contact-form-input input::placeholder,.contact-form-input textarea::placeholder{
+  color:white;
+}
 .contact-form-input input,
 .contact-form-input textarea {
-  border: none;
-  width: 80%;
+  /* border: none; */
+  width: 90%;
+  padding:5px;
   padding-left: 45px;
   /* background-color: #070707; */
-  color: white;
+  /* color: white; */
   background-color: transparent;
   /* background: #B8171A; */
   /* opacity: 90%; */
   margin: 22px 0;
   border-radius: 15px;
+  border-color: white;
+  border-width:1px
 }
 .contact-form-input {
   width: 55%;
@@ -822,6 +828,17 @@ body {
   position: absolute;
   top: 36px;
   left: 6px;
+}
+.text-details-part{
+  margin-left:20px;
+}
+.alert-message{
+  margin-top:-10px;
+  margin-bottom: 5px;
+  color:#b8171a;
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
 }
 
 @media (max-width: 1050px) {
@@ -917,4 +934,16 @@ body {
   .cont {
     margin: 0 7%;
   }
+}
+.red-container{
+  background-color: #B8171A;
+  position:absolute;
+  top:0;
+  right:14.5%;
+  height:80vh;
+  width:25vw;
+  z-index:-1;
+}
+.tedx-geu{
+  height: 150px;
 }
