@@ -191,7 +191,7 @@ body {
   align-items: center;
   margin-top: 100px;
   margin-top: 60px;
-  margin-left:10%;
+  /* margin-left:10%; */
 }
 .home-first-img{
   margin-left:0
@@ -594,7 +594,7 @@ body {
 .speakers-component>p{
   font-size:16px;
   color:white
-}
+} 
 .first-secction-text {color: #fff;}
 .first-secction-text h1{color: #B8171A;font-family: Arial, Helvetica, sans-serif;font-weight: bold;font-size: 3.9rem;}
 .first-secction-text h2{font-family: 'Poppins';
@@ -610,21 +610,25 @@ body {
   line-height: 27px;
   width: 490px;
   color: rgba(255, 255, 255, 0.7);margin-top: 21px;margin-bottom: 46px;}
-  .first-section-btn button:nth-child(1){background: #B8171A;
+  .first-section-btn button:nth-child(1){
+    cursor: pointer;
+    background: #B8171A;
     /* Main Red */
     font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height */
-padding: 16px 31px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    padding: 16px 31px;
 
-color: #FFFFFF;
+    color: #FFFFFF;
     
     border: 1px solid #B8171A;
-    border-radius: 15px;}
+    border-radius: 15px;
+  }
     .first-section-btn button:nth-child(2){
+      cursor: pointer;
       border: 1px solid #B8171A;
       border-radius: 15px;
       font-family: 'Poppins';
@@ -688,3 +692,9 @@ color: #FFFFFF;
   .sec-di> div{
     padding:5vh 0;
   }
+    .contact-form{margin-top: 240px;}
+    .speaker-heading p{font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      
+      color: rgba(255, 255, 255, 0.7);}
