@@ -27,20 +27,19 @@ function Home() {
                             <button>Speakers</button>
                         </div>
                     </div>
-                    <div className="first-section-img">
-                    
-                    </div>
+                    {/* <div className="first-section-img">
+                    </div> */}
                 </div>
-                <Second/>
+                <Second />
                 <div className="home-about-section">
-                    <Heading 
+                    <Heading
                         heading={'About this event'}
                         content={'<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velautem aperiam sapiente amet aliquam iste modi dolor fugaducimusculpa perspiciatis doloremque enim nihil, quo quos quasi atqueeligendi maiores iusto molestiae animi alias ratione. Rerumrepudiandae aspernatur numquam.</p><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velautem aperiam sapiente amet aliquam iste modi dolor fugaducimusculpa perspiciatis doloremque enim nihil, quo quos quasi atqueeligendi maiores iusto molestiae animi alias ratione. Rerumrepudiandae aspernatur numquam.</p><br><p>Venue : KP Nauityal</p><br><p>Date : 30th May 2022</p>'}
                     />
                     <About />
                 </div>
                 <Speakers />
-                <Contact/>
+                <Contact />
             </div>
             <Footer />
         </>
