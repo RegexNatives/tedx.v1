@@ -1,19 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
-.App {
-  text-align: center;
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,12 +9,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-/* .home-seccond-wrapper{} */
-
-.App-link {
-  color: #61dafb;
-}
+} 
 
 @keyframes App-logo-spin {
   from {
@@ -37,11 +18,7 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-button {
-  font-size: calc(10px + 2vmin);
-}
+} 
 *{
   box-sizing: border-box;
   margin: 0;
@@ -250,4 +227,46 @@ body{
           }
         }
         .home-about-section{padding-top: 50px;}
-        .home-about-section{min-height: 100vh;}
+        .home-about-section{min-height: 100vh;}  
+.home-page-wrapper{overflow: hidden !important;}
+.video-section video{width: 100%;min-height: 100vh;object-fit: cover;z-index: 2;}
+/* .video-section {background: url('./assets/main.mp4') ;height: 100vh;width: 100%;} */
+.video-animation{position: relative;overflow: hidden; height: 100vh;margin-bottom: 700px;}
+.block {
+  width: 100%;
+  height: 100vh;
+  background-color: #070707;
+}
+.video-base{height: 80vh;}
+.copyright h1{font-size: 34px;font-weight: 400;position: relative;top: 60px;}
+.dot {
+  position: absolute;
+  left: 39.7%;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;overflow: hidden;
+  /* background-color: #f2473e; */
+}
+.dot video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.text-container{
+  position:absolute;
+  right:-190%;
+  top:45%;
+}
+.horixon-text{
+  position:absolute;width: 100%;text-align: center;top: 50%; 
+}
+.text {
+  color: red;
+  font-size: 13rem;
+  /* font-weight: bold; */
+  text-align: right;
+}
+.text span{position: absolute;top: -20px; font-size: 10rem;}
+.speakers{background-color: #070707; }
+.horixon-text h1{color: #fff;font-size: 100px;z-index: 1;}
