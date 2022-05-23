@@ -17,9 +17,9 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="copyright">
+          {/* <div className="copyright">
            <h1> Developed and designed by &lt;Dhairya Marwah/&gt;</h1>
-          </div>
+          </div> */}
           <div className="footer-get">
             <h1>Get in touch</h1>
             <p>tedxgraphicera@gmail.com</p>
