@@ -27,7 +27,6 @@ function Home() {
         end: "center",
         scrub: true,
         pin: true,
-        // duration:14000
       },
     });
     secttion
@@ -75,11 +74,6 @@ function Home() {
         },
       })
       .to(".dot", { scale: 1, duration: 4, })
-      // .to(".horizon-text-h1",{opacity:1}, "-=1")
-      // .to(".horizon-text-h1",{duration:5,  x:'50vw'})
-      // .to(".dot", { x:'50vw',duration:5,},"-0.5")
-      // .from(".horixon-text", { opacity: 0,   ease: "power3.inOut" })
-      // .to(".dot", {x:'50vw',duration: 4,}) 
       .to(".text", { x: -5500, duration: 4, }, "-=6");
   }, []);
 
@@ -96,41 +90,11 @@ function Home() {
         duration: 8000,
       },
     });
-    // secttion
-    // .from(".video-section",{scale:3.8,opacity:0.05,duration:1.5,ease:"power3.inOut"})
   }, []);
 
   return (
     <ParallaxProvider>
-      {/* <div className="cont"> */}
       <div className="cont">
-        <Navbar />
-        <div className="home-page-first">
-          <div className="home-first-img">
-            {/* <img src={XImg} alt="" /> */}
-          </div>
-          <div className="home-first-text">
-            <h1>
-              TED <span>X</span>
-            </h1>
-            {/* <button >Book</button> */}
-            {/* <button >Speakers</button> */}
-            {/* <div className="social-links">
-            <a href="">
-              <img src={Insta} alt="" />
-            </a>
-            <a href="">
-              <img src={Insta} alt="" />
-            </a>
-            <a href="">
-              <img src={Insta} alt="" />
-            </a>
-            <a href="">
-              <img src={Insta} alt="" />
-            </a>
-          </div> */}
-          </div>
-        </div>
         <div className="home-page-wrapper">
           <div className="home-page-second">
             <div className="home-second-text">
@@ -154,7 +118,6 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* <Parallax speed={-30}> */}
       <div className="home-about-section">
         <div className="about-section-text">
           <h1>About this event</h1>
@@ -172,13 +135,7 @@ function Home() {
 
         <About />
       </div>
-      {/* </Parallax> */}
 
-      {/* <Parallax speed={30}> */}
-
-      {/* <div className="video-section">
-        <video src={Video} autoPlay loop muted playsInline />
-      </div> */}
       <div className="video-animation">
         <div class="block">
           <div class="dot">
@@ -193,8 +150,6 @@ function Home() {
         </div>
       </div>
       <div className="video-base"></div>
-      {/* </Parallax> */}
-      {/* <Parallax speed={30}> */}
       <div className="speakers">
         <h1>Speakers</h1>
         <div className="speaker-card">
@@ -203,8 +158,6 @@ function Home() {
           ))}
         </div>
       </div>
-      {/* </Parallax> */}
-      {/* </div> */}
 
       <Footer />
 

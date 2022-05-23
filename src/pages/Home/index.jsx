@@ -5,15 +5,15 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { speakers } from '../../constants/speaker'
 import Footer from "../../components/footer";
+import Second from "../../components/Second";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function Home() {
-    return(
+    return (
         <>
-            <div className="cont">
-                <Navbar />
-            </div>
+            <Navbar />
+            <Second />
             <Footer />
         </>
     )
