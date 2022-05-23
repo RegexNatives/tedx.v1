@@ -686,3 +686,8 @@ body {
       font-size:16px;
     }
     .contact-form{margin-top: 240px;}
+    .speaker-heading p{font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      
+      color: rgba(255, 255, 255, 0.7);}
