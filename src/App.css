@@ -886,6 +886,35 @@ body {
     left: 11px;
   }
 }
-::placeholder{
+::placeholder {
   color: white;
+}
+
+@media screen and (max-width: 750px) {
+  .first-section{
+    min-width: 10vh;
+  }
+  .navabr {
+    flex-direction: column;
+  }
+  .home-second-img {
+    position: absolute;
+  }
+  .first-secction-text p{
+    width: auto;
+  }
+  .footer-content{
+    flex-direction: column;
+  }
+  .footer-bottom-text{
+    padding: 38px 0;
+  }
+  .footer-get{
+    padding: 10px 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .cont {
+    margin: 0 7%;
+  }
 }
