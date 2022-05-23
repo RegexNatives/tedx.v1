@@ -3,7 +3,7 @@ import logo from "../assets/logo.svg";
 
 function Navbar() {
     return (
-        <div className="cont">
+
             <div className="navabr">
                 <div className="logo">
                     <img src={logo} alt="logo" />
@@ -17,7 +17,6 @@ function Navbar() {
                     </ul>
                 </div>
             </div>
-        </div>
     )
 }
 
