@@ -917,6 +917,9 @@ body {
 }
 
 @media screen and (max-width: 750px) {
+  .about-section-img > svg{
+    height: 500px;
+  }
   .contact-form-container {
     padding-bottom: 0;
   }
@@ -937,7 +940,7 @@ body {
     padding-top: 0px;
 }
   .speakers-component{
-    padding: 15px 0;
+    padding-top: 40px;
   }
   .home-about-section{
     flex-direction: column-reverse;
