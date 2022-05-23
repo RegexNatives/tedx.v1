@@ -160,7 +160,7 @@ body {
   display: flex;
   justify-content: space-around;
   width: 96%;
-  margin: 0 auto;
+  margin: 0 0;
   align-items: center;
 }
 .about-section-text {
@@ -820,3 +820,12 @@ body {
     .contact-form-input input, .contact-form-input textarea{width: 93%;border-radius: 12px;}
     .name-input img, .email-input img, .message-input img{left: 11px;}
 } 
+.red-container{
+    background-color: rgba(184, 23, 26, 1);
+    height: 80vh;
+    width: 25vw;
+    position: absolute;
+    top: 0;
+    right: 14.5%;
+    z-index: -1;
+}
