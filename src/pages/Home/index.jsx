@@ -14,6 +14,22 @@ function Home() {
             <div className="cont">
                 <Navbar />
             </div>
+            <div className="cont">
+              <div className="first-section">
+                <div className="first-secction-text">
+                <h1>TED <span>X</span></h1>
+                <h2>GRAPHIC ERA UNIVERSITY</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis parturient purus pulvinar scelerisque. Fringilla sagittis, nibh euismod rhoncus. Gravida mattis sollicitudin molestie quam tristique orci. Sit sed quam mauris malesuada et vitae.</p>
+                <div className="first-section-btn">
+                  <button>Get Pass Today</button>
+                  <button>Speakers</button>
+                </div>
+                </div>
+                <div className="first-section-img">
+                  
+                </div>
+              </div>
+            </div>
             <Footer />
         </>
     )
