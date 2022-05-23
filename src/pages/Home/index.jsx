@@ -13,9 +13,11 @@ import Anim4 from "../../assets/anim4.svg";
 import Anim5 from "../../assets/anim5.svg";
 import Anim6 from "../../assets/anim6.svg";
 import Speaker from "../../assets/speaker.svg";
-import { Parallax, ParallaxProvider } from "react-scroll-parallax";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Parallax , ParallaxProvider} from "react-scroll-parallax";
+import {gsap} from 'gsap'
+import {ScrollTrigger} from 'gsap/ScrollTrigger'
+import {speakers} from '../../constants/speaker'
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -548,15 +550,9 @@ function Home() {
       <div className="speakers">
         <h1>Speakers</h1>
         <div className="speaker-card">
-          <img src={Speaker} alt="" />
-          <img src={Speaker} alt="" />
-          <img src={Speaker} alt="" />
-          <img src={Speaker} alt="" />
-          <img src={Speaker} alt="" />
-          <img src={Speaker} alt="" />
-          <img src={Speaker} alt="" />
-          <img src={Speaker} alt="" />
-          <img src={Speaker} alt="" />
+          {speakers.map((speaker) => (
+            <img src={Speaker} alt="" />
+          ))}
         </div>
       </div>
       {/* </Parallax> */}
