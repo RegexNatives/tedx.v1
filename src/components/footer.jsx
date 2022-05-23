@@ -4,7 +4,9 @@ import Insta from '../assets/insta.svg'
 
 const Footer = () => {
     return(
-        <div className="footer">
+      <div className="footer">
+        <div className="footer-container">
+
         <div className="footer-content">
           <div className="footer-logo">
             <img src={logo} alt="" />
@@ -45,6 +47,7 @@ const Footer = () => {
             This independent TEDx event is operated under license from TED.
             Copyright Stichting TEDxGraphicEra, 2022. All Rights Reserved under REGEX NATIVES.{" "}
           </p>
+          </div>
         </div>
       </div>
     )
