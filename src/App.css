@@ -917,6 +917,9 @@ body {
 }
 
 @media screen and (max-width: 750px) {
+  .contact-form-container {
+    padding-bottom: 0;
+  }
   .contact-form {
     margin-top: 20px;
 }
