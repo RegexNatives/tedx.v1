@@ -1246,4 +1246,5 @@ li .link-line{right: unset;position: relative;top: unset;}
 .right-border{top: 169px;}
 @media (max-width:550px) {
   .right-border,.social-link-wrap{display: none;}
+  .nav-links{width: 300px;}
 }

@@ -12,6 +12,7 @@ import PhoneImg from "../assets/phone-img.svg"
 const Contact = () => {
 
   const [sent,setSent] = useState(false);
+  const [error,setError] = useState(false);
 
   const formik = useFormik({
     initialValues: {
@@ -21,22 +22,32 @@ const Contact = () => {
     },
     validationSchema : contactFormValidators,
     
-    onSubmit: (values) => {
-      makeQuery(values)
-                .then(res => {
-                  console.log(res)
-                  if(res.success){
-                      setSent(true);
-                  }
-                  else{
-                    setSent(false);
-                  }
-                  resetForm();
-                  console.log(sent)
-                })
-                .catch(err => {
-                  setSent(false);
-                })
+    onSubmit:async (values) => {
+      const response=await makeQuery(values)
+      if(response.success){
+
+        setSent(true)
+
+        resetForm();
+      }
+      else{
+        setError(true)
+      }
+
+                // .then(res => {
+                //   console.log(res)
+                //   if(res.success){
+                //       setSent(true);
+                //   }
+                //   else{
+                //     setSent(false);
+                //   }
+                //   resetForm();
+                //   console.log(sent)
+                // })
+                // .catch(err => {
+                //   setSent(false);
+                // })
       // alert(JSON.stringify(values, null, 2));
     },
   });
@@ -92,6 +103,9 @@ const Contact = () => {
                 ></textarea>
                 {formik.touched.body && formik.errors.body ? (
                   <div className="alert-message">{formik.errors.body}</div>
+                ) : null}
+                {error  ? (
+                  <div className="alert-message">Unable to process request!</div>
                 ) : null}
               </div>
               <div className="first-section-btn">
