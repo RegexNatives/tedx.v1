@@ -29,7 +29,7 @@ if(window.innerWidth<=768){
     let secttion = gsap.timeline({
       scrollTrigger: {
         trigger: ".home-page-wrapper",
-        start: "center 70%",
+        start: "center 82%",
         end: "+=" + window.innerHeight * 1,
         scrub: true,
         pin: true,
@@ -136,7 +136,7 @@ else{
       scrollTrigger: {
         trigger: ".video-section",
         start: "center center",
-        end: "center",
+        end: "+=" + window.innerHeight * 1,
         scrub: true,
         pin: true,
         duration: 8000,

@@ -10,6 +10,7 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import QR from '../../assets/qr.jpg'
 
+import logo2 from "../../assets/logo2.svg";
 
 const GetPasses = () => {
 
@@ -42,6 +43,7 @@ const GetPasses = () => {
         },
       });
     return(
+      <>
         <div className="cont">
         <Navbar />
       <div className="contact-form pass-form" id="contact-section">
@@ -51,6 +53,17 @@ const GetPasses = () => {
               content={'<p>We will be honoured to help you in the best possible way. Feel free to reach out to us.</p>'}
           />
           <div className="contact-form-container">
+          <div className="entry-card">
+        <div className="entry-card-content">
+                  <h1>Dhairya Marwah</h1>
+                  <p>2922210</p>
+                  <img src={logo} alt="" />
+                  <p className="Date">May,30 | KP Nautiyal</p>
+                  <p>#CEE244</p>
+                  <img src={logo2} alt="" />
+                  </div>
+
+      </div>
         <div className="contact-form-input">
           <form onSubmit={formik.handleSubmit}>
               <label className="input-labels">Name</label>
@@ -119,14 +132,12 @@ const GetPasses = () => {
               </Modal>
             </form>
           </div>
-          <div className="contact-form-text-part">
-            <img src={logo}  className="tedx-geu" />
-          <div className="text-details-part">
-          </div>
-        </div>
+         
       </div>
       </div>
+      
      </div>
+     </>
     )
 }
 
