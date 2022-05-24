@@ -385,6 +385,11 @@ chalk@^2.0.0:
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
+clsx@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.1.1.tgz#98b3134f9abbdf23b2663491ace13c5c03a73188"
+  integrity sha512-6/bPho624p3S2pMyvP5kKBPXnI3ufHLObBFCfgx+LkeR5lg2XYy2hqZqUf45ypD8COn2bhgGJSUE+l5dhNBieA==
+
 color-convert@^1.9.0:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.3.tgz#bb71850690e1f136567de629d2d5471deda4c1e8"
@@ -822,6 +827,13 @@ react-scroll-parallax@^3.2.0:
   integrity sha512-jZYFHbO+pE+IbNacHCpBKqw+WhGTA7t5WmXmQzC8i4DGdSYJ25d64R7ZD02K3CwMWdw5uKuc1LUZX/0OA/HCVA==
   dependencies:
     parallax-controller "^1.5.0"
+
+react-toastify@^9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/react-toastify/-/react-toastify-9.0.1.tgz#2f3abd26a75efd55a82cb9c0a897c865218ea420"
+  integrity sha512-c2zeZHkCX+WXuItS/JRqQ/8CH8Qm/je+M0rt09xe9fnu5YPJigtNOdD8zX4fwLA093V2am3abkGfOowwpkrwOQ==
+  dependencies:
+    clsx "^1.1.1"
 
 react-tsparticles@^2.0.6:
   version "2.0.6"
