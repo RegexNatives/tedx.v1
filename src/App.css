@@ -916,7 +916,9 @@ body {
   height: 150px;
 }
 
+
 @media screen and (max-width: 750px) {
+ 
   .about-section-img > svg{
     height: 500px;
   }
@@ -995,3 +997,18 @@ body {
   top: 41%;
 }
 .video-animation{padding-right: 60px;}
+@media screen and (max-width: 850px) {
+  .speakers-component > div{font-size: 13px;}
+ .speaker-heading > h1{    font-size: 22px;
+   font-weight: 500;}
+   .red-marker{    height: 24px;
+     width: 5px;
+     margin-top: 5px;
+     margin-right: 9px} 
+ .speaker-heading > h1{    font-size: 22px;
+   font-weight: 500;}
+   .red-marker{    height: 24px;
+     width: 5px;
+     margin-top: 5px;
+     margin-right: 9px}
+}
