@@ -1135,7 +1135,7 @@ color: #FFFFFF;
   right: 30px;left: unset;bottom: 29px;
 }
 .red-container svg {cursor: pointer;}
-.red-container .link-line{
+.ater-phone-link .link-line,.red-container .link-line{
   width: 2px;right: 39px;top: 67px;
   height: 270px;position: absolute;background-color: #fff;
 }
@@ -1175,3 +1175,7 @@ color: #FFFFFF;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.ater-phone-link{z-index: 3;position: absolute;right: 24px;}
+.ater-phone-link svg{top: 13%;position: relative;right: -8px;}
+.ater-phone-link .link-line{height: 105px;top: 107px; }
