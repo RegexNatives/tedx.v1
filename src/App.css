@@ -1176,7 +1176,7 @@ li .link-line{right: unset;position: relative;top: unset;}
     rgb(206, 129, 129) 0%,
     rgba(208, 54, 54, 1) 73%
   );
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
 }
 
