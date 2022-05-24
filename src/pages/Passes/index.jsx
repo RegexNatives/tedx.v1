@@ -21,7 +21,7 @@ import * as yup from "yup";
   email: yup.string().email("Invalid Format").required(),
    
 });
-const GetPasses = () => {
+const Passes = () => {
   const formik = useFormik({
     initialValues: {
       // website: "",
