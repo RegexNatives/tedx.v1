@@ -5,10 +5,5 @@ export const routesData = [
         path: '/',
         name: 'home',
         Component : Home
-    },
-    {
-        path: '/old-home',
-        name: 'old',
-        Component : HomeOld
     }
 ]
