@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from "../assets/logo.svg";
 import {motion} from 'framer-motion'
-function Navbar() {
+const Navbar = ()=> {
     return (
 
             <div className="navabr">
