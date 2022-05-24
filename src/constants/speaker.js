@@ -18,5 +18,5 @@ export const speakers=[
     {
         name:"Sandeep Jain",
         designation:"Founder GFG"
-    },
+    } 
 ]

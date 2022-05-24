@@ -14,11 +14,11 @@ const Second = () => {
                 className="sec-di">
                     <Heading
                         heading={'What is TED?'}
-                        content={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velautem aperiam sapiente amet aliquam iste modi dolor fugaducimusculpa perspiciatis doloremque enim nihil, quo quos quasi atqueeligendi maiores iusto molestiae animi alias ratione. Rerumrepudiandae aspernatur numquam.'}
+                        content={'TEDx is an elemental initiative, created in the spirit of TED’s overall mission to research and discover “ideas worth spreading.” TEDx brings the spirit of TED to local communities around the globe through TEDx events. These events are organised by passionate individuals who seek to unleash new ideas and to share the latest research in their local areas that spark conversations in their communities for their wholesome development.'}
                     />
                     <Heading
                         heading={'About Graphic Era'}
-                        content={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velautem aperiam sapiente amet aliquam iste modi dolor fugaducimusculpa perspiciatis doloremque enim nihil, quo quos quasi atqueeligendi maiores iusto molestiae animi alias ratione. Rerumrepudiandae aspernatur numquam.'}
+                        content={'Graphic Era Deemed to be University, is the culmination of the vision of its founder, Prof (Dr) Kamal Ghanshala. The university has been conferred All-India NIRF Rank 75 in the Engineering Category, thus being accorded as the highest-ranked Engineering University in Uttarakhand, after IIT Roorkee, in the MHRD NIRF (National Institutional Ranking Framework) Rankings in September 2021.'}
                     />
                 </motion.div>
                 <div className="home-second-img">
