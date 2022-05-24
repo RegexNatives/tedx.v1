@@ -17,12 +17,14 @@ function Home() {
   const ref4 = useRef(null);
   useEffect(() => {
     const element = ref4.current;
+
+    
     let secttion = gsap.timeline({
       scrollTrigger: {
         trigger: ".home-page-wrapper",
-        start: "top 10%",
+        start: "center 100%",
         // end: "center",
-        end: "+=" + window.innerHeight * 0.5,
+        end: "+=" + window.innerHeight * 1,
         // end: "+=" + window.innerHeight * 1,
         scrub: true,
         pin: true,
@@ -53,11 +55,13 @@ function Home() {
    (
     secttion
       .from(".sec-di ", {
-        scale: 1.6,
+        scale: 1.7,
         opacity: 0.05,
-        duration: 0.2,
+        duration: 1,
       })
       .to(".sec-di ", { scale: 1, opacity: 1 })
+      .to(".home-page-wrapper", {y:-390,duration:2},`-=1`)
+      // .to(".sec-di ", { scale: 1, opacity: 1 })
       .from(".sec-di ", { x: 300 })
       .to(".sec-di ", { x: 0 })
       .from(".home-second-img", { opacity: 0, scale: 0.1 })
@@ -161,6 +165,7 @@ function Home() {
                     </div>
                   </div>
                 </div>
+                <div className="video-base"></div>
                 <div className="home-about-section" id="about-section">
                     <Heading
                         heading={'About this event'}
