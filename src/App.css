@@ -18,6 +18,12 @@
 .cont {
   margin: 0 10%;
 }
+.logo{
+  margin-left:-20px;
+}
+.logo>img{
+  width:125px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
