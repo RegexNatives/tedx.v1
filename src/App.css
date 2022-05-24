@@ -185,8 +185,10 @@ body {
   width: 28vw;
   padding-left: 12px;
 }
-.home-page-first,
-.home-page-second {
+.home-page-first
+/* ,
+.home-page-second  */
+{
   min-height: 100vh;
 }
 .home-about-section {
@@ -229,6 +231,7 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+
 .speaker-card img {
   margin-bottom: 30px;
   margin-top: 30px;
@@ -566,7 +569,7 @@ body {
   min-height: 100vh;
 } */
 .footer-container {
-  padding: 0 10% !important;
+  padding: 1% 10% !important;
 }
 .nav-links-list > li {
   padding: 10px;

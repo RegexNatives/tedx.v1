@@ -22,7 +22,7 @@ function Home() {
     let secttion = gsap.timeline({
       scrollTrigger: {
         trigger: ".home-page-wrapper",
-        start: "center 100%",
+        start: "center center",
         // end: "center",
         end: "+=" + window.innerHeight * 1,
         // end: "+=" + window.innerHeight * 1,
@@ -40,6 +40,7 @@ function Home() {
         duration: 2.5,
         ease: "power3.inOut",
       })
+      
       // .from(".sec-di ", {
       //   scale: 1.6,
       //   opacity: 0.0,
@@ -54,16 +55,17 @@ function Home() {
     
    (
     secttion
-      .from(".sec-di ", {
-        scale: 1.7,
-        opacity: 0.05,
-        duration: 1,
-      })
-      .to(".sec-di ", { scale: 1, opacity: 1 })
-      .to(".home-page-wrapper", {y:-390,duration:2},`-=1`)
+      // .from(".sec-di ", {
+      //   scale: 1.7,
+      //   opacity: 0.05,
+      //   duration: 1,
+      // })
       // .to(".sec-di ", { scale: 1, opacity: 1 })
-      .from(".sec-di ", { x: 300 })
-      .to(".sec-di ", { x: 0 })
+      // .to(".home-page-wrapper", {y:-0,duration:2},`-=1`)
+      // .to(".sec-di ", { scale: 1, opacity: 1 })
+      // .from(".sec-di ", { x: 300 })
+      // .to(".sec-di ", { x: 0 })
+      
       .from(".home-second-img", { opacity: 0, scale: 0.1 })
       .to(".home-second-img", {
         opacity: 1,
