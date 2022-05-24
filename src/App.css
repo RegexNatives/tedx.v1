@@ -923,6 +923,16 @@ body {
 }
 
 @media screen and (max-width: 750px) {
+  .footer-bottom-text >p{
+    text-align: left;
+  }
+  .footer-logo >img{
+    position: relative;
+    left: -7%;
+  }
+  .footer-logo >h1{
+    text-align: unset;
+  }
   .about-section-img > svg{
     height: 500px;
   }
