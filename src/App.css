@@ -664,7 +664,8 @@ body {
 }
 .first-section-btn button:nth-child(2) {
   cursor: pointer;
-  border: 1px solid #b8171a;
+  /* border: 1px solid #b8171a; */
+  border: none;
   border-radius: 15px;
   font-family: 'Poppins';
   font-style: normal;
@@ -674,11 +675,12 @@ body {
   /* identical to box height */
 
   background-color: transparent;
-  padding: 16px 20px;
-  margin-left: 20px;
+  /* padding: 16px 20px; */
+  padding-top: 16px;
+  /* margin-left: 20px; */
   /* Main Red */
 
-  color: #b8171a;
+  color: #fff;
 }
 .first-section {
   min-height: 90vh;
@@ -825,7 +827,7 @@ body {
   /* border: none; */
   width: 80%;
   padding:5px;
-  padding-left: 45px;
+  padding-left: 20px;
   /* background-color: #070707; */
   /* color: white; */
   background-color: transparent;
@@ -833,7 +835,7 @@ body {
   /* opacity: 90%; */
   margin: 22px 0;
   border-radius: 15px;
-  border-color: white;
+  border-color: rgba(255, 255, 255, 0.5);
   border-width:1px
 }
 .contact-form-input {
@@ -946,10 +948,24 @@ body {
   position:absolute;
   top:0;
   right:11.5%;
-  height:70vh;
+  /* min-height:70vh; */
+  height: 680px;
   width:371px;
   z-index:-1;
 }
+.red-container h2{
+  font-weight: 600;
+font-size: 47px;
+line-height: 118%;
+/* or 55px */
+position: absolute;
+bottom: 37%;left: -25px;
+
+color: #FFFFFF;
+}
+
+.red-container img{position: absolute;bottom: 0%;left: -53px;}
+.red-container img:nth-child(1){bottom: unset;top: 14%;}
 .tedx-geu{
   height: 150px;
 }
@@ -1077,3 +1093,18 @@ body {
   .horixon-text{left: 53px;}
 }
 .home-page-wrapper{position: relative;margin-top: 200px;}
+.red-container svg{
+  position: absolute;
+  right: 30px;left: unset;bottom: 29px;
+}
+.red-container svg {cursor: pointer;}
+.red-container .link-line{
+  width: 2px;right: 39px;top: 67px;
+  height: 270px;position: absolute;background-color: #fff;
+}
+.input-labels{font-size: 18px;color: #fff;}
+
+.contact-form-input input::placeholder, .contact-form-input textarea::placeholder{
+  opacity: 0.6;font-size: 16px;font-weight: 400;
+}
+.first-section-btn{display: flex;flex-direction: column;align-items: baseline;}
