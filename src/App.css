@@ -178,7 +178,8 @@ body {
   margin-top: 14px;
 }
 .home-second-img img {
-  width: 36vw;
+  width: 28vw;
+  padding-left: 12px;
 }
 .home-page-first,
 .home-page-second {
@@ -203,7 +204,7 @@ body {
   line-height: 77px;
 }
 .about-section-img svg:nth-child(1) {
-  width: 50vw;
+  width: 35vw;
 }
 .about-section-text {
   width: 500px;
@@ -322,7 +323,8 @@ body {
 .about-section-img svg:nth-child(1) {
   z-index: 1;
   position: relative;
-  bottom: -40px;
+  bottom: 20px;
+  padding-left: 31px;
 }
 /* .about-section-img{position: relative;}
       .about-section-img img:nth-child(4),  .about-section-img img:nth-child(5),  .about-section-img img:nth-child(6){position: absolute;}
@@ -718,6 +720,7 @@ body {
 .sec-di {
   display: flex;
   flex-direction: column;
+  padding-right: 124px;
 }
 .sec-di > div {
   padding: 5vh 0;
@@ -933,8 +936,16 @@ body {
   height: 150px;
 }
 
-
+.speakers-component{
+  padding-right: 106px;
+}
 @media screen and (max-width: 750px) {
+  .speakers-component{
+    padding-right: 0px;
+  }
+  .sec-di{
+    padding-right: 0px;
+  }
   .footer-bottom-text >p{
     text-align: left;
   }
