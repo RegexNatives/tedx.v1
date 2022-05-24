@@ -1293,3 +1293,13 @@ li .link-line{right: unset;position: relative;top: unset;}
     .entry-card-content p{font-size: 1.3rem;
       font-weight: 700; margin-bottom: 20px;
       text-align: center;}
+.pass-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.here-text{
+  cursor: pointer;
+  
+}

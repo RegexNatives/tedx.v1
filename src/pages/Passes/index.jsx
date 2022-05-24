@@ -12,7 +12,7 @@ import QR from '../../assets/qr.jpg'
 
 import logo2 from "../../assets/logo2.svg";
 
-const GetPasses = () => {
+const Passes = () => {
 
   const [sent, setSent] = useState(false);
   const [open,setOpen] = useState(false)
@@ -141,4 +141,4 @@ const GetPasses = () => {
     )
 }
 
-export default GetPasses;
+export default Passes;
