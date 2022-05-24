@@ -1,9 +1,8 @@
 import React from "react";
-import logo from '../assets/logo.svg'
 import Insta from '../assets/insta.svg'
 import Linkedin from '../assets/LinkedIn.svg';
 import Twitter from '../assets/Twitter.svg';
-import Facebook from '../assets/facebook.svg';
+import logo from '../assets/tedx-white.png';
 
 const Footer = () => {
     return(

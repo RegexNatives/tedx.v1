@@ -1204,3 +1204,7 @@ li .link-line{right: unset;position: relative;top: unset;}
   /* ul  li a:hover svg path{fill: #b8171a;opacity: 0.86;} */
   .left-border,.right-border{display: unset;}
 }
+
+.contact-form-text-part{
+  margin-top:30px
+}
