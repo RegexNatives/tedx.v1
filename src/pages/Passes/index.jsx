@@ -3,8 +3,8 @@ import { useFormik } from "formik";
 import {contactFormValidators} from '../../utils/validators';
 import Heading from "../../components/Heading";
 import logo from "../../assets/Tedx-logo.svg";
-import Navbar from "../../components/Navbar";
-
+import logo2 from "../../assets/logo2.svg";
+import Navbar from "../../components/Navbar"; 
 
 const GetPasses = () => {
 
@@ -38,6 +38,7 @@ const GetPasses = () => {
         },
       });
     return(
+      <>
         <div className="cont">
         <Navbar />
       <div className="contact-form pass-form" id="contact-section">
@@ -103,7 +104,19 @@ const GetPasses = () => {
         </div>
       </div>
       </div>
+      <div className="entry-card">
+        <div className="entry-card-content">
+                  <h1>Dhairya Marwah</h1>
+                  <p>2922210</p>
+                  <img src={logo} alt="" />
+                  <p className="Date">May,30 | KP Nautiyal</p>
+                  <p>#CEE244</p>
+                  <img src={logo2} alt="" />
+                  </div>
+
+      </div>
      </div>
+     </>
     )
 }
 
