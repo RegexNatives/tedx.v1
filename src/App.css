@@ -1313,3 +1313,7 @@ li .link-line{right: unset;position: relative;top: unset;}
         cursor: pointer;
         
       }
+      .contact-form-input{margin-left: 50px;}
+      @media (max-width:1050px) {
+        .contact-form-input{margin-left: 0px;margin-top: 30px;}
+      }

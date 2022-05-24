@@ -79,7 +79,7 @@ const Passes = () => {
           <div className="entry-card">
         <div className="entry-card-content">
                   <h1>Your Name</h1>
-                  <p>2922210</p>
+                  <p>@username</p>
                   <img src={logo} alt="" />
                   <p className="Date">May,30 | KP Nautiyal</p>
                   <p>#CEE244</p>
@@ -156,7 +156,7 @@ const Passes = () => {
                     </div>
                     <div className="proceed-btn">
 
-                    <Button variant="outlined" color="success">
+                    <Button on variant="outlined" color="success">
                       Proceed
                     </Button>
                     </div>
