@@ -1104,10 +1104,10 @@ color: #FFFFFF;
 }
 .horixon-text {
   position: absolute;
-  left: 74px;
+  left: 3vw;
   width: 100%;
   text-align: center;
-  top: 5%;
+  top: 2%;
 }
 .video-animation {
   padding-right: 60px;
@@ -1197,6 +1197,7 @@ li .link-line{right: unset;position: relative;top: unset;}
     rgb(206, 129, 129) 0%,
     rgba(208, 54, 54, 1) 73%
   );
+  background-clip:text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1219,4 +1220,9 @@ li .link-line{right: unset;position: relative;top: unset;}
 
 .contact-form-text-part{
   margin-top:30px
+}
+@media  (max-width:1250px) {
+ .red-container{
+   display: none;
+ }
 }
