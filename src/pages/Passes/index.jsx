@@ -9,14 +9,37 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import QR from '../../assets/qr.jpg'
-
+import TextField from '@mui/material/TextField';
 import logo2 from "../../assets/logo2.svg";
+// import { Formik, Form, Field } from 'formik';
+import * as yup from "yup";
+//  import { useFormik } from "formik";
 
+ const validationSchema = yup.object({ 
+  name: yup.string("Enter name").required(),
+  phone: yup.string("Enter phoneNo.").required(),
+  email: yup.string().email("Invalid Format").required(),
+   
+});
 const GetPasses = () => {
-
+  const formik = useFormik({
+    initialValues: {
+      // website: "",
+      name: "",
+      phone: "",
+      email: "",
+       
+    },
+    validationSchema: validationSchema,
+    onSubmit: (values) => {
+      
+        console.log(values);
+       
+    },
+  });
   const [sent, setSent] = useState(false);
   const [open,setOpen] = useState(false)
-
+  const handleClose = () => setOpen(false);
   const style = {
     position: 'absolute',
     top: '50%',
@@ -29,19 +52,19 @@ const GetPasses = () => {
     p: 4,
   };
 
-    const formik = useFormik({
-        initialValues: {
-          name: "",
-          email: "",
-          contact: "",
-          transactionId:"",
-        },
-        // validationSchema : contactFormValidators,
+    // const formik = useFormik({
+    //     initialValues: {
+    //       name: "",
+    //       email: "",
+    //       contact: "",
+    //       transactionId:"",
+    //     },
+    //     // validationSchema : contactFormValidators,
         
-        onSubmit: (values) => {
-          // alert(JSON.stringify(values, null, 2));
-        },
-      });
+    //     onSubmit: (values) => {
+    //       // alert(JSON.stringify(values, null, 2));
+    //     },
+    //   });
     return(
       <>
         <div className="cont">
@@ -55,7 +78,7 @@ const GetPasses = () => {
           <div className="contact-form-container">
           <div className="entry-card">
         <div className="entry-card-content">
-                  <h1>Dhairya Marwah</h1>
+                  <h1>Your Name</h1>
                   <p>2922210</p>
                   <img src={logo} alt="" />
                   <p className="Date">May,30 | KP Nautiyal</p>
@@ -113,10 +136,12 @@ const GetPasses = () => {
               </div>
               <Modal
                   open={open}
+                  onClose={handleClose}
                   aria-labelledby="modal-modal-title"
                   aria-describedby="modal-modal-description"
                 >
                   <Box sx={style}>
+                    <div className="payment-wrap">
                     <div className="payment-container">
                       <div className="red-marker"></div>
                       <h1>{'Payment'}</h1>
@@ -125,9 +150,17 @@ const GetPasses = () => {
                     <div className="qr-code-container">
                       <img src={QR} className="qr-code" />  
                     </div>
-                    <Button variant="outlined" color="error">
-                      Error
+                    <div className="transaction-id">
+
+                    <TextField id="outlined-basic" size="small" label="Transaction-id" variant="outlined" />
+                    </div>
+                    <div className="proceed-btn">
+
+                    <Button variant="outlined" color="success">
+                      Proceed
                     </Button>
+                    </div>
+                    </div>
                   </Box>
               </Modal>
             </form>

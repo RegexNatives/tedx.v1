@@ -1293,3 +1293,13 @@ li .link-line{right: unset;position: relative;top: unset;}
     .entry-card-content p{font-size: 1.3rem;
       font-weight: 700; margin-bottom: 20px;
       text-align: center;}
+      .entry-card-content p:nth-child(5){font-size: 1.7rem;}
+      .MuiBox-root {border-radius: 13px;padding: 5px !important;
+        background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+       
+      }
+      .transaction-id{text-align: center;}
+      .payment-wrap{padding: 10px;background-color: #fff;border-radius: 10px;}
+      .transaction-id .MuiOutlinedInput-root {width: 300px;}
+      .proceed-btn{text-align: center;margin-top: 20px;margin-bottom: 10px;}
