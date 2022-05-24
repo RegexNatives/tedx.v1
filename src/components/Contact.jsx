@@ -5,8 +5,8 @@ import {contactFormValidators} from '../utils/validators'
 import EmailImg from "../assets/email-img.svg"
 import GlobImg from "../assets/global-img.svg"
 import logo from "../assets/Tedx-logo.svg";
-import { toast,ToastContainer } from 'react-toastify';
 import { makeQuery } from '../services/Contact';
+import PhoneImg from "../assets/phone-img.svg"
 
 
 const Contact = () => {
@@ -43,7 +43,6 @@ const Contact = () => {
 
   return (
      <>
-      <ToastContainer autoClose={2000} />
       <div className="contact-form" id="contact-section">
 
           <Heading
@@ -104,8 +103,10 @@ const Contact = () => {
             <img src={logo}  className="tedx-geu" />
           <div className="text-details-part">
             <a href="mailto:tedxgraphicera@gmail.com" className="nav-a-tag"> <img src={EmailImg} alt="" /> tedxgrahicera@gmail.com</a>
-            {/* <p> <img src={PhoneImg} alt="" /> 123456789</p> */}
-            <p> <img src={GlobImg} alt="" /> Dehradun ,India</p>
+            <p>
+              <img src={PhoneImg} alt="" /><a href="tel:+918077043655" className="nav-a-tag"> +91 8077043655</a> , 
+              <a href="tel:+916397232910" className="nav-a-tag"> +91 6397232910</a>
+            </p><img src={GlobImg} alt="" /> Dehradun ,India
           </div>
         </div>
       </div>

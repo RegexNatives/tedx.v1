@@ -7,7 +7,7 @@ export const makeQuery = async (data) => {
         console.log("API URL endpoint = ", URL);
         console.log(data);
         let resp = await axios.post(URL, data);
-        console.log(resp);
+        // console.log(resp);
         return {
           success: true,
           data: resp.data,
