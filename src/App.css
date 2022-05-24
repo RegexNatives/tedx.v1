@@ -1245,6 +1245,14 @@ li .link-line{right: unset;position: relative;top: unset;}
 .first-section .t-align{word-spacing: 0.1px;}
 .right-border{top: 169px;}
 @media (max-width:550px) {
-  .right-border,.social-link-wrap{display: none;}
+  .right-border{display: none;}
   .nav-links{width: 300px;}
+  .video-animation{display: none;}
+}
+@media (max-width:550px) {
+  .social-link-wrap {
+    top: -10px;
+}
+.link-line{width: 1px;height: 170px;}
+.social-link-wrap svg{width: 13px;}
 }

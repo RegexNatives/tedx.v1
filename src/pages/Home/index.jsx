@@ -19,6 +19,29 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Home() {
   const ref4 = useRef(null);
+if(window.innerWidth<=768){
+  useEffect(() => {
+    const element = ref4.current;
+    let secttion = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".home-page-wrapper",
+        start: "center 70%",
+        end: "+=" + window.innerHeight * 1,
+        scrub: true,
+        pin: true,
+      },
+    });
+      secttion
+          .from(".home-second-img", { opacity: 0.1, scale: 0.1 })
+          .to(".home-second-img", {
+            opacity: 1,
+            scale: 1,
+            duration: 2.5,
+            ease: "power3.inOut",
+          }) 
+  }, []);
+}
+else{
   useEffect(() => {
     const element = ref4.current;
     let secttion = gsap.timeline({
@@ -30,27 +53,51 @@ function Home() {
         pin: true,
       },
     });
-    {
-      window.innerWidth < 750
-        ? secttion
-          .from(".home-second-img", { opacity: 0, scale: 0.1 })
-          .to(".home-second-img", {
-            opacity: 1,
-            scale: 1,
-            duration: 2.5,
-            ease: "power3.inOut",
-          })
-        :
-        secttion
-          .from(".home-second-img", { opacity: 0, scale: 0.1 })
-          .to(".home-second-img", {
-            opacity: 1,
-            scale: 1,
-            duration: 4.5,
-            ease: "power3.inOut",
-          });
-    }
+    secttion
+    .from(".home-second-img", { opacity: 0, scale: 0.1 })
+    .to(".home-second-img", {
+      opacity: 1,
+      scale: 1,
+      duration: 4.5,
+      ease: "power3.inOut",
+    });
   }, []);
+}
+
+
+
+  // useEffect(() => {
+  //   const element = ref4.current;
+  //   let secttion = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: ".home-page-wrapper",
+  //       start: "center center",
+  //       end: "+=" + window.innerHeight * 1,
+  //       scrub: true,
+  //       pin: true,
+  //     },
+  //   });
+  //   {
+  //     window.innerWidth < 750
+  //       ? secttion
+  //         .from(".home-second-img", { opacity: 0, scale: 0.1 })
+  //         .to(".home-second-img", {
+  //           opacity: 1,
+  //           scale: 1,
+  //           duration: 2.5,
+  //           ease: "power3.inOut",
+  //         })
+  //       :
+  //       secttion
+  //         .from(".home-second-img", { opacity: 0, scale: 0.1 })
+  //         .to(".home-second-img", {
+  //           opacity: 1,
+  //           scale: 1,
+  //           duration: 4.5,
+  //           ease: "power3.inOut",
+  //         });
+  //   }
+  // }, []);
 
   const ref = useRef(null);
   useEffect(() => {
