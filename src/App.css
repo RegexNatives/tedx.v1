@@ -71,10 +71,13 @@ body {
   font-style: normal;
   font-weight: 400;
   cursor: pointer;
+
+
   font-size: 16px;
   line-height: 29px;
 }
-
+li svg path{transition: all 0.6s ease;}
+  ul  li a:hover svg path{fill: #b8171a;opacity: 0.86;}
 .home-page-first > div {
   margin: 0 5%;
 }
@@ -1135,10 +1138,11 @@ color: #FFFFFF;
   right: 30px;left: unset;bottom: 29px;
 }
 .red-container svg {cursor: pointer;}
-.ater-phone-link .link-line,.red-container .link-line{
+.ater-phone-link .link-line,.link-line, .red-container .link-line{
   width: 2px;right: 39px;top: 67px;
   height: 270px;position: absolute;background-color: #fff;
 }
+li .link-line{right: unset;position: relative;top: unset;}
 .input-labels{font-size: 18px;color: #fff;}
 
 .contact-form-input input::placeholder, .contact-form-input textarea::placeholder{
@@ -1179,3 +1183,14 @@ color: #FFFFFF;
 .ater-phone-link{z-index: 3;position: absolute;right: 24px;}
 .ater-phone-link svg{top: 13%;position: relative;right: -8px;}
 .ater-phone-link .link-line{height: 105px;top: 107px; }
+.social-link-wrap{position: absolute;right: 220px;top: 70px;}
+.social-link-wrap ul li{margin: 10px 0;cursor: pointer;}
+.social-link-wrap ul{display: flex;flex-direction: column;justify-content: space-between;align-items: center;}
+@media (max-width: 1050px) {
+  .red-container{display: none;}
+}
+@media (max-width:905px) {
+  .social-link-wrap{right: 20px;}
+  .social-link-wrap{top: 160px;}
+  .left-border,.right-border{display: unset;}
+}
