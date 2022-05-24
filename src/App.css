@@ -55,6 +55,8 @@ body {
   align-items: center;
   color: #fff;
   justify-content: space-between;
+  margin-top: 10px;
+  margin-left:4%
 }
 .nav-links ul {
   display: flex;
@@ -62,6 +64,8 @@ body {
 }
 .nav-links {
   width: 340px;
+  position: relative;
+  left:-4%
 }
 .nav-links ul li {
   font-style: normal;
@@ -219,7 +223,7 @@ body {
 .speaker-card {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  /* width: 90%; */
   margin: 0 auto;
   justify-content: space-around;
   align-items: center;
@@ -602,6 +606,7 @@ body {
 }
 .first-secction-text {
   color: #fff;
+  margin-left:4%
 }
 .first-secction-text h1 {
   color: #b8171a;
@@ -696,6 +701,10 @@ body {
   margin-bottom: 20px;
   color: white;
 }
+.speakers-component{
+  margin-left: 4%;
+  width: 90%;
+}
 .speakers-component > p {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.7);
@@ -706,6 +715,8 @@ body {
 .speaker-card-content {
   display: flex;
   flex-direction: column;
+  margin-left:30px;
+  margin-right:30px
 }
 .speaker-card-content > h3 {
   color: white;
@@ -852,6 +863,10 @@ body {
 }
 
 @media (max-width: 1050px) {
+
+  .red-container{
+    right:11%;
+  }
   .contact-form-text-part h1 {
     font-size: 39px;
     line-height: 53px;
@@ -926,7 +941,7 @@ body {
   top:0;
   right:11.5%;
   height:70vh;
-  width:22vw;
+  width:371px;
   z-index:-1;
 }
 .tedx-geu{
@@ -988,12 +1003,15 @@ body {
   }
   .navabr {
     flex-direction: column;
+    margin-top: 10px;
+    margin-left:4%
   }
   .home-page-second {
  flex-direction: column-reverse;
   }
   .first-secction-text p{
     width: auto;
+    margin-left:4%
   }
   .footer-content{
     flex-direction: column;
