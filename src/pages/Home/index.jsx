@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
-import Navbar from "../../components/Navbar";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Navbar from "../../components/Navbar";
 import Speakers from "../../components/Speakers";
 import Footer from "../../components/Footer";
 import Contact from "../../components/Contact";
@@ -11,6 +11,7 @@ import About from "../../components/About";
 import Heading from "../../components/Heading";
 import Video from "../../assets/main.mp4";
 import {motion} from 'framer-motion'
+
 gsap.registerPlugin(ScrollTrigger);
 
 function Home() {

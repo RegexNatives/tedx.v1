@@ -1,26 +1,22 @@
 export const speakers=[
     {
-        name:"Prof. Kamal Ghanshala",
+        name:"Prof.(Dr) Kamal Ghanshala",
         designation:"Chairman"
     },
     {
-        name:"Sameeksha Sajwan",
+        name:"Kamlesh Nagware",
         designation:"CEO & Founder"
     },
     {
-        name:"Ansleem Fernandez",
+        name:"Jaspreet Singh",
         designation:"CEO & Founder"
-    },
-    {
-        name:"Jubian Nautiyal",
-        designation:"Musician"
     },
     {
         name:"Bobby Cash",
         designation:"Musician"
     },
     {
-        name:"Kamlesh Nagware",
-        designation:"CEO & Founder"
-    }
+        name:"Sandeep Jain",
+        designation:"Founder GFG"
+    },
 ]
