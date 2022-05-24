@@ -10,6 +10,7 @@ import Second from "../../components/Second";
 import About from "../../components/About";
 import Heading from "../../components/Heading";
 import Video from "../../assets/main.mp4";
+import {motion} from 'framer-motion'
 gsap.registerPlugin(ScrollTrigger);
 
 function Home() {
@@ -19,13 +20,37 @@ function Home() {
     let secttion = gsap.timeline({
       scrollTrigger: {
         trigger: ".home-page-wrapper",
-        start: "center center",
+        start: "top 10%",
         // end: "center",
-        end: "+=" + window.innerHeight * 1.0,
+        end: "+=" + window.innerHeight * 0.5,
+        // end: "+=" + window.innerHeight * 1,
         scrub: true,
         pin: true,
       },
     });
+     {window.innerWidth<750?
+      (
+      secttion
+      .from(".home-second-img", { opacity: 0, scale: 0.1 })
+      .to(".home-second-img", {
+        opacity: 1,
+        scale: 1,
+        duration: 2.5,
+        ease: "power3.inOut",
+      })
+      // .from(".sec-di ", {
+      //   scale: 1.6,
+      //   opacity: 0.0,
+      //   duration: 0.2,
+      // })
+      // .to(".sec-di ", { scale: 1, opacity: 1 })
+      .from(".sec-di ", { x: '90vw' })
+      .to(".sec-di ", { x: 0 })
+     
+      )
+      :
+    
+   (
     secttion
       .from(".sec-di ", {
         scale: 1.6,
@@ -41,7 +66,9 @@ function Home() {
         scale: 1,
         duration: 4.5,
         ease: "power3.inOut",
-      });
+      })
+   )
+    }
   }, []);
 
   const ref = useRef(null);
@@ -92,8 +119,18 @@ function Home() {
         <>
             <div className="cont">
                 <Navbar />
-                <div className="first-section">
-                    <div className="first-secction-text">
+                <div 
+                // initial={{ x: -250 }}
+                // animate={{ x: 0 }}
+                // transition={{ delay: 0.2}}
+                className="first-section">
+                    <motion.div 
+                     
+                   
+                    initial={{ opacity:0, x: -200 }}
+                animate={{opacity:1, x: 0 }}
+                transition={{ duration: 1}} 
+                    className="first-secction-text">
                         <h1>TED <span>X</span></h1>
                         <h2>GRAPHIC ERA UNIVERSITY</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis parturient purus pulvinar scelerisque. Fringilla sagittis, nibh euismod rhoncus. Gravida mattis sollicitudin molestie quam tristique orci. Sit sed quam mauris malesuada et vitae.</p>
@@ -101,7 +138,7 @@ function Home() {
                             <button>Get Pass Today</button>
                             <button>Speakers</button>
                         </div>
-                    </div>
+                    </motion.div>
                     <div className="red-container"></div>
                     <div className="first-section-img">
                     

@@ -1,20 +1,29 @@
 import React from 'react';
 import logo from "../assets/logo.svg";
-
+import {motion} from 'framer-motion'
 function Navbar() {
     return (
 
             <div className="navabr">
-                <div className="logo">
+                <motion.div 
+                 
+                 initial={{ opacity:0,y:-30 }}
+                 animate={{opacity:1, y: 0 }}
+                 transition={{ duration: 1}} 
+                className="logo">
                     <img src={logo} alt="logo" />
-                </div>
+                </motion.div>
                 <div className="nav-links">
-                    <ul className='nav-links-list'>
+                    <motion.ul 
+                    initial={{ opacity:0,y:-30 }}
+                    animate={{opacity:1, y: 0 }}
+                    transition={{ duration: 1}} 
+                    className='nav-links-list'>
                         <li>About</li>
                         <li>Speakers</li>
                         <li>Team</li>
                         <li>Contact</li>
-                    </ul>
+                    </motion.ul>
                 </div>
             </div>
     )
