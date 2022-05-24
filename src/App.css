@@ -564,7 +564,6 @@ body {
   font-size: 100px;
   z-index: 1;
 }
-
 /* .home-about-section {
   min-height: 100vh;
 } */
@@ -958,6 +957,9 @@ body {
   padding-right: 106px;
 }
 @media screen and (max-width: 750px) {
+  .first-section-btn > button{
+   margin:12px;
+  }
   .speakers-component{
     padding-right: 0px;
   }
@@ -1025,7 +1027,7 @@ body {
   }
   .first-secction-text p{
     width: auto;
-    margin-left:4%
+    /* margin-left:4% */
   }
   .footer-content{
     flex-direction: column;
@@ -1082,3 +1084,4 @@ body {
   color:#fff;
   text-align: left;
 }
+
