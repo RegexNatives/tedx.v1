@@ -1,25 +1,42 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Heading from './Heading';
 import { useFormik } from "formik";
 import {contactFormValidators} from '../utils/validators'
 import EmailImg from "../assets/email-img.svg"
 import GlobImg from "../assets/global-img.svg"
 import logo from "../assets/Tedx-logo.svg";
-import { toast } from 'react-toastify';
+import { makeQuery } from '../services/Contact';
+import PhoneImg from "../assets/phone-img.svg"
 
 
 const Contact = () => {
+
+  const [sent,setSent] = useState(false);
 
   const formik = useFormik({
     initialValues: {
       name: "",
       email: "",
-      message: "",
+      body: "",
     },
     validationSchema : contactFormValidators,
     
     onSubmit: (values) => {
-      toast("Wow so easy!")
+      makeQuery(values)
+                .then(res => {
+                  console.log(res)
+                  if(res.success){
+                      setSent(true);
+                  }
+                  else{
+                    setSent(false);
+                  }
+                  resetForm();
+                  console.log(sent)
+                })
+                .catch(err => {
+                  setSent(false);
+                })
       // alert(JSON.stringify(values, null, 2));
     },
   });
@@ -67,18 +84,18 @@ const Contact = () => {
               <div className="message-input">
                 {/* <img src={MessImg} alt="" /> */}
                 <textarea placeholder="Message/Query" 
-                  name="message"
-                  id="message"
+                  name="body"
+                  id="body  "
                   onChange={formik.handleChange}
-                  defaultValue={formik.values.message}
+                  defaultValue={formik.values.body}
                   onBlur={formik.handleBlur}
                 ></textarea>
-                {formik.touched.message && formik.errors.message ? (
-                  <div className="alert-message">{formik.errors.message}</div>
+                {formik.touched.body && formik.errors.body ? (
+                  <div className="alert-message">{formik.errors.body}</div>
                 ) : null}
               </div>
               <div className="first-section-btn">
-                  <button type="submit">Submit</button>
+                  <button type="submit" disabled={sent}>{sent?'Sent ✅':'Submit'}</button>
               </div>
             </form>
           </div>
@@ -86,8 +103,10 @@ const Contact = () => {
             <img src={logo}  className="tedx-geu" />
           <div className="text-details-part">
             <a href="mailto:tedxgraphicera@gmail.com" className="nav-a-tag"> <img src={EmailImg} alt="" /> tedxgrahicera@gmail.com</a>
-            {/* <p> <img src={PhoneImg} alt="" /> 123456789</p> */}
-            <p> <img src={GlobImg} alt="" /> Dehradun ,India</p>
+            <p>
+              <img src={PhoneImg} alt="" /><a href="tel:+918077043655" className="nav-a-tag"> +91 8077043655</a> , 
+              <a href="tel:+916397232910" className="nav-a-tag"> +91 6397232910</a>
+            </p><img src={GlobImg} alt="" /> Dehradun ,India
           </div>
         </div>
       </div>
