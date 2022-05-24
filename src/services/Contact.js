@@ -1,6 +1,5 @@
 import { apiURL } from "../constants/config";
 import axios from 'axios'
-import {request} from '../utils/requestService'
 
 export const makeQuery = async (data) => {
     try {
