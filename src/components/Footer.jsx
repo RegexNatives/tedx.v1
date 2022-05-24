@@ -18,7 +18,7 @@ const Footer = () => {
               <ul>
                 <a href="#about-section" className="nav-a-tag"><li>About</li> </a>
                 <a href="#speaker-section" className="nav-a-tag"><li>Speakers</li> </a>
-                <a href="#" className="nav-a-tag"><li>Team</li> </a>
+                {/* <a href="#" className="nav-a-tag"><li>Team</li> </a> */}
                 <a href="#contact-section" className="nav-a-tag"><li>Contact</li> </a>
               </ul>
             </div>
@@ -31,13 +31,13 @@ const Footer = () => {
             <p>tedxgraphicera@gmail.com</p>
             <h1>Get Updated</h1>
             <div className="social-links">
-              <a href="#">
+              <a href="https://instagram.com/tedxgraphicerauniversity?igshid=YmMyMTA2M2Y=">
                 <img src={Insta} alt="" />
               </a>
-              <a href="#">
+              <a href="https://twitter.com/TEDxGraphicEra">
                 <img src={Twitter} alt="" />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/tedxgraphicerauniversityofficial">
                 <img src={Linkedin} alt="" />
               </a>
             </div>

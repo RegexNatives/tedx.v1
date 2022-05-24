@@ -21,7 +21,7 @@ const Navbar = ()=> {
                          className='nav-links-list'>
                         <a href="#about-section" className="nav-a-tag"><li>About</li> </a>
                         <a href="#speaker-section" className="nav-a-tag"><li>Speakers</li> </a>
-                        <a href="#" className="nav-a-tag"><li>Team</li> </a>
+                        {/* <a href="#" className="nav-a-tag"><li>Team</li> </a> */}
                         <a href="#contact-section" className="nav-a-tag"><li>Contact</li> </a>
                     </motion.ul>
                 </div>

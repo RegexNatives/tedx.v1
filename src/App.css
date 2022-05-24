@@ -643,7 +643,7 @@ body {
   margin-top: 21px;
   margin-bottom: 46px;
 }
-.first-section-btn button:nth-child(1) {
+.first-section-btn a:nth-child(1),.first-section-btn button:nth-child(1) {
   cursor: pointer;
   background: #b8171a;
   /* Main Red */

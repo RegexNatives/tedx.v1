@@ -145,7 +145,7 @@ function Home() {
                         <h2>GRAPHIC ERA UNIVERSITY</h2>
                         <p>It is always said that dreams can never be achieved in a comfortable way of living. To achieve your horizons, one needs to have difficulties as a cup of tea. On that note, Graphic Era Deemed To Be University presents TedxGraphicEra. Upholding the roots of Tedx, we aim to provide a direction to the youth to excel in their domains.</p>
                         <div className="first-section-btn">
-                            <button>Learn More</button>
+                            <a href="#about-section">Learn More</a>
                             <button>Passes Coming Soon!</button>
                         </div>
                         
@@ -247,7 +247,7 @@ function Home() {
                 <div className="home-about-section" id="about-section">
                     <Heading
                         heading={'About this event'}
-                        content={'<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velautem aperiam sapiente amet aliquam iste modi dolor fugaducimusculpa perspiciatis doloremque enim nihil, quo quos quasi atqueeligendi maiores iusto molestiae animi alias ratione. Rerumrepudiandae aspernatur numquam.</p><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velautem aperiam sapiente amet aliquam iste modi dolor fugaducimusculpa perspiciatis doloremque enim nihil, quo quos quasi atqueeligendi maiores iusto molestiae animi alias ratione. Rerumrepudiandae aspernatur numquam.</p><br><p>Venue : KP Nauityal</p><br><p>Date : 30th May 2022</p>'}
+                        content={'<p>TEDxGraphic Era will be witnessing speakers from a wide plethora. The goal is to bring experts from different domains under one roof to collaborate and inculcate their knowledge and experiences for the development of the society.  </p><br><p>HORIZON is the distance between a living human being and the line where the sky and the earth meet is very wide. It can only be measured with our eyes, mind and soul. Our vision is to bring these ends a little closure with the help of our speaker’s talk, his/ her journey, experience, and useful insights.</p><br><p>Venue : KP Nauityal Hall</p><br><p>Date : 30th May 2022</p>'}
                     />
                     <About />
                 </div>
