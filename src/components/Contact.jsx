@@ -28,24 +28,10 @@ const Contact = () => {
       <div className="contact-form" id="contact-section">
 
           <Heading
-              heading={'Contact Me'}
+              heading={'Contact Us'}
               content={'<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velautem aperiam sapiente amet aliquam iste modi dolor fugaducimusculpa perspiciatis doloremque enim nihil, quo quos quasi atqueeligendi maiores iusto molestiae animi alias ratione. Rerumrepudiandae aspernatur numquam.</p>'}
           />
           <div className="contact-form-container">
-        {/* <div className="contact-form-text-part">
-          <h1>
-            Let’s Take Your <br /> Meet to new level
-          </h1>
-          <p>
-            Subscribe to our service and be our <br />
-            first consumer
-          </p>
-          <div className="text-details-part">
-            <p> <img src={EmailImg} alt="" /> dhairyamarwah01@gmail.com</p>
-            <p> <img src={PhoneImg} alt="" /> 123456789</p>
-            <p> <img src={GlobImg} alt="" /> Dehradun ,India</p>
-          </div>
-        </div> */}
         <div className="contact-form-input">
           <form onSubmit={formik.handleSubmit}>
               <label className="input-labels">Name</label>
