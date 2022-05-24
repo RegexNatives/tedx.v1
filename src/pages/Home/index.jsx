@@ -9,10 +9,85 @@ import Contact from "../../components/Contact";
 import Second from "../../components/Second";
 import About from "../../components/About";
 import Heading from "../../components/Heading";
-
+import Video from "../../assets/main.mp4";
 gsap.registerPlugin(ScrollTrigger);
 
 function Home() {
+  const ref4 = useRef(null);
+  useEffect(() => {
+    const element = ref4.current;
+    let secttion = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".home-page-wrapper",
+        start: "center center",
+        // end: "center",
+        end: "+=" + window.innerHeight * 1.0,
+        scrub: true,
+        pin: true,
+      },
+    });
+    secttion
+      .from(".sec-di ", {
+        scale: 1.6,
+        opacity: 0.05,
+        duration: 0.2,
+      })
+      .to(".sec-di ", { scale: 1, opacity: 1 })
+      .from(".sec-di ", { x: 300 })
+      .to(".sec-di ", { x: 0 })
+      .from(".home-second-img", { opacity: 0, scale: 0.1 })
+      .to(".home-second-img", {
+        opacity: 1,
+        scale: 1,
+        duration: 4.5,
+        ease: "power3.inOut",
+      });
+  }, []);
+
+  const ref = useRef(null);
+  useEffect(() => {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".dot",
+        start: "center center",
+        // end: "center",
+        end: "+=" + window.innerHeight * 2,
+        scrub: true,
+        pin: true,
+        // duration:99000
+      },
+    });
+    tl.to(".dot", { scale: 20.5, duration: 16, ease: "power3.inOut" })
+      // .from(".horizon-text-h1", { opacity: 1,duration:1 })
+      .to(".horizon-text-h1", {
+        opacity: 0,
+        duration: 0.4,
+        scrollTrigger: {
+          trigger: ".horizon-text",
+          start: "center center",
+          end: "+=" + window.innerHeight * 1,
+          scrub: true,
+          pin: true,
+        },
+      })
+      .to(".dot", { scale: 1, duration: 4 })
+      // .to(".text", { x: -5500, duration: 4 }, "-=6");
+  }, []);
+
+  const ref5 = useRef(null);
+  useEffect(() => {
+    const element = ref5.current;
+    let secttion2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".video-section",
+        start: "center center",
+        end: "center",
+        scrub: true,
+        pin: true,
+        duration: 8000,
+      },
+    });
+  }, []);
     return (
         <>
             <div className="cont">
@@ -35,6 +110,20 @@ function Home() {
                     </div> */}
                 </div>
                 <Second />
+                <div className="video-animation">
+            <div className="block">
+              <div className="video-wrap">
+
+             
+              <div className="dot">
+              <video src={Video} autoPlay loop muted playsInline />
+              </div>
+              <div className="horixon-text">
+                <h1 className="horizon-text-h1">H&nbsp;&nbsp;&nbsp; RIZON</h1>
+              </div>
+              </div>
+            </div>
+          </div>
                 <div className="home-about-section">
                     <Heading
                         heading={'About this event'}

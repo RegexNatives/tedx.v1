@@ -504,8 +504,8 @@ body {
   top: 60px;
 }
 .dot {
-  position: absolute;
-  left: 39.7%;
+  position: relative;
+  /* left: 37.6%; */
   top: 50%;
   width: 100px;
   height: 100px;
@@ -972,3 +972,16 @@ body {
     margin: 0 7%;
   }
 }
+
+.dot{left: unset !important;}
+.video-wrap .pin-spacer{width: unset !important;display: flex !important;justify-content: center;align-items: center;}
+
+.horixon-text h1{font-size: 68px;}
+.dot{width: 70px;height: 70px;left: -40px;}
+.horixon-text {
+  position: relative;left: 74px;
+  width: 100%;
+  text-align: center; 
+  top: 41%;
+}
+.video-animation{padding-right: 60px;}
