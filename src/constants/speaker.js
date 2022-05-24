@@ -1,6 +1,6 @@
 export const speakers=[
     {
-        name:"Kamal Ghansala",
+        name:"Prof. Kamal Ghanshala",
         designation:"Chairman"
     },
     {
