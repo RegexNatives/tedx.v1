@@ -5,7 +5,6 @@ import {motion} from 'framer-motion'
 
 const Second = () => {
     return (
-
         <div className="home-page-wrapper">
             <div className="home-page-second">
                 <motion.div 

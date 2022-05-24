@@ -14,6 +14,7 @@ import {motion} from 'framer-motion'
 import XX from "../../assets/xx.svg"
 import BlackSvg from "../../assets/black.svg"
 import Link from "../../assets/links.svg"
+
 gsap.registerPlugin(ScrollTrigger);
 
 function Home() {
