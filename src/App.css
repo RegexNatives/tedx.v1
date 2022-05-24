@@ -76,7 +76,7 @@ body {
   line-height: 29px;
 }
 li svg path{transition: all 0.6s ease;}
-  ul  li a:hover svg path{fill: #b8171a;opacity: 0.86;}
+  ul  li a:hover svg path{fill: #000;opacity: 0.86;}
 .home-page-first > div {
   margin: 0 5%;
 }
@@ -1201,5 +1201,6 @@ li .link-line{right: unset;position: relative;top: unset;}
 @media (max-width:905px) {
   .social-link-wrap{right: 20px;}
   .social-link-wrap{top: 160px;}
+  /* ul  li a:hover svg path{fill: #b8171a;opacity: 0.86;} */
   .left-border,.right-border{display: unset;}
 }
