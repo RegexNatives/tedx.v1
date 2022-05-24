@@ -109,7 +109,7 @@ function Home() {
               TED <span>X</span>
             </h1>
             <h2>GraphicEraUniversity</h2>
-            <p>
+            <p className="t-align">
               It is always said that dreams can never be achieved in a
               comfortable way of living. To achieve your horizons, one needs to
               have difficulties as a cup of tea. On that note, Graphic Era

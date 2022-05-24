@@ -1185,7 +1185,7 @@ li .link-line{right: unset;position: relative;top: unset;}
   .first-secction-text h1{font-size: 3.2rem;}
   .first-secction-text h2{margin-top: 5px;
     font-size: 29px;font-weight: 500;}
-    .first-secction-text p{  font-size: 17px;line-height: 24px;  width: 272px;}
+    .first-secction-text p{  font-size: 14px;line-height: 24px;  width: 272px;}
 }
 
 .coming-soon > h3 {
@@ -1232,3 +1232,11 @@ li .link-line{right: unset;position: relative;top: unset;}
 }
 .red-marker .t-align{word-spacing: -3px;}
 .venue{font-weight: bold;color: #fff;opacity: 0.8;}
+@media (max-width: 750px) {
+.first-secction-text h2 {
+    margin-top: 5px;
+    font-size: 24px;
+    font-weight: 500;
+}}
+.first-section .t-align{word-spacing: 0.1px;}
+.right-border{top: 169px;}
