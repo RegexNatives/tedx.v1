@@ -50,8 +50,8 @@ const Contact = () => {
           <form onSubmit={formik.handleSubmit}>
               <label className="input-labels">Name</label>
               <div className="name-input">
-                <img src={ProfileImg} alt="" />
-                <input type="text" placeholder="Name"
+                {/* <img src={ProfileImg} alt="" /> */}
+                <input type="text" placeholder="John Doe"
                   name="name"
                   id="name"
                   onChange={formik.handleChange}
@@ -64,8 +64,8 @@ const Contact = () => {
               </div>
               <label className="input-labels">Email</label>
               <div className="email-input">
-                <img src={EmailImg} style={{opacity:"0.8"}} alt="" />
-                <input type="email" placeholder="Email"
+                {/* <img src={EmailImg} style={{opacity:"0.8"}} alt="" /> */}
+                <input type="email" placeholder="johndoe@gmail.com"
                     name="email"
                     id="email"
                    onChange={formik.handleChange}
@@ -78,7 +78,7 @@ const Contact = () => {
               </div>
               <label className="input-labels">Message</label>
               <div className="message-input">
-                <img src={MessImg} alt="" />
+                {/* <img src={MessImg} alt="" /> */}
                 <textarea placeholder="Message/Query" 
                   name="message"
                   id="message"
