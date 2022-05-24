@@ -678,7 +678,7 @@ body {
   color: #b8171a;
 }
 .first-section {
-  min-height: 90vh;
+  /* min-height: 90vh; */
   display: flex;
   padding-top: 150px;
 }
@@ -850,7 +850,7 @@ body {
 .email-input img,
 .message-input img {
   position: absolute;
-  top: 36px;
+  top: 30px;
   left: 10px;
 }
 .text-details-part{
