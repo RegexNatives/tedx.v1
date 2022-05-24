@@ -1303,3 +1303,13 @@ li .link-line{right: unset;position: relative;top: unset;}
       .payment-wrap{padding: 10px;background-color: #fff;border-radius: 10px;}
       .transaction-id .MuiOutlinedInput-root {width: 300px;}
       .proceed-btn{text-align: center;margin-top: 20px;margin-bottom: 10px;}
+      .pass-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .here-text{
+        cursor: pointer;
+        
+      }

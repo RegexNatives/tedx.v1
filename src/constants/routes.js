@@ -1,5 +1,6 @@
 import Home from "../pages/Home";
-import GetPasses from "../pages/Passes";
+import Passes from "../pages/Passes";
+import GetPasses from "../pages/Passes/Get-passes";
 export const routesData = [
     {
         path: '/',
@@ -8,7 +9,12 @@ export const routesData = [
     },
     {
         path: '/book-passes',
-        name: 'getPasses',
+        name: 'Passes',
+        Component : Passes
+    },
+    {
+        path: '/get-passes/:_id',
+        name: 'Passes',
         Component : GetPasses
     }
 ]

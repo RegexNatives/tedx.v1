@@ -174,4 +174,4 @@ const GetPasses = () => {
     )
 }
 
-export default GetPasses;
+export default Passes;
