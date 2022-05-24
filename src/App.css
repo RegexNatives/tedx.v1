@@ -185,8 +185,10 @@ body {
   width: 28vw;
   padding-left: 12px;
 }
-.home-page-first,
-.home-page-second {
+.home-page-first
+/* ,
+.home-page-second  */
+{
   min-height: 100vh;
 }
 .home-about-section {
