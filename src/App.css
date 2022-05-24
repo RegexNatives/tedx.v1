@@ -573,8 +573,13 @@ body {
   padding: 10px;
   font-size: 16px;
 }
-.nav-a-tag > li {
+.nav-a-tag > li{
   padding: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+}
+.nav-a-tag {
   font-size: 16px;
   text-decoration: none;
   color: #fff;

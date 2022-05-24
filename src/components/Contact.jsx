@@ -29,7 +29,7 @@ const Contact = () => {
 
           <Heading
               heading={'Contact Us'}
-              content={'<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velautem aperiam sapiente amet aliquam iste modi dolor fugaducimusculpa perspiciatis doloremque enim nihil, quo quos quasi atqueeligendi maiores iusto molestiae animi alias ratione. Rerumrepudiandae aspernatur numquam.</p>'}
+              content={'<p>We will be honoured to help you in the best possible way. Feel free to reach out to us.</p>'}
           />
           <div className="contact-form-container">
         <div className="contact-form-input">
@@ -84,8 +84,8 @@ const Contact = () => {
           <div className="contact-form-text-part">
             <img src={Tedx}  className="tedx-geu" />
           <div className="text-details-part">
-            <p> <img src={EmailImg} alt="" /> tedxgraphicera@gmail.com</p>
-            <p> <img src={PhoneImg} alt="" /> 123456789</p>
+            <a href="mailto:tedxgraphicera@gmail.com" className="nav-a-tag"> <img src={EmailImg} alt="" /> tedxgrahicera@gmail.com</a>
+            {/* <p> <img src={PhoneImg} alt="" /> 123456789</p> */}
             <p> <img src={GlobImg} alt="" /> Dehradun ,India</p>
           </div>
         </div>

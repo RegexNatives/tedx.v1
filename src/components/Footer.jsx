@@ -28,7 +28,7 @@ const Footer = () => {
           </div> */}
           <div className="footer-get">
             <h1>Get in touch</h1>
-            <p>tedxgraphicera@gmail.com</p>
+            <a href="mailto:tedxgraphicera@gmail.com" className="nav-a-tag">  tedxgrahicera@gmail.com</a>
             <h1>Get Updated</h1>
             <div className="social-links">
               <a href="https://instagram.com/tedxgraphicerauniversity?igshid=YmMyMTA2M2Y=">
