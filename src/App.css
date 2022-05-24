@@ -1103,11 +1103,11 @@ color: #FFFFFF;
   left: -40px;
 }
 .horixon-text {
-  position: relative;
-  left: 74px;
+  position: absolute;
+  left: 3vw;
   width: 100%;
   text-align: center;
-  top: 41%;
+  top: 2%;
 }
 .video-animation {
   padding-right: 60px;
@@ -1146,7 +1146,7 @@ color: #FFFFFF;
     height: 50px;
   }
   .horixon-text {
-    left: 53px;
+    left: 26px;
   }
 }
 .home-page-wrapper {
@@ -1197,6 +1197,7 @@ li .link-line{right: unset;position: relative;top: unset;}
     rgb(206, 129, 129) 0%,
     rgba(208, 54, 54, 1) 73%
   );
+  background-clip:text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1220,4 +1221,8 @@ li .link-line{right: unset;position: relative;top: unset;}
 .contact-form-text-part{
   margin-top:30px
 }
-
+@media  (max-width:1250px) {
+ .red-container{
+   display: none;
+ }
+}

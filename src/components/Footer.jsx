@@ -44,7 +44,7 @@ const Footer = () => {
         <div className="footer-bottom-text">
           <p>
             This independent TEDx event is operated under license from TED.
-            Copyright Stichting TEDxGraphicEra, 2022. All Rights Reserved under REGEX NATIVES.{" "}
+            Copyright TEDxGraphicEra, 2022.<br/> Designed and Developed by Regex Natives.{" "}
           </p>
           </div>
         </div>

@@ -21,14 +21,11 @@ function Home() {
   const ref4 = useRef(null);
   useEffect(() => {
     const element = ref4.current;
-
     let secttion = gsap.timeline({
       scrollTrigger: {
         trigger: ".home-page-wrapper",
         start: "center center",
-        // end: "center",
         end: "+=" + window.innerHeight * 1,
-        // end: "+=" + window.innerHeight * 1,
         scrub: true,
         pin: true,
       },
@@ -36,41 +33,22 @@ function Home() {
     {
       window.innerWidth < 750
         ? secttion
-            .from(".home-second-img", { opacity: 0, scale: 0.1 })
-            .to(".home-second-img", {
-              opacity: 1,
-              scale: 1,
-              duration: 2.5,
-              ease: "power3.inOut",
-            })
-        : // .from(".sec-di ", {
-          //   scale: 1.6,
-          //   opacity: 0.0,
-          //   duration: 0.2,
-          // })
-          // .to(".sec-di ", { scale: 1, opacity: 1 })
-          // .from(".sec-di ", { x: '90vw' })
-          // .to(".sec-di ", { x: 0 })
-
-          secttion
-            // .from(".sec-di ", {
-            //   scale: 1.7,
-            //   opacity: 0.05,
-            //   duration: 1,
-            // })
-            // .to(".sec-di ", { scale: 1, opacity: 1 })
-            // .to(".home-page-wrapper", {y:-0,duration:2},`-=1`)
-            // .to(".sec-di ", { scale: 1, opacity: 1 })
-            // .from(".sec-di ", { x: 300 })
-            // .to(".sec-di ", { x: 0 })
-
-            .from(".home-second-img", { opacity: 0, scale: 0.1 })
-            .to(".home-second-img", {
-              opacity: 1,
-              scale: 1,
-              duration: 4.5,
-              ease: "power3.inOut",
-            });
+          .from(".home-second-img", { opacity: 0, scale: 0.1 })
+          .to(".home-second-img", {
+            opacity: 1,
+            scale: 1,
+            duration: 2.5,
+            ease: "power3.inOut",
+          })
+        :
+        secttion
+          .from(".home-second-img", { opacity: 0, scale: 0.1 })
+          .to(".home-second-img", {
+            opacity: 1,
+            scale: 1,
+            duration: 4.5,
+            ease: "power3.inOut",
+          });
     }
   }, []);
 
@@ -80,15 +58,12 @@ function Home() {
       scrollTrigger: {
         trigger: ".dot",
         start: "center center",
-        // end: "center",
         end: "+=" + window.innerHeight * 2,
         scrub: true,
         pin: true,
-        // duration:99000
       },
     });
     tl.to(".dot", { scale: 20.5, duration: 16, ease: "power3.inOut" })
-      // .from(".horizon-text-h1", { opacity: 1,duration:1 })
       .to(".horizon-text-h1", {
         opacity: 0,
         duration: 0.4,
@@ -101,7 +76,6 @@ function Home() {
         },
       })
       .to(".dot", { scale: 1, duration: 4 });
-    // .to(".text", { x: -5500, duration: 4 }, "-=6");
   }, []);
 
   const ref5 = useRef(null);
@@ -123,9 +97,6 @@ function Home() {
       <div className="cont">
         <Navbar />
         <div
-          // initial={{ x: -250 }}
-          // animate={{ x: 0 }}
-          // transition={{ delay: 0.2}}
           className="first-section"
         >
           <motion.div
@@ -151,7 +122,6 @@ function Home() {
               <button>Passes Coming Soon!</button>
             </div>
           </motion.div>
-          {/* <div className="left-border"></div> */}
           <div className="right-border"></div>
           <MotionDiv />
           <div className="red-container">
@@ -181,8 +151,6 @@ function Home() {
           </div>
 
           <div className="first-section-img"></div>
-          {/* <div className="first-section-img">
-                    </div> */}
         </div>
         <Second />
         <div className="video-animation">
