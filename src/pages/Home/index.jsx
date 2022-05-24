@@ -14,11 +14,15 @@ import { motion } from "framer-motion";
 import XX from "../../assets/xx.svg";
 import BlackSvg from "../../assets/black.svg";
 import MotionDiv from "../../components/Motion-div";
+import {useNavigate} from 'react-router-dom'
 
 gsap.registerPlugin(ScrollTrigger);
 
 function Home() {
+
   const ref4 = useRef(null);
+  const navigate = useNavigate();
+
   useEffect(() => {
     const element = ref4.current;
     let secttion = gsap.timeline({
@@ -119,7 +123,7 @@ function Home() {
             </p>
             <div className="first-section-btn">
               <a href="#about-section">Learn More</a>
-              <button>Passes Coming Soon!</button>
+              <button onClick={()=>navigate('/book-passes')}>Get Passes Now!</button>
             </div>
           </motion.div>
           <div className="right-border"></div>

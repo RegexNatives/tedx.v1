@@ -1226,3 +1226,7 @@ li .link-line{right: unset;position: relative;top: unset;}
    display: none;
  }
 }
+
+.pass-form{
+  margin-top: 100px;
+}
