@@ -1,6 +1,5 @@
 import { apiURL } from "../constants/config";
 import axios from 'axios'
-import {request} from '../utils/requestService'
 
 export const makeQuery = async (data) => {
     try {
@@ -8,7 +7,7 @@ export const makeQuery = async (data) => {
         console.log("API URL endpoint = ", URL);
         console.log(data);
         let resp = await axios.post(URL, data);
-        console.log(resp);
+        // console.log(resp);
         return {
           success: true,
           data: resp.data,
