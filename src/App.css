@@ -26,7 +26,7 @@ body{
 .logo > img {
   width: 180px;
   margin-top: 20px;
-
+  cursor: pointer;
 }
 .nav-links{
   z-index:10
@@ -1259,4 +1259,19 @@ li .link-line{right: unset;position: relative;top: unset;}
 }
 .link-line{width: 1px;height: 170px;}
 .social-link-wrap svg{width: 13px;}
+}
+
+.payment-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.qr-code-container{
+  display: flex;
+  justify-content: center;
+  margin : 20px 0
+}
+
+.qr-code{
+  height: 300px;
 }

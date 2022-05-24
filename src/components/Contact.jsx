@@ -6,7 +6,7 @@ import EmailImg from "../assets/email-img.svg"
 import GlobImg from "../assets/global-img.svg"
 import logo from "../assets/Tedx-logo.svg";
 import { makeQuery } from '../services/Contact';
-import PhoneImg from "../assets/phone-img.svg"
+import PhoneImg from "../assets/phone-img.svg";
 
 
 const Contact = () => {
@@ -25,30 +25,12 @@ const Contact = () => {
     onSubmit:async (values) => {
       const response=await makeQuery(values)
       if(response.success){
-
         setSent(true)
-
         resetForm();
       }
       else{
         setError(true)
       }
-
-                // .then(res => {
-                //   console.log(res)
-                //   if(res.success){
-                //       setSent(true);
-                //   }
-                //   else{
-                //     setSent(false);
-                //   }
-                //   resetForm();
-                //   console.log(sent)
-                // })
-                // .catch(err => {
-                //   setSent(false);
-                // })
-      // alert(JSON.stringify(values, null, 2));
     },
   });
 

@@ -4,36 +4,40 @@ import {contactFormValidators} from '../../utils/validators';
 import Heading from "../../components/Heading";
 import logo from "../../assets/Tedx-logo.svg";
 import Navbar from "../../components/Navbar";
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
+import QR from '../../assets/qr.jpg'
 
 
 const GetPasses = () => {
 
   const [sent, setSent] = useState(false);
+  const [open,setOpen] = useState(false)
+
+  const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+  };
 
     const formik = useFormik({
         initialValues: {
           name: "",
           email: "",
-          transactionId: "",
+          contact: "",
+          transactionId:"",
         },
-        validationSchema : contactFormValidators,
+        // validationSchema : contactFormValidators,
         
         onSubmit: (values) => {
-          makeQuery(values)
-                    .then(res => {
-                      console.log(res)
-                      if(res.success){
-                          setSent(true);
-                      }
-                      else{
-                        setSent(false);
-                      }
-                      resetForm();
-                      console.log(sent)
-                    })
-                    .catch(err => {
-                      setSent(false);
-                    })
           // alert(JSON.stringify(values, null, 2));
         },
       });
@@ -77,23 +81,42 @@ const GetPasses = () => {
                   <div className="alert-message">{formik.errors.email}</div>
                 ) : null}
               </div>
-              <label className="input-labels">TransactionId</label>
+              <label className="input-labels">Contact</label>
               <div className="message-input">
                 {/* <img src={MessImg} alt="" /> */}
-                <input type="email" placeholder="johndoe@gmail.com"
-                    name="transactionId"
-                    id="transactionId"
+                <input type="email" placeholder="+91-1234567890"
+                    name="contact"
+                    id="contact"
                    onChange={formik.handleChange}
-                   defaultValue={formik.values.transactionId}
+                   defaultValue={formik.values.contact}
                    onBlur={formik.handleBlur}
                 />
-                {formik.touched.transactionId && formik.errors.transactionId ? (
-                  <div className="alert-message">{formik.errors.transactionId}</div>
+                {formik.touched.contact && formik.errors.contact ? (
+                  <div className="alert-message">{formik.errors.contact}</div>
                 ) : null}
               </div>
               <div className="first-section-btn">
-                  <button type="submit" disabled={sent}>{sent?'Sent ✅':'Submit'}</button>
+                  <button type="button" onClick={()=>setOpen(true)} disabled={sent}>{sent?'Sent ✅':'Proceed'}</button>
               </div>
+              <Modal
+                  open={open}
+                  aria-labelledby="modal-modal-title"
+                  aria-describedby="modal-modal-description"
+                >
+                  <Box sx={style}>
+                    <div className="payment-container">
+                      <div className="red-marker"></div>
+                      <h1>{'Payment'}</h1>
+                    </div>
+                    <p>Scan the QR to pay!</p>
+                    <div className="qr-code-container">
+                      <img src={QR} className="qr-code" />  
+                    </div>
+                    <Button variant="outlined" color="error">
+                      Error
+                    </Button>
+                  </Box>
+              </Modal>
             </form>
           </div>
           <div className="contact-form-text-part">
