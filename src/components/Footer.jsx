@@ -2,7 +2,7 @@ import React from "react";
 import Insta from '../assets/insta.svg'
 import Linkedin from '../assets/LinkedIn.svg';
 import Twitter from '../assets/Twitter.svg';
-import logo from '../assets/tedx-white.png';
+import logo from '../assets/tedx-white.svg';
 
 const Footer = () => {
     return(
@@ -12,7 +12,6 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-logo">
             <img src={logo} alt="" />
-            <h1>HORIZON</h1>
             <div className="footer-links">
               <ul>
                 <a href="#about-section" className="nav-a-tag"><li>About</li> </a>

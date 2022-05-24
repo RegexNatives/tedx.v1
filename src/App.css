@@ -20,9 +20,12 @@
   margin: 0 10%;
 }
 .logo > img {
-  width: 150px;
+  width: 180px;
   margin-top: 20px;
 
+}
+.nav-links{
+  z-index:10
 }
 .App-header {
   background-color: #282c34;
@@ -984,7 +987,16 @@ color: #FFFFFF;
 .speakers-component {
   padding-right: 106px;
 }
+.footer-logo > img {
+  width: 333px;
+  padding-bottom:10px;
+  border-bottom: 1px solid #fff;
+}
 @media screen and (max-width: 750px) {
+
+  .footer-logo > img {
+    width: 300px;
+  }
   .first-section-btn > button {
     margin: 12px;
   }
