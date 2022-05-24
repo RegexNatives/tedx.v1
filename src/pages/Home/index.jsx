@@ -23,6 +23,29 @@ function Home() {
   const ref4 = useRef(null);
   const navigate = useNavigate();
 
+if(window.innerWidth<=768){
+  useEffect(() => {
+    const element = ref4.current;
+    let secttion = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".home-page-wrapper",
+        start: "center 70%",
+        end: "+=" + window.innerHeight * 1,
+        scrub: true,
+        pin: true,
+      },
+    });
+      secttion
+          .from(".home-second-img", { opacity: 0.1, scale: 0.1 })
+          .to(".home-second-img", {
+            opacity: 1,
+            scale: 1,
+            duration: 2.5,
+            ease: "power3.inOut",
+          }) 
+  }, []);
+}
+else{
   useEffect(() => {
     const element = ref4.current;
     let secttion = gsap.timeline({
@@ -34,27 +57,51 @@ function Home() {
         pin: true,
       },
     });
-    {
-      window.innerWidth < 750
-        ? secttion
-          .from(".home-second-img", { opacity: 0, scale: 0.1 })
-          .to(".home-second-img", {
-            opacity: 1,
-            scale: 1,
-            duration: 2.5,
-            ease: "power3.inOut",
-          })
-        :
-        secttion
-          .from(".home-second-img", { opacity: 0, scale: 0.1 })
-          .to(".home-second-img", {
-            opacity: 1,
-            scale: 1,
-            duration: 4.5,
-            ease: "power3.inOut",
-          });
-    }
+    secttion
+    .from(".home-second-img", { opacity: 0, scale: 0.1 })
+    .to(".home-second-img", {
+      opacity: 1,
+      scale: 1,
+      duration: 4.5,
+      ease: "power3.inOut",
+    });
   }, []);
+}
+
+
+
+  // useEffect(() => {
+  //   const element = ref4.current;
+  //   let secttion = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: ".home-page-wrapper",
+  //       start: "center center",
+  //       end: "+=" + window.innerHeight * 1,
+  //       scrub: true,
+  //       pin: true,
+  //     },
+  //   });
+  //   {
+  //     window.innerWidth < 750
+  //       ? secttion
+  //         .from(".home-second-img", { opacity: 0, scale: 0.1 })
+  //         .to(".home-second-img", {
+  //           opacity: 1,
+  //           scale: 1,
+  //           duration: 2.5,
+  //           ease: "power3.inOut",
+  //         })
+  //       :
+  //       secttion
+  //         .from(".home-second-img", { opacity: 0, scale: 0.1 })
+  //         .to(".home-second-img", {
+  //           opacity: 1,
+  //           scale: 1,
+  //           duration: 4.5,
+  //           ease: "power3.inOut",
+  //         });
+  //   }
+  // }, []);
 
   const ref = useRef(null);
   useEffect(() => {
@@ -113,7 +160,7 @@ function Home() {
               TED <span>X</span>
             </h1>
             <h2>GraphicEraUniversity</h2>
-            <p>
+            <p className="t-align">
               It is always said that dreams can never be achieved in a
               comfortable way of living. To achieve your horizons, one needs to
               have difficulties as a cup of tea. On that note, Graphic Era
@@ -174,7 +221,7 @@ function Home() {
           <Heading
             heading={"About this event"}
             content={
-              "<p>TEDxGraphic Era will be witnessing speakers from a wide plethora. The goal is to bring experts from different domains under one roof to collaborate and inculcate their knowledge and experiences for the development of the society.  </p><br><p>HORIZON is the distance between a living human being and the line where the sky and the earth meet is very wide. It can only be measured with our eyes, mind and soul. Our vision is to bring these ends a little closure with the help of our speaker’s talk, his/ her journey, experience, and useful insights.</p><br><p>Venue : KP Nauityal Hall</p><br><p>Date : 30th May 2022</p>"
+              "<p>TEDxGraphic Era will be witnessing speakers from a wide plethora. The goal is to bring experts from different domains under one roof to collaborate and inculcate their knowledge and experiences for the development of the society.  </p><br><p>HORIZON is the distance between a living human being and the line where the sky and the earth meet is very wide. It can only be measured with our eyes, mind and soul. Our vision is to bring these ends a little closure with the help of our speaker’s talk, his/ her journey, experience, and useful insights.</p><br><p class=venue>Venue : KP Nautiyal Auditorium, Graphic Era Hill University, Dehradun Uttarakhand</p><br><p class=venue>Date : 30th May 2022</p>"
             }
           />
           <About />
