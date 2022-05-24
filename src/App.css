@@ -20,10 +20,12 @@
   margin: 0 10%;
 }
 .logo {
-  margin-left: -20px;
+  /* margin-top: 20px; */
 }
 .logo > img {
-  width: 125px;
+  width: 150px;
+  margin-top: 20px;
+
 }
 .App-header {
   background-color: #282c34;
@@ -578,6 +580,9 @@ body {
   font-size: 16px;
   text-decoration: none;
   color: #fff;
+}.nav-a-tag > img{
+  position: relative;
+  top:5px
 }
 .nav-a-tag {
   font-size: 16px;
@@ -675,6 +680,7 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+  color:#b8171a;
   /* identical to box height */
 
 
@@ -684,7 +690,6 @@ body {
   /* margin-left: 20px; */
   /* Main Red */
 
-  color: #fff;
 }
 .first-section {
   /* min-height: 90vh; */
@@ -834,14 +839,15 @@ body {
   padding:5px;
   padding-left: 20px;
   /* background-color: #070707; */
-  /* color: white; */
+  color: white;
   background-color: transparent;
   /* background: #B8171A; */
   /* opacity: 90%; */
   margin: 22px 0;
   border-radius: 15px;
   border-color: rgba(255, 255, 255, 0.5);
-  border-width:1px
+  border-width:1px;
+  margin-top:15px
 }
 .contact-form-input {
   width: 55%;
@@ -855,6 +861,7 @@ body {
 .email-input,
 .message-input {
   position: relative;
+  /* margin-top: -10px !important; */
 }
 .name-input img,
 .email-input img,
@@ -864,7 +871,7 @@ body {
   left: 10px;
 }
 .text-details-part {
-  margin-left: 20px;
+  margin-top: 25px;
 }
 .alert-message {
   margin-top: -10px;

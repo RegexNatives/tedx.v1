@@ -4,10 +4,10 @@ import { useFormik } from "formik";
 import {contactFormValidators} from '../utils/validators'
 import EmailImg from "../assets/email-img.svg"
 import GlobImg from "../assets/global-img.svg"
-import MessImg from "../assets/message-img.svg"
-import PhoneImg from "../assets/phone-img.svg"
-import ProfileImg from "../assets/profile-circle.svg";
-import Tedx from '../assets/Tedx.svg'
+import logo from "../assets/Tedx-logo.svg";
+import { toast } from 'react-toastify';
+
+
 const Contact = () => {
 
   const formik = useFormik({
@@ -19,7 +19,8 @@ const Contact = () => {
     validationSchema : contactFormValidators,
     
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      toast("Wow so easy!")
+      // alert(JSON.stringify(values, null, 2));
     },
   });
 
@@ -77,12 +78,12 @@ const Contact = () => {
                 ) : null}
               </div>
               <div className="first-section-btn">
-                  <button>Submit</button>
+                  <button type="submit">Submit</button>
               </div>
             </form>
           </div>
           <div className="contact-form-text-part">
-            <img src={Tedx}  className="tedx-geu" />
+            <img src={logo}  className="tedx-geu" />
           <div className="text-details-part">
             <a href="mailto:tedxgraphicera@gmail.com" className="nav-a-tag"> <img src={EmailImg} alt="" /> tedxgrahicera@gmail.com</a>
             {/* <p> <img src={PhoneImg} alt="" /> 123456789</p> */}

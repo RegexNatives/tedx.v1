@@ -246,8 +246,8 @@ function Home() {
                 <div className="video-base"></div>
                 <div className="home-about-section" id="about-section">
                     <Heading
-                        heading={'About this event'}
-                        content={'<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velautem aperiam sapiente amet aliquam iste modi dolor fugaducimusculpa perspiciatis doloremque enim nihil, quo quos quasi atqueeligendi maiores iusto molestiae animi alias ratione. Rerumrepudiandae aspernatur numquam.</p><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velautem aperiam sapiente amet aliquam iste modi dolor fugaducimusculpa perspiciatis doloremque enim nihil, quo quos quasi atqueeligendi maiores iusto molestiae animi alias ratione. Rerumrepudiandae aspernatur numquam.</p><br><p>Venue : KP Nautiyal Hall</p><br><p>Date : 30th May 2022</p>'}
+                        heading={'About the event'}
+                        content={'<p>TEDxGraphic Era will be witnessing speakers from a wide plethora. The goal is to bring experts from different domains under one roof to collaborate and inculcate their knowledge and experiences for the development of the society. </p><br><p>HORIZON is the distance between a living human being and the line where the sky and the earth meet is very wide. It can only be measured with our eyes, mind and soul. Our vision is to bring these ends a little closure with the help of our speaker’s talk, his/ her journey, experience, and useful insights.</p><br><p>Venue : KP Nautiyal Hall</p><br><p>Date : 30th May 2022</p>'}
                     />
                     <About />
                 </div>
