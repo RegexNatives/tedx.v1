@@ -1230,6 +1230,10 @@ li .link-line{right: unset;position: relative;top: unset;}
    display: none;
  }
 }
+
+.pass-form{
+  margin-top: 100px;
+}
 .t-align{
   text-align: justify;
   word-spacing:-2px;
