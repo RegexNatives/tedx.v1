@@ -917,6 +917,15 @@ body {
 }
 
 @media screen and (max-width: 750px) {
+  .about-section-img > svg{
+    height: 500px;
+  }
+  .contact-form-container {
+    padding-bottom: 0;
+  }
+  .contact-form {
+    margin-top: 20px;
+}
   .home-second-img img {
     width: 75vw;
 }
@@ -931,7 +940,7 @@ body {
     padding-top: 0px;
 }
   .speakers-component{
-    padding: 15px 0;
+    padding-top: 40px;
   }
   .home-about-section{
     flex-direction: column-reverse;
@@ -947,6 +956,7 @@ body {
   }
   .first-section{
     min-width: 10vh;
+    padding-top: 70px;
   }
   .navabr {
     flex-direction: column;
