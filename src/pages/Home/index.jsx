@@ -146,29 +146,29 @@ function Home() {
                     {/* <div className="first-section-img">
                     </div> */}
                 </div>
-                <Second />
+                <Second  />
                 <div className="video-animation">
-            <div className="block">
-              <div className="video-wrap">
+                  <div className="block">
+                    <div className="video-wrap">
 
-             
-              <div className="dot">
-              <video src={Video} autoPlay loop muted playsInline />
-              </div>
-              <div className="horixon-text">
-                <h1 className="horizon-text-h1">H&nbsp;&nbsp;&nbsp; RIZON</h1>
-              </div>
-              </div>
-            </div>
-          </div>
-                <div className="home-about-section">
+                  
+                    <div className="dot">
+                    <video src={Video} autoPlay loop muted playsInline />
+                    </div>
+                    <div className="horixon-text">
+                      <h1 className="horizon-text-h1">H&nbsp;&nbsp;&nbsp; RIZON</h1>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="home-about-section" id="about-section">
                     <Heading
                         heading={'About this event'}
                         content={'<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velautem aperiam sapiente amet aliquam iste modi dolor fugaducimusculpa perspiciatis doloremque enim nihil, quo quos quasi atqueeligendi maiores iusto molestiae animi alias ratione. Rerumrepudiandae aspernatur numquam.</p><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velautem aperiam sapiente amet aliquam iste modi dolor fugaducimusculpa perspiciatis doloremque enim nihil, quo quos quasi atqueeligendi maiores iusto molestiae animi alias ratione. Rerumrepudiandae aspernatur numquam.</p><br><p>Venue : KP Nauityal</p><br><p>Date : 30th May 2022</p>'}
                     />
                     <About />
                 </div>
-                <Speakers />
+                <Speakers  />
                 <Contact />
             </div>
             <Footer />

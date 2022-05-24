@@ -14,6 +14,7 @@
   /* font-family: 'San Francisco', sans-serif; */
   /* font-family: 'Helvetica', sans-serif; */
   /* font-family: 'Helvetica Neue LT Std', sans-serif; */
+  scroll-behavior: smooth;
 }
 .cont {
   margin: 0 10%;
@@ -236,7 +237,7 @@ body {
 .footer-content {
   display: flex;
   justify-content: space-between;
-  /* width: 90%; */
+  width: 90%;
   margin: 0 auto;
 }
 .footer-bottom-text {
@@ -565,6 +566,12 @@ body {
   padding: 10px;
   font-size: 16px;
 }
+.nav-a-tag > li {
+  padding: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+}
 .home-page-button {
   padding: 10 10;
 }
@@ -736,7 +743,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
-  /* padding-left: 60px; */
+  padding-left: 60px;
   padding-top: 60px;
   padding-bottom: 80px;
 }
@@ -774,7 +781,7 @@ body {
   /* color: rgba(0, 0, 0, 0.7); */
 }
 .contact-form-input input {
-  height: 52px;
+  height:45px;
 }
 .contact-form-input textarea {
   height: 165px;
@@ -799,7 +806,7 @@ body {
 .contact-form-input input,
 .contact-form-input textarea {
   /* border: none; */
-  width: 90%;
+  width: 80%;
   padding:5px;
   padding-left: 45px;
   /* background-color: #070707; */
@@ -830,7 +837,7 @@ body {
 .message-input img {
   position: absolute;
   top: 36px;
-  left: 6px;
+  left: 10px;
 }
 .text-details-part{
   margin-left:20px;
@@ -841,7 +848,7 @@ body {
   color:#b8171a;
   display: flex;
   justify-content: flex-end;
-  width: 90%;
+  width: 80%;
 }
 
 @media (max-width: 1050px) {
@@ -860,19 +867,20 @@ body {
     margin-bottom: 28px;
   }
   .contact-form-input input {
-    height: 56px;
+    height: 45px;
   }
   .contact-form-input input,
   .contact-form-input textarea {
     margin: 11px 0;
   }
   .contact-form-container {
-    padding-left: 40px;
+    padding-left: 20px;
+    width:auto
   }
   .name-input img,
   .email-input img,
   .message-input img {
-    top: 25px;
+    top: 20px;
   }
   .contact-form-text-part {
     margin: 10px 0;
@@ -881,6 +889,9 @@ body {
     width: 100vw !important;
     height: 83%;
     top: 7%;
+  }
+  .alert-message{
+    width:90%
   }
   .step3 {
     flex-direction: column;
@@ -897,7 +908,7 @@ body {
   }
   .contact-form-input input,
   .contact-form-input textarea {
-    width: 93%;
+    width: 100%;
     border-radius: 12px;
   }
   .name-input img,
@@ -924,7 +935,16 @@ body {
 
 
 @media screen and (max-width: 750px) {
- 
+  .footer-bottom-text >p{
+    text-align: left;
+  }
+  .footer-logo >img{
+    position: relative;
+    left: -7%;
+  }
+  .footer-logo >h1{
+    text-align: unset;
+  }
   .about-section-img > svg{
     height: 500px;
   }

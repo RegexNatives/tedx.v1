@@ -16,10 +16,10 @@ const Footer = () => {
             <h1>HORIZON</h1>
             <div className="footer-links">
               <ul>
-                <li>About</li>
-                <li>Speakers</li>
-                <li>Team</li>
-                <li>Contact</li>
+                <a href="#about-section" className="nav-a-tag"><li>About</li> </a>
+                <a href="#speaker-section" className="nav-a-tag"><li>Speakers</li> </a>
+                <a href="#" className="nav-a-tag"><li>Team</li> </a>
+                <a href="#contact-section" className="nav-a-tag"><li>Contact</li> </a>
               </ul>
             </div>
           </div>
