@@ -5,7 +5,7 @@ import Heading from './Heading'
 
 const Speakers = () => {
     return(
-        <div >
+        <div id="speaker-section">
             <Heading
                 heading={'Speakers'}
                 content={'<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velautem aperiam sapiente amet aliquam iste modi dolor fugaducimusculpa perspiciatis doloremque enim nihil, quo quos quasi atqueeligendi maiores iusto molestiae animi alias ratione. Rerumrepudiandae aspernatur numquam.</p>'}

@@ -10,10 +10,10 @@ function Navbar() {
                 </div>
                 <div className="nav-links">
                     <ul className='nav-links-list'>
-                        <li>About</li>
-                        <li>Speakers</li>
-                        <li>Team</li>
-                        <li>Contact</li>
+                        <a href="#about-section" className="nav-a-tag"><li>About</li> </a>
+                        <a href="#speaker-section" className="nav-a-tag"><li>Speakers</li> </a>
+                        <a href="#" className="nav-a-tag"><li>Team</li> </a>
+                        <a href="#contact-section" className="nav-a-tag"><li>Contact</li> </a>
                     </ul>
                 </div>
             </div>
