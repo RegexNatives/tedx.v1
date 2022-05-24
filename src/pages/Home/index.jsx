@@ -137,7 +137,7 @@ function Home() {
             <h1>
               TED <span>X</span>
             </h1>
-            <h2>GRAPHIC ERA UNIVERSITY</h2>
+            <h2>GraphicEraUniversity</h2>
             <p>
               It is always said that dreams can never be achieved in a
               comfortable way of living. To achieve your horizons, one needs to

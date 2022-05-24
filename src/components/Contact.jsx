@@ -6,6 +6,7 @@ import EmailImg from "../assets/email-img.svg"
 import GlobImg from "../assets/global-img.svg"
 import logo from "../assets/Tedx-logo.svg";
 import { toast } from 'react-toastify';
+import { makeQuery } from '../services/Contact';
 
 
 const Contact = () => {
@@ -14,11 +15,12 @@ const Contact = () => {
     initialValues: {
       name: "",
       email: "",
-      message: "",
+      body: "",
     },
     validationSchema : contactFormValidators,
     
     onSubmit: (values) => {
+      makeQuery(values)
       toast("Wow so easy!")
       // alert(JSON.stringify(values, null, 2));
     },
@@ -67,14 +69,14 @@ const Contact = () => {
               <div className="message-input">
                 {/* <img src={MessImg} alt="" /> */}
                 <textarea placeholder="Message/Query" 
-                  name="message"
-                  id="message"
+                  name="body"
+                  id="body  "
                   onChange={formik.handleChange}
-                  defaultValue={formik.values.message}
+                  defaultValue={formik.values.body}
                   onBlur={formik.handleBlur}
                 ></textarea>
-                {formik.touched.message && formik.errors.message ? (
-                  <div className="alert-message">{formik.errors.message}</div>
+                {formik.touched.body && formik.errors.body ? (
+                  <div className="alert-message">{formik.errors.body}</div>
                 ) : null}
               </div>
               <div className="first-section-btn">
