@@ -1226,3 +1226,9 @@ li .link-line{right: unset;position: relative;top: unset;}
    display: none;
  }
 }
+.t-align{
+  text-align: justify;
+  word-spacing:-2px;
+}
+.red-marker .t-align{word-spacing: -3px;}
+.venue{font-weight: bold;color: #fff;opacity: 0.8;}
