@@ -1,15 +1,17 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Heading from './Heading';
 import { useFormik } from "formik";
 import {contactFormValidators} from '../utils/validators'
 import EmailImg from "../assets/email-img.svg"
 import GlobImg from "../assets/global-img.svg"
 import logo from "../assets/Tedx-logo.svg";
-import { toast } from 'react-toastify';
+import { toast,ToastContainer } from 'react-toastify';
 import { makeQuery } from '../services/Contact';
 
 
 const Contact = () => {
+
+  const [sent,setSent] = useState(false);
 
   const formik = useFormik({
     initialValues: {
@@ -21,13 +23,27 @@ const Contact = () => {
     
     onSubmit: (values) => {
       makeQuery(values)
-      toast("Wow so easy!")
+                .then(res => {
+                  console.log(res)
+                  if(res.success){
+                      setSent(true);
+                  }
+                  else{
+                    setSent(false);
+                  }
+                  resetForm();
+                  console.log(sent)
+                })
+                .catch(err => {
+                  setSent(false);
+                })
       // alert(JSON.stringify(values, null, 2));
     },
   });
 
   return (
      <>
+      <ToastContainer autoClose={2000} />
       <div className="contact-form" id="contact-section">
 
           <Heading
@@ -80,7 +96,7 @@ const Contact = () => {
                 ) : null}
               </div>
               <div className="first-section-btn">
-                  <button type="submit">Submit</button>
+                  <button type="submit" disabled={sent}>{sent?'Sent ✅':'Submit'}</button>
               </div>
             </form>
           </div>

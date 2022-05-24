@@ -7,14 +7,6 @@ export const makeQuery = async (data) => {
         let URL = apiURL + "messages";
         console.log("API URL endpoint = ", URL);
         console.log(data);
-        const requestOptions = {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(data)
-        };
-        // let resp = await fetch(URL, requestOptions)
-        //     .then(response => response.json())
-        // let resp = await request(URL, "POST", {'Content-Type': 'application/json'}, data); //Example of new request Service
         let resp = await axios.post(URL, data);
         console.log(resp);
         return {
@@ -25,7 +17,6 @@ export const makeQuery = async (data) => {
       } catch (e) {
         return {
           success: false,
-          data: {},
           message: e.message,
         };
       }
