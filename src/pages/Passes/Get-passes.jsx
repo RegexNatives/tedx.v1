@@ -53,9 +53,9 @@ const GetPasses = () => {
           <div className="ticket final-ticket">
             <div className="ticket-text">
                 <img src={tick} alt="" />
-                <h1>Your Name</h1>
-                <p>@username</p>
-                <h2># TGEU2102</h2>
+                <h1>{passDetails?.name}</h1>
+                <p>@{passDetails?.email?.split('@')[0]}</p>
+                <h2>#{passDetails?.transactionId}</h2>
                 <div className="venue-ticket">
                     <p>May 20, 2022 </p>
                     <p><span>KP Nautiyal Auditorium </span> <br /> Graphic Era Hill University <br /> Dehradun, Uttarakhand</p>
