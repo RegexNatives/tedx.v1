@@ -1509,7 +1509,31 @@ li .link-line {
 }
 .here-text {
   cursor: pointer;
+
+  
 }
+.passes-btn{
+
+}
+.passes-btn button {
+  cursor: pointer;
+  background: #b8171a;
+  /* Main Red */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  padding: 16px 31px;
+
+  color: #ffffff;
+
+  border: 1px solid #b8171a;
+  border-radius: 15px;
+}
+
+
 .contact-form-input {
   margin-left: 50px;
 }
@@ -1523,6 +1547,7 @@ li .link-line {
     justify-content: center;
     align-items: center;
   }
+  
 }
 @media (max-width: 1050px) {
   .entry-card {
@@ -1534,6 +1559,7 @@ li .link-line {
     width: 72vw;
   }
 }
+
 .ticket-text{color: #fff;position: relative;
    /* background: url('./assets/ticket.svg');background-repeat: no-repeat; */
    /* background-size: 400px; */
@@ -1588,4 +1614,39 @@ li .link-line {
         .first-section-btn a:nth-child(2){margin-top: 20px;}
         .form-link-btn .first-section-btn{align-items: flex-start;margin-left: 0;}
         .first-section-btn a:nth-child(2){margin-left: 0;}
+        .pass-form {
+          padding: 70px 4%;
       }
+      }
+      .final-ticket{margin:70px auto;width: 18vw;}
+      @media (max-width:1050px) {
+        .pass-form .contact-form-container{flex-direction: column-reverse; width: unset;}
+        .first-section-btn{margin-top: 270px;}
+        .final-ticket{ width: 23vw;}
+      }
+      @media (max-width:850px) {  
+        .final-ticket{ width: 32vw;}
+      }
+      @media (max-width:650px) {  
+        .final-ticket{ width: 38vw;}
+        .final-text-getpass .pass-form{padding-top: 20px;}
+      }
+      @media (max-width:510px) {  
+        .final-ticket{ width: 43vw;}
+      }
+      @media (max-width:480px) {  
+        .final-ticket{ width: 46vw;}
+      }
+      @media (max-width:450px) {  
+        .final-ticket{ width: 48vw;}
+      }
+      @media (max-width:425px) {  
+        .final-ticket{ width: 52vw;}
+      }
+      @media (max-width:400px) {  
+        .final-ticket{ width: 56vw;}
+      }
+ @media (max-width:600px) {
+  .ticket-text >img:nth-child(1){left: -120px;}
+ }
+ .venue-ticket p{white-space: nowrap;}

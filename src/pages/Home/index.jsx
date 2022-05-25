@@ -164,7 +164,7 @@ else{
               It is always said that dreams can never be achieved in a
               comfortable way of living. To achieve your horizons, one needs to
               have difficulties as a cup of tea. On that note, Graphic Era
-              Deemed To Be University presents TedxGraphicEra. Upholding the
+              Deemed To Be University presents TedxGraphicEraUniversity. Upholding the
               roots of Tedx, we aim to provide a direction to the youth to excel
               in their domains.
             </p>

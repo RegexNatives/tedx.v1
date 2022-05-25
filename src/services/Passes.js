@@ -1,5 +1,16 @@
 import { apiURL } from "../constants/config";
 import axios from 'axios'
+import domtoimage from "dom-to-image";
+
+export const downloadPass=(name)=>{
+    domtoimage
+            .toBlob(document.getElementById("entry-pass-card"))
+            .then(function (blob) {
+              // require("downloadjs")(blob, name+"-TEDx.GEU.png");
+              // setSent(true)
+              // return blob;
+            });
+}
 
 export const makeTransaction = async (data) => {
     try {

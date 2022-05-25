@@ -1,12 +1,11 @@
 import React,{useState} from "react";
 import { useFormik } from "formik";
-import {contactFormValidators} from '../../utils/validators';
+import {passFormValidation} from '../../utils/validators';
 import Heading from "../../components/Heading";
 import logo from "../../assets/Tedx-logo.svg";
 import Navbar from "../../components/Navbar";
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import qrcode from '../../assets/qr-code.png';
 import Modal from '@mui/material/Modal';
 import QR from '../../assets/qr.jpg'
 import TextField from '@mui/material/TextField';
@@ -41,7 +40,7 @@ const Passes = () => {
   const style = {
     position: 'absolute',
     top: '50%',
-    left: '50%',
+    left: '25%',
     transform: 'translate(-50%, -50%)',
     width: 400,
     bgcolor: 'background.paper',
