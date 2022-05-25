@@ -925,7 +925,10 @@ ul li a:hover svg path {
     margin: 11px 0;
   }
   .contact-form-container {
-    padding-left: 20px;
+    padding-left: unset;
+    width: 90vw;
+  }
+  .payment-form-container {
     width: auto;
   }
   .name-input img,
