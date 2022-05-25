@@ -1039,6 +1039,9 @@ ul li a:hover svg path {
   .footer-logo > img {
     width: 300px;
   }
+  .for-reference-heading{
+	  font-size: 1rem !important;
+  }
   .pass-form {
     margin-top: 25px !important;
   }
@@ -1161,6 +1164,10 @@ ul li a:hover svg path {
   padding-right: 60px;
 }
 @media screen and (max-width: 850px) {
+
+	.booking-info-container div:nth-child(2){
+		margin-bottom: 70px;
+	}
   .speakers-component > div {
     font-size: 13px;
   }
@@ -1787,9 +1794,8 @@ li .link-line {
   margin-top: 200px;
 }
 
-.book-pass-btn {
+.book-pass-btn,.red-button {
   /* box-shadow: 0 0 10px 5px #b8171a; */
-  border: 1px black;
   width: 200px;
   font-weight: 600 !important;
   font-size: 18px;
@@ -1815,4 +1821,35 @@ li .link-line {
   }
 
 }
+.for-graphians{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 40px;
+}
+.red-button{
+	cursor: pointer;
+  background: #b8171a;
+  /* Main Red */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  padding: 16px 31px;
+	width: 150px;
+  color: #ffffff;
 
+  border: 1px solid #b8171a;
+  border-radius: 15px;
+}
+.booking-info-container{
+	display: flex;
+	flex-direction: column;
+}
+.for-reference-heading{
+	font-size: 1.5rem !important;
+}
+.first-secction-text>span{
+  margin-top:10px
+}

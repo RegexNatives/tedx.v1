@@ -4,11 +4,8 @@ import { passFormValidation } from "../../utils/validators";
 import Heading from "../../components/Heading";
 import logo from "../../assets/Tedx-logo.svg";
 import Navbar from "../../components/Navbar";
-import Box from "@mui/material/Box";
 import qrcode from "../../assets/qr-code.png";
-import Modal from "@mui/material/Modal";
 import QR from "../../assets/qr.jpg";
-import TextField from "@mui/material/TextField";
 import logo2 from "../../assets/logo2.svg";
 // import { Formik, Form, Field } from 'formik';
 import * as yup from "yup";
@@ -53,7 +50,44 @@ const Passes = () => {
 							// marginLeft: "4%",
 						}}>
 						{/* <Ticket/> */}
-						<div className="form-link-btn">
+						<div className="booking-info-container">
+
+							<div className="for-graphians">
+								<div className="speaker-heading" >
+									<h1  className="for-reference-heading ">{'For Graphians '}</h1>
+								</div>
+								<p className="color-grey t-align">
+									Welcome to the show!!
+									<br/>
+									Hope you're wearing your best clothes.
+								</p>
+								<br />
+								<button
+									className="red-button"
+										onClick={()=>window.open("https://paytm.me/pl6-J3l","_blank")}
+										rel="noopener noreferrer">
+										Book Now
+									</button>
+							</div>
+							<div className="for-graphians">
+								<div className="speaker-heading ">
+									<h1  className="for-reference-heading">{'For Others'}</h1>
+								</div>
+								<p className="color-grey t-align">
+									Welcome to our firepit!!
+									<br />
+									The more, the merrier :')
+								</p>
+								<br />
+								<button
+									className="red-button"
+										onClick={()=>window.open("https://paytm.me/nj-EwY9","_blank")}
+										rel="noopener noreferrer">
+										Book Now
+									</button>
+							</div>
+						</div>
+						{/* <div className="form-link-btn">
 							<div
 								className="first-section-btn pass-btn"
 								style={{
@@ -74,8 +108,7 @@ const Passes = () => {
 									For Outsiders
 								</a>
 							</div>
-							{/* <p>Limited seats available, hurry up. Book your seat now!</p> */}
-						</div>
+						</div> */}
 						<div
 							className="ticket-container"
 							// style={{ marginLeft: "4rem" }}

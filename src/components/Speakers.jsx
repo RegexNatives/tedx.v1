@@ -8,7 +8,7 @@ const Speakers = () => {
         <div id="speaker-section">
             <Heading
                 heading={'Speakers'}
-                content={'<p>TEDxGraphic Era will be witnessing speakers from a wide range of domains to inculcate life experiences and ideas with the audience with different goals of their lives.</p>'}
+                content={'<p>TED is shaped by the world’s most inspired thinkers coming together to spread and seed ideas that matter – those whose role is to nurture, plant seeds, remove a few weeds, and marvel at life and creativity. The TED garden is still young. And the strengths of curiosity, knowledge sharing, and global connectedness are still the unbridled, powerful forces in the new TEDx world.</p>'}
             />
             <div className="speaker-card-container">
                 <div className="speaker-card">

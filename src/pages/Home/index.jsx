@@ -153,14 +153,9 @@ function Home() {
 							TED <span>X</span>
 						</h1>
 						<h2>GraphicEraUniversity</h2>
-						<p className="">
-							It is always said that dreams can never be achieved
-							in a comfortable way of living. To achieve your
-							horizons, one needs to have difficulties as a cup of
-							tea. On that note, Graphic Era Deemed To Be
-							University presents TedxGraphicEraUniversity.
-							Upholding the roots of Tedx, we aim to provide a
-							direction to the youth to excel in their domains.
+						<p>
+						Do not look to the ground for your next step; greatness lies with those who look to the horizon. No matter how far a person reach, the horizon will always be beyond them. Every stop here is transitory, like a pilgrim’s adjournment on a journey with destination still so far away. It keeps shifting, and invites all of us to keep moving too.<br />
+							Graphic Era University is over the moon as we pull together a punchy, wholesome event for you all. With TED, we aim to spark conversation, community, and connection in as many lives as possible.
 						</p>
 						<div
 							className="first-section-btn" id="mobile-flex-row"
@@ -224,7 +219,7 @@ function Home() {
 					<Heading
 						heading={"About this event"}
 						content={
-							"<p>TEDxGraphic Era will be witnessing speakers from a wide plethora. The goal is to bring experts from different domains under one roof to collaborate and inculcate their knowledge and experiences for the development of the society.  </p><br><p>HORIZON is the distance between a living human being and the line where the sky and the earth meet is very wide. It can only be measured with our eyes, mind and soul. Our vision is to bring these ends a little closure with the help of our speaker’s talk, his/ her journey, experience, and useful insights.</p><br><p class=venue>Venue : KP Nautiyal Auditorium, Graphic Era Hill University, Dehradun Uttarakhand</p><br><p class=venue>Date : 30th May 2022</p>"
+							"<p>Watch any TED (Technology, Entertainment and Design) event and be absolutely assured of having an intellectual adrenaline rush, like the feeling that rips through you after a crucial accomplishment. Except for this time, the exhilaration is triggered by the imagination and not the act. </p><br><p>The philosophy of TED is all about simplified, authentic storytelling, which seems to fit well with its mission of, “ideas worth spreading”. Combine both with a remarkable TEDx speaker and organizer, and you get the deadly 18-minute presentation equivalent of a blockbuster movie.</p><br><p class=venue>Venue : KP Nautiyal Auditorium, Graphic Era Hill University, Dehradun Uttarakhand</p><br><p class=venue>Date : 30th May 2022</p>"
 						}
 					/>
 					<About />
