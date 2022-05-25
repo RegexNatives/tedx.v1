@@ -1621,7 +1621,7 @@ li .link-line {
       .final-ticket{margin:70px auto;width: 18vw;}
       @media (max-width:1050px) {
         .pass-form .contact-form-container{flex-direction: column-reverse; width: unset;}
-        .first-section-btn{margin-top: 270px;}
+       .form-link-btn .first-section-btn{margin-top: 270px;}
         .final-ticket{ width: 23vw;}
       }
       @media (max-width:850px) {  
