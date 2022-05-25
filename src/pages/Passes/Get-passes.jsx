@@ -5,7 +5,7 @@ import Navbar from "../../components/Navbar";
 import logo2 from "../../assets/logo2.svg";
 import {useParams,useNavigate} from 'react-router-dom';
 import {getSingleTransaction} from '../../services/Passes';
-import domtoimage from "dom-to-image";
+// import domtoimage from "dom-to-image";
 
 const GetPasses = () => {
 
@@ -39,12 +39,12 @@ const GetPasses = () => {
 
   function downloadPass(){
     // console.log('hello');
-    domtoimage
-            .toBlob(document.getElementById("entry-pass-card"))
-            .then(function (blob) {
-              require("downloadjs")(blob, passDetails?.name+"-TEDx.GEU.png");
-              setSent(true)
-            });
+    // domtoimage
+    //         .toBlob(document.getElementById("entry-pass-card"))
+    //         .then(function (blob) {
+    //           require("downloadjs")(blob, passDetails?.name+"-TEDx.GEU.png");
+    //           setSent(true)
+    //         });
   }
 
     return(
