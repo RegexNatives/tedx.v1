@@ -1487,7 +1487,6 @@ li .link-line {
 }
 .here-text {
   cursor: pointer;
-<<<<<<< HEAD
   
 }
 .passes-btn{
@@ -1509,8 +1508,6 @@ li .link-line {
 
   border: 1px solid #b8171a;
   border-radius: 15px;
-}
-=======
 }
 .contact-form-input {
   margin-left: 50px;
@@ -1536,4 +1533,3 @@ li .link-line {
     width: 72vw;
   }
 }
->>>>>>> ef5f73688ca424dd1b926a4f1dbff3e9bb25fab6
