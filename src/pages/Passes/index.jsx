@@ -13,6 +13,8 @@ import TextField from '@mui/material/TextField';
 import logo2 from "../../assets/logo2.svg";
 // import { Formik, Form, Field } from 'formik';
 import * as yup from "yup";
+import Ticket from "../../components/Ticket.jsx";
+import TicketDemo from "../../components/TicketDemo";
 //  import { useFormik } from "formik";
 
  const validationSchema = yup.object({ 
@@ -24,17 +26,13 @@ import * as yup from "yup";
 const Passes = () => {
   const formik = useFormik({
     initialValues: {
-      // website: "",
       name: "",
       phone: "",
       email: "",
-       
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      
         console.log(values);
-       
     },
   });
   const [sent, setSent] = useState(false);
@@ -51,20 +49,6 @@ const Passes = () => {
     boxShadow: 24,
     p: 4,
   };
-
-    // const formik = useFormik({
-    //     initialValues: {
-    //       name: "",
-    //       email: "",
-    //       contact: "",
-    //       transactionId:"",
-    //     },
-    //     // validationSchema : contactFormValidators,
-        
-    //     onSubmit: (values) => {
-    //       // alert(JSON.stringify(values, null, 2));
-    //     },
-    //   });
     return(
       <>
         <div className="cont">
@@ -76,7 +60,7 @@ const Passes = () => {
               content={'<p>We will be honoured to help you in the best possible way. Feel free to reach out to us.</p>'}
           />
           <div className="contact-form-container">
-          <div className="entry-card">
+          {/* <div className="entry-card">
         <div className="entry-card-content">
                   <h1>Your Name</h1>
                   <p>@username</p>
@@ -86,87 +70,21 @@ const Passes = () => {
                   <img src={logo2} alt="" />
                   </div>
 
+      </div> */}
+      {/* <Ticket/> */}
+      <div className="form-link-btn">
+      <div className="first-section-btn">
+              <a href="https://paytm.me/pl6-J3l"target="_blank" rel="noopener noreferrer">For Graphic Students</a>
+              
+              <a href="https://paytm.me/nj-EwY9" target="_blank" rel="noopener noreferrer">For Outsiders</a>
+            </div>
       </div>
-        <div className="contact-form-input">
-          <form onSubmit={formik.handleSubmit}>
-              <label className="input-labels">Name</label>
-              <div className="name-input">
-                {/* <img src={ProfileImg} alt="" /> */}
-                <input type="text" placeholder="John Doe"
-                  name="name"
-                  id="name"
-                  onChange={formik.handleChange}
-                  defaultValue={formik.values.name}
-                  onBlur={formik.handleBlur}
-                />
-                 {formik.touched.name && formik.errors.name ? (
-                  <div className="alert-message">{formik.errors.name}</div>
-                ) : null}
-              </div>
-              <label className="input-labels">Email</label>
-              <div className="email-input">
-                {/* <img src={EmailImg} style={{opacity:"0.8"}} alt="" /> */}
-                <input type="email" placeholder="johndoe@gmail.com"
-                    name="email"
-                    id="email"
-                   onChange={formik.handleChange}
-                   defaultValue={formik.values.email}
-                   onBlur={formik.handleBlur}
-                />
-                {formik.touched.email && formik.errors.email ? (
-                  <div className="alert-message">{formik.errors.email}</div>
-                ) : null}
-              </div>
-              <label className="input-labels">Contact</label>
-              <div className="message-input">
-                {/* <img src={MessImg} alt="" /> */}
-                <input type="email" placeholder="+91-1234567890"
-                    name="contact"
-                    id="contact"
-                   onChange={formik.handleChange}
-                   defaultValue={formik.values.contact}
-                   onBlur={formik.handleBlur}
-                />
-                {formik.touched.contact && formik.errors.contact ? (
-                  <div className="alert-message">{formik.errors.contact}</div>
-                ) : null}
-              </div>
-              <div className="first-section-btn">
-                  <button type="button" onClick={()=>setOpen(true)} disabled={sent}>{sent?'Sent ✅':'Proceed'}</button>
-              </div>
-              <Modal
-                  open={open}
-                  onClose={handleClose}
-                  aria-labelledby="modal-modal-title"
-                  aria-describedby="modal-modal-description"
-                >
-                  <Box sx={style}>
-                    <div className="payment-wrap">
-                    <div className="payment-container">
-                      <div className="red-marker"></div>
-                      <h1>{'Payment'}</h1>
-                    </div>
-                    <p>Scan the QR to pay!</p>
-                    <div className="qr-code-container">
-                      <img src={QR} className="qr-code" />  
-                    </div>
-                    <div className="transaction-id">
-
-                    <TextField id="outlined-basic" size="small" label="Transaction-id" variant="outlined" />
-                    </div>
-                    <div className="proceed-btn">
-
-                    <Button on variant="outlined" color="success">
-                      Proceed
-                    </Button>
-                    </div>
-                    </div>
-                  </Box>
-              </Modal>
-            </form>
-          </div>
+      <TicketDemo/> 
+         
          
       </div>
+      {/* <Ticket/> */}
+      {/* <TicketDemo/> */}
       </div>
       
      </div>

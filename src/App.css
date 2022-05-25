@@ -708,6 +708,25 @@ ul li a:hover svg path {
   /* margin-left: 20px; */
   /* Main Red */
 }
+.first-section-btn a:nth-child(2) {
+  cursor: pointer;
+  border: 1px solid #b8171a;
+  /* border: none; */
+  border-radius: 15px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;margin-left: 15px;
+  color: #b8171a;
+  /* identical to box height */
+
+  background-color: transparent;
+  padding: 16px 20px;
+  padding-top: 16px;
+  /* margin-left: 20px; */
+  /* Main Red */
+}
 .first-section {
   /* min-height: 90vh; */
   display: flex;
@@ -781,19 +800,20 @@ ul li a:hover svg path {
 .contact-form-container {
   color: rgba(255, 255, 255, 0.7) !important;
   /* background: #303030; */
-  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.25); */
   border-radius: 20px;
   width: 90%;
   /* margin: 0 auto; */
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 50px;
   padding-left: 0px;
   padding-top: 60px;
-  flex-direction: row-reverse;
+  flex-direction: row;
   padding-bottom: 80px;
 }
-
+.pass-form{padding: 70px 10%;}
 .contact-form-text-part h1 {
   font-family: 'Manrope';
   font-style: normal;
@@ -1467,10 +1487,12 @@ li .link-line {
   text-align: center;
 }
 .payment-wrap {
-  padding: 10px;
+  padding: 15px;
   background-color: #fff;
   border-radius: 10px;
 }
+.proceed-btn .MuiButton-root {background-color: #b8171a;color: #fff;}
+.payment-wrap p{padding-left: 24px;}
 .transaction-id .MuiOutlinedInput-root {
   width: 300px;
 }
@@ -1512,3 +1534,58 @@ li .link-line {
     width: 72vw;
   }
 }
+.ticket-text{color: #fff;position: relative;
+   /* background: url('./assets/ticket.svg');background-repeat: no-repeat; */
+   /* background-size: 400px; */
+  }
+.logo-ticket img{width: 20em;}
+.ticket-text >img:nth-child(1){position: absolute;z-index: -1;left: -110px;top: -80px;}
+.ticket-text h2{font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;margin-bottom: 125px;}
+.ticket-text h1{font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;}
+  .ticket-text> p{font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    /* identical to box height */
+    
+    
+    color: rgba(255, 255, 255, 0.84);margin-top: 10px;margin-bottom: 35px;}
+    .venue-ticket p{font-style: normal;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 26px;margin-bottom: 10px;
+      /* identical to box height */
+      
+      
+      color: rgba(255, 255, 255, 0.8);}
+      .venue-ticket p:nth-child(2) span{color: #b8171a;}
+      .logo-ticket img{margin-top: 66px;}
+      .logo-ticket img {
+        width: 14em;
+        position: absolute;
+    }
+    .demo-ticket h1{font-weight: 700;
+      font-size: 37px;
+      line-height: 56px;}
+      .demo-ticket .venue-ticket{margin-top: 144px;color: #fff;}
+      .demo-ticket .venue-ticket  p:nth-child(2){opacity: 0.7;font-weight: 600;
+        font-size: 13.8733px;
+        line-height: 21px;}
+      .demo-ticket .venue-ticket  p:nth-child(2) span{color: #fff;opacity: 1;font-weight: 600;}
+      .demo-ticket .ticket-text >img:nth-child(1){top: -91px;}
+      .form-link-btn .first-section-btn{display: flex;justify-content: center;align-items: center;flex-direction: row;}
+      @media (max-width:1250px) {
+        .form-link-btn .first-section-btn{flex-direction: column;}
+        .first-section-btn a:nth-child(2){margin-top: 20px;}
+        .form-link-btn .first-section-btn{align-items: flex-start;margin-left: 0;}
+        .first-section-btn a:nth-child(2){margin-left: 0;}
+      }
