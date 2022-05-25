@@ -165,10 +165,9 @@ function Home() {
 						<div
 							className="first-section-btn" id="mobile-flex-row"
 							style={{ display: "flex", flexDirection: "row" }}>
-							<button onClick={() => navigate("/book-passes")}>
-								Get Passes Now!
+							<button onClick={() => navigate("/book-passes")} className="book-pass-btn">
+								Book Now
 							</button>
-							<a href="#about-section">Learn More</a>
 						</div>
 					</motion.div>
 					<div className="right-border"></div>

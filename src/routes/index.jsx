@@ -2,22 +2,18 @@ import React from "react";
 import {
     Route,
     Routes,
-    useLocation,
-    useNavigate,
-    Navigate,
   } from "react-router-dom";
-import { ToastContainer } from 'react-toastify';
-import {routesData} from '../constants/routes'
+import Home from "../pages/Home";
+import Passes from "../pages/Passes";
+// import GetPasses from "../pages/Passes/Get-passes";
+// import {routesData} from '../constants/routes'
 
 export default function Navigation(){
     return(
         <>
-            <ToastContainer />
             <Routes>
-                {/* */}
-                {routesData.map((route, index) => (
-                    <Route key={index} path={route.path} element={<route.Component />} />
-                ))}
+                <Route path="/" element={<Home />} />
+                <Route path="/book-passes" element={<Passes />} />
             </Routes>
         </>
     )

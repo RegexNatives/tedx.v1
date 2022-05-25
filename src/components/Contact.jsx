@@ -11,6 +11,7 @@ import PhoneImg from "../assets/phone-img.svg";
 const Contact = () => {
 	const [sent, setSent] = useState(false);
 	const [error, setError] = useState(false);
+	const [loading,setLoading] = useState(false);
 
 	const formik = useFormik({
 		initialValues: {
@@ -21,6 +22,7 @@ const Contact = () => {
 		validationSchema: contactFormValidators,
 
 		onSubmit: async (values) => {
+			setLoading(true);
 			const response = await makeQuery(values);
 			if (response.success) {
 				setSent(true);
@@ -28,6 +30,7 @@ const Contact = () => {
 			} else {
 				setError(true);
 			}
+			setLoading(false);
 		},
 	});
 
@@ -100,9 +103,9 @@ const Contact = () => {
 									</div>
 								) : null}
 							</div>
-							<div className="first-section-btn">
-								<button type="submit" disabled={sent}>
-									{sent ? "Sent ✅" : "Submit"}
+							<div className="first-section-btn ">
+								<button type="submit" className="contact-form-submission" disabled={sent || loading}>
+									{sent ? "Sent ✅" : loading? "Sending..." : "Submit"}
 								</button>
 							</div>
 						</form>
@@ -113,9 +116,9 @@ const Contact = () => {
 							<p>
 								<img src={EmailImg} alt="" />
 								<a
-									href="mailto:tedxgraphicera@gmail.com"
+									href="mailto:contact@tedxgraphicerauniversity.com"
 									className="nav-a-tag">
-									<span>tedxgrahicera@gmail.com</span>
+									<span>contact@tedxgraphicerauniversity.com</span>
 								</a>
 							</p>
 							<p>

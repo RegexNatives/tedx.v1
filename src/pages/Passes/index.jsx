@@ -15,24 +15,10 @@ import * as yup from "yup";
 import Ticket from "../../components/Ticket.jsx";
 import TicketDemo from "../../components/TicketDemo";
 //  import { useFormik } from "formik";
+import Footer from "../../components/Footer";
 
-const validationSchema = yup.object({
-	name: yup.string("Enter name").required(),
-	phone: yup.string("Enter phoneNo.").required(),
-	email: yup.string().email("Invalid Format").required(),
-});
 const Passes = () => {
-	const formik = useFormik({
-		initialValues: {
-			name: "",
-			phone: "",
-			email: "",
-		},
-		validationSchema: validationSchema,
-		onSubmit: (values) => {
-			console.log(values);
-		},
-	});
+	
 	const [sent, setSent] = useState(false);
 	const [open, setOpen] = useState(false);
 	const handleClose = () => setOpen(false);
@@ -53,35 +39,23 @@ const Passes = () => {
 				<Navbar />
 				<div
 					className="contact-form pass-form"
-					id="contact-section"
 					style={{ padding: "0rem" }}>
 					<Heading
 						heading={"Get Passes Now!"}
 						content={
-							"<p>We will be honoured to help you in the best possible way. Feel free to reach out to us.</p>"
+							"<p>Limited seats available, hurry up. Book your seat now.</p><p>Feel free to reach out to us for any queries or difficulties</p>"
 						}
 					/>
 					<div
-						className="contact-form-container"
+						className="contact-form-container pass-container"
 						style={{
-							display: "block",
-							marginLeft: "4%",
+							// display: "block",
+							// marginLeft: "4%",
 						}}>
-						{/* <div className="entry-card">
-        <div className="entry-card-content">
-                  <h1>Your Name</h1>
-                  <p>@username</p>
-                  <img src={logo} alt="" />
-                  <p className="Date">May,30 | KP Nautiyal</p>
-                  <p>#CEE244</p>
-                  <img src={logo2} alt="" />
-                  </div>
-
-      </div> */}
 						{/* <Ticket/> */}
 						<div className="form-link-btn">
 							<div
-								className="first-section-btn"
+								className="first-section-btn pass-btn"
 								style={{
 									marginBottom: "8rem",
 									justifyContent: "flex-start",
@@ -90,7 +64,7 @@ const Passes = () => {
 									href="https://paytm.me/pl6-J3l"
 									target="_blank"
 									rel="noopener noreferrer">
-									For Graphic Students
+									For Graphic Era Students
 								</a>
 
 								<a
@@ -100,16 +74,21 @@ const Passes = () => {
 									For Outsiders
 								</a>
 							</div>
+							{/* <p>Limited seats available, hurry up. Book your seat now!</p> */}
 						</div>
 						<div
 							className="ticket-container"
-							style={{ marginLeft: "4rem" }}>
+							// style={{ marginLeft: "4rem" }}
+						>
 							<TicketDemo />
 						</div>
 					</div>
 					{/* <Ticket/> */}
 					{/* <TicketDemo/> */}
 				</div>
+			</div>
+			<div className="pass-footer">
+				<Footer />
 			</div>
 		</>
 	);
