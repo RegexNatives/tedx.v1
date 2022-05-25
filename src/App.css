@@ -1403,7 +1403,7 @@ li .link-line {
   border-radius: 10px;
 }
 .entry-card img {
-  width: 200px;
+  width: 10em;
 }
 .entry-card {
   /* fallback for old browsers */
