@@ -788,8 +788,9 @@ ul li a:hover svg path {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
-  padding-left: 60px;
+  padding-left: 0px;
   padding-top: 60px;
+  flex-direction: row-reverse;
   padding-bottom: 80px;
 }
 
