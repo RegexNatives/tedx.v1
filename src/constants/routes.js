@@ -8,12 +8,12 @@ export const routesData = [
         Component : Home
     },
     {
-        path: '/book-passes',
+        path: '/book-pass',
         name: 'Passes',
         Component : Passes
     },
     {
-        path: '/get-passes/:_id',
+        path: '/pass/:_id',
         name: 'Passes',
         Component : GetPasses
     }

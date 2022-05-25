@@ -68,7 +68,7 @@ body {
   color: #fff;
   justify-content: space-between;
   margin-top: 10px;
-  margin-left: 4%;
+  /* margin-left: 4%; */
 }
 .nav-links ul {
   display: flex;
@@ -637,7 +637,7 @@ ul li a:hover svg path {
 }
 .first-secction-text {
   color: #fff;
-  margin-left: 4%;
+  /* margin-left: 4%; */
 }
 .first-secction-text h1 {
   color: #b8171a;
@@ -717,7 +717,8 @@ ul li a:hover svg path {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  line-height: 24px;margin-left: 15px;
+  line-height: 24px;
+  margin-left: 15px;
   color: #b8171a;
   /* identical to box height */
 
@@ -754,7 +755,7 @@ ul li a:hover svg path {
   color: white;
 }
 .speakers-component {
-  margin-left: 4%;
+  /* margin-left: 4%; */
   width: 90%;
 }
 .speakers-component > p {
@@ -787,7 +788,7 @@ ul li a:hover svg path {
   padding: 5vh 0;
 }
 .contact-form {
-  margin-top: 240px;
+  margin-top: 5vh;
 }
 .speaker-heading p {
   font-weight: 400;
@@ -806,14 +807,16 @@ ul li a:hover svg path {
   /* margin: 0 auto; */
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   margin-bottom: 50px;
   padding-left: 0px;
   padding-top: 60px;
   flex-direction: row;
   padding-bottom: 80px;
 }
-.pass-form{padding: 70px 10%;}
+/* .pass-form {
+  padding: 70px 10%;
+} */
 .contact-form-text-part h1 {
   font-family: 'Manrope';
   font-style: normal;
@@ -840,8 +843,9 @@ ul li a:hover svg path {
   font-style: normal;
   display: flex;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 17px;
   padding: 16px 0;
+  color: #fff;
   line-height: 25px;
 
   /* color: rgba(0, 0, 0, 0.7); */
@@ -1239,7 +1243,7 @@ li .link-line {
 }
 .first-section-btn {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: baseline;
 }
 
@@ -1354,9 +1358,9 @@ li .link-line {
   }
 }
 
-.pass-form {
+/* .pass-form {
   margin-top: 100px;
-}
+} */
 .t-align {
   text-align: justify;
   word-spacing: -2px;
@@ -1491,8 +1495,13 @@ li .link-line {
   background-color: #fff;
   border-radius: 10px;
 }
-.proceed-btn .MuiButton-root {background-color: #b8171a;color: #fff;}
-.payment-wrap p{padding-left: 24px;}
+.proceed-btn .MuiButton-root {
+  background-color: #b8171a;
+  color: #fff;
+}
+.payment-wrap p {
+  padding-left: 24px;
+}
 .transaction-id .MuiOutlinedInput-root {
   width: 300px;
 }
@@ -1509,12 +1518,9 @@ li .link-line {
 }
 .here-text {
   cursor: pointer;
-
-  
 }
-.passes-btn{
-
-}
+/* .passes-btn {
+} */
 .passes-btn button {
   cursor: pointer;
   background: #b8171a;
@@ -1533,7 +1539,6 @@ li .link-line {
   border-radius: 15px;
 }
 
-
 .contact-form-input {
   margin-left: 50px;
 }
@@ -1547,7 +1552,6 @@ li .link-line {
     justify-content: center;
     align-items: center;
   }
-  
 }
 @media (max-width: 1050px) {
   .entry-card {
@@ -1560,93 +1564,174 @@ li .link-line {
   }
 }
 
-.ticket-text{color: #fff;position: relative;
-   /* background: url('./assets/ticket.svg');background-repeat: no-repeat; */
-   /* background-size: 400px; */
-  }
-.logo-ticket img{width: 20em;}
-.ticket-text >img:nth-child(1){position: absolute;z-index: -1;left: -110px;top: -80px;}
-.ticket-text h2{font-family: 'Poppins';
+.ticket-text {
+  color: #fff;
+  position: relative;
+  /* background: url('./assets/ticket.svg');background-repeat: no-repeat; */
+  /* background-size: 400px; */
+}
+.logo-ticket img {
+  width: 20em;
+}
+.ticket-text > img:nth-child(1) {
+  position: absolute;
+  z-index: -1;
+  left: -110px;
+  top: -80px;
+}
+.ticket-text h2 {
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
-  line-height: 45px;margin-bottom: 125px;}
-.ticket-text h1{font-family: 'Poppins';
+  line-height: 45px;
+  margin-bottom: 125px;
+}
+.ticket-text h1 {
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
-  line-height: 33px;}
-  .ticket-text> p{font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 26px;
-    /* identical to box height */
-    
-    
-    color: rgba(255, 255, 255, 0.84);margin-top: 10px;margin-bottom: 35px;}
-    .venue-ticket p{font-style: normal;
-      font-weight: 500;
-      font-size: 17px;
-      line-height: 26px;margin-bottom: 10px;
-      /* identical to box height */
-      
-      
-      color: rgba(255, 255, 255, 0.8);}
-      .venue-ticket p:nth-child(2) span{color: #b8171a;}
-      .logo-ticket img{margin-top: 66px;}
-      .logo-ticket img {
-        width: 14em;
-        position: absolute;
-    }
-    .demo-ticket h1{font-weight: 700;
-      font-size: 37px;
-      line-height: 56px;}
-      .demo-ticket .venue-ticket{margin-top: 144px;color: #fff;}
-      .demo-ticket .venue-ticket  p:nth-child(2){opacity: 0.7;font-weight: 600;
-        font-size: 13.8733px;
-        line-height: 21px;}
-      .demo-ticket .venue-ticket  p:nth-child(2) span{color: #fff;opacity: 1;font-weight: 600;}
-      .demo-ticket .ticket-text >img:nth-child(1){top: -91px;}
-      .form-link-btn .first-section-btn{display: flex;justify-content: center;align-items: center;flex-direction: row;}
-      @media (max-width:1250px) {
-        .form-link-btn .first-section-btn{flex-direction: column;}
-        .first-section-btn a:nth-child(2){margin-top: 20px;}
-        .form-link-btn .first-section-btn{align-items: flex-start;margin-left: 0;}
-        .first-section-btn a:nth-child(2){margin-left: 0;}
-        .pass-form {
-          padding: 70px 4%;
-      }
-      }
-      .final-ticket{margin:70px auto;width: 18vw;}
-      @media (max-width:1050px) {
-        .pass-form .contact-form-container{flex-direction: column-reverse; width: unset;}
-       .form-link-btn .first-section-btn{margin-top: 270px;}
-        .final-ticket{ width: 23vw;}
-      }
-      @media (max-width:850px) {  
-        .final-ticket{ width: 32vw;}
-      }
-      @media (max-width:650px) {  
-        .final-ticket{ width: 38vw;}
-        .final-text-getpass .pass-form{padding-top: 20px;}
-      }
-      @media (max-width:510px) {  
-        .final-ticket{ width: 43vw;}
-      }
-      @media (max-width:480px) {  
-        .final-ticket{ width: 46vw;}
-      }
-      @media (max-width:450px) {  
-        .final-ticket{ width: 48vw;}
-      }
-      @media (max-width:425px) {  
-        .final-ticket{ width: 52vw;}
-      }
-      @media (max-width:400px) {  
-        .final-ticket{ width: 56vw;}
-      }
- @media (max-width:600px) {
-  .ticket-text >img:nth-child(1){left: -120px;}
- }
- .venue-ticket p{white-space: nowrap;}
+  line-height: 33px;
+}
+.ticket-text > p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  /* identical to box height */
+
+  color: rgba(255, 255, 255, 0.84);
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+.venue-ticket p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  margin-bottom: 10px;
+  /* identical to box height */
+
+  color: rgba(255, 255, 255, 0.8);
+}
+.venue-ticket p:nth-child(2) span {
+  color: #b8171a;
+}
+.logo-ticket img {
+  margin-top: 66px;
+}
+.logo-ticket img {
+  width: 14em;
+  position: absolute;
+}
+.demo-ticket h1 {
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 56px;
+}
+.demo-ticket .venue-ticket {
+  margin-top: 144px;
+  color: #fff;
+}
+.demo-ticket .venue-ticket p:nth-child(2) {
+  opacity: 0.7;
+  font-weight: 600;
+  font-size: 13.8733px;
+  line-height: 21px;
+}
+.demo-ticket .venue-ticket p:nth-child(2) span {
+  color: #fff;
+  opacity: 1;
+  font-weight: 600;
+}
+.demo-ticket .ticket-text > img:nth-child(1) {
+  top: -91px;
+}
+.form-link-btn .first-section-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width: 1250px) {
+  .form-link-btn .first-section-btn {
+    flex-direction: column;
+  }
+  .first-section-btn a:nth-child(2) {
+    margin-top: 20px;
+  }
+  .form-link-btn .first-section-btn {
+    align-items: flex-start;
+    margin-left: 0;
+  }
+  .first-section-btn a:nth-child(2) {
+    margin-left: 0;
+  }
+  /* .pass-form {
+    padding: 70px 4%;
+  } */
+}
+.final-ticket {
+  margin: 70px auto;
+  width: 18vw;
+}
+@media (max-width: 1050px) {
+  .pass-form .contact-form-container {
+    flex-direction: column-reverse;
+    width: unset;
+  }
+  .form-link-btn .first-section-btn {
+    margin-top: 270px;
+  }
+  .final-ticket {
+    width: 23vw;
+  }
+}
+@media (max-width: 850px) {
+  .final-ticket {
+    width: 32vw;
+  }
+}
+@media (max-width: 650px) {
+  .final-ticket {
+    width: 38vw;
+  }
+  .final-text-getpass .pass-form {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 510px) {
+  .final-ticket {
+    width: 43vw;
+  }
+}
+@media (max-width: 480px) {
+  .final-ticket {
+    width: 46vw;
+  }
+}
+@media (max-width: 450px) {
+  .final-ticket {
+    width: 48vw;
+  }
+}
+@media (max-width: 425px) {
+  .final-ticket {
+    width: 52vw;
+  }
+}
+@media (max-width: 400px) {
+  .final-ticket {
+    width: 56vw;
+  }
+}
+@media (max-width: 600px) {
+  .ticket-text > img:nth-child(1) {
+    left: -120px;
+  }
+}
+.venue-ticket p {
+  white-space: nowrap;
+}
