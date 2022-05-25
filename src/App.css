@@ -1303,3 +1303,23 @@ li .link-line{right: unset;position: relative;top: unset;}
   cursor: pointer;
   
 }
+.passes-btn{
+
+}
+.passes-btn button {
+  cursor: pointer;
+  background: #b8171a;
+  /* Main Red */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  padding: 16px 31px;
+
+  color: #ffffff;
+
+  border: 1px solid #b8171a;
+  border-radius: 15px;
+}

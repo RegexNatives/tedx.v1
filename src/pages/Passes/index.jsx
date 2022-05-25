@@ -1,12 +1,11 @@
 import React,{useState} from "react";
 import { useFormik } from "formik";
-import {contactFormValidators} from '../../utils/validators';
+import {passFormValidation} from '../../utils/validators';
 import Heading from "../../components/Heading";
 import logo from "../../assets/Tedx-logo.svg";
 import Navbar from "../../components/Navbar";
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import qrcode from '../../assets/qr-code.png';
 import Modal from '@mui/material/Modal';
 import QR from '../../assets/qr.jpg'
 
@@ -20,7 +19,7 @@ const Passes = () => {
   const style = {
     position: 'absolute',
     top: '50%',
-    left: '50%',
+    left: '25%',
     transform: 'translate(-50%, -50%)',
     width: 400,
     bgcolor: 'background.paper',
@@ -36,7 +35,7 @@ const Passes = () => {
           contact: "",
           transactionId:"",
         },
-        // validationSchema : contactFormValidators,
+        validationSchema : passFormValidation,
         
         onSubmit: (values) => {
           // alert(JSON.stringify(values, null, 2));
@@ -108,11 +107,30 @@ const Passes = () => {
                   <div className="alert-message">{formik.errors.contact}</div>
                 ) : null}
               </div>
-              <div className="first-section-btn">
-                  <button type="button" onClick={()=>setOpen(true)} disabled={sent}>{sent?'Sent ✅':'Proceed'}</button>
+              <label className="input-labels">Transaction Id</label>
+              <div className="message-input">
+                {/* <img src={MessImg} alt="" /> */}
+                <input type="email" placeholder="+91-1234567890"
+                    name="transactionId"
+                    id="transactionId"
+                   onChange={formik.handleChange}
+                   defaultValue={formik.values.transactionId}
+                   onBlur={formik.handleBlur}
+                />
+                {formik.touched.transactionId && formik.errors.transactionId ? (
+                  <div className="alert-message">{formik.errors.transactionId}</div>
+                ) : null}
+              </div>
+              <div className="first-section-btn passes-btn">
+                  <button type="button" onClick={()=>setOpen(true)} >
+                    <img src={qrcode} />
+                    Get Qr
+                  </button>
+                  <button type="button"  disabled={sent}>{sent?'Sent ✅':'Proceed'}</button>
               </div>
               <Modal
                   open={open}
+                  onClose={()=>setOpen(false)}
                   aria-labelledby="modal-modal-title"
                   aria-describedby="modal-modal-description"
                 >
@@ -125,9 +143,6 @@ const Passes = () => {
                     <div className="qr-code-container">
                       <img src={QR} className="qr-code" />  
                     </div>
-                    <Button variant="outlined" color="error">
-                      Error
-                    </Button>
                   </Box>
               </Modal>
             </form>

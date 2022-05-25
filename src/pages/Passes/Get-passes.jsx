@@ -4,8 +4,7 @@ import logo from "../../assets/Tedx-logo.svg";
 import Navbar from "../../components/Navbar";
 import logo2 from "../../assets/logo2.svg";
 import {useParams,useNavigate} from 'react-router-dom';
-import {getSingleTransaction} from '../../services/Passes';
-import domtoimage from "dom-to-image";
+import {getSingleTransaction,downloadPass} from '../../services/Passes';
 
 const GetPasses = () => {
 
@@ -37,15 +36,7 @@ const GetPasses = () => {
   },[params._id])
 
 
-  function downloadPass(){
-    // console.log('hello');
-    domtoimage
-            .toBlob(document.getElementById("entry-pass-card"))
-            .then(function (blob) {
-              require("downloadjs")(blob, passDetails?.name+"-TEDx.GEU.png");
-              setSent(true)
-            });
-  }
+  
 
     return(
       <>
@@ -83,9 +74,9 @@ const GetPasses = () => {
                 </div>
               )}
             <br />
-            {/* <div className="first-section-btn">
-                <button type="button" onClick={()=>downloadPass()} disabled={sent}>{sent?'Done ✅':'Download'}</button>
-            </div> */}
+            <div className="first-section-btn">
+                <button type="button" onClick={()=>downloadPass(passDetails?.name)} disabled={sent}>{sent?'Done ✅':'Download'}</button>
+            </div>
          
         </div>
       </div>
