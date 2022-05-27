@@ -225,7 +225,7 @@ function Home() {
 					<About />
 				</div>
 				<Speakers />
-				<Contact />
+				<Contact />x
 			</div>
 			<Footer />
 		</>
