@@ -6,15 +6,16 @@ export const routesData = [
         path: '/',
         name: 'home',
         Component : Home
-    },
-    {
-        path: '/book-passes',
-        name: 'Passes',
-        Component : Passes
-    },
-    {
-        path: '/get-passes/:_id',
-        name: 'Passes',
-        Component : GetPasses
     }
+    // ,
+    // {
+    //     path: '/book-passes',
+    //     name: 'Passes',
+    //     Component : Passes
+    // },
+    // {
+    //     path: '/get-passes/:_id',
+    //     name: 'Passes',
+    //     Component : GetPasses
+    // }
 ]

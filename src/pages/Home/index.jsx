@@ -160,9 +160,9 @@ function Home() {
 						<div
 							className="first-section-btn" id="mobile-flex-row"
 							style={{ display: "flex", flexDirection: "row" }}>
-							<button onClick={() => navigate("/book-passes")} className="book-pass-btn">
+							{/* <button onClick={() => navigate("/book-passes")} className="book-pass-btn">
 								Book Now
-							</button>
+							</button> */}
 						</div>
 					</motion.div>
 					<div className="right-border"></div>
@@ -219,7 +219,7 @@ function Home() {
 					<Heading
 						heading={"About this event"}
 						content={
-							"<p>Watch any TED (Technology, Entertainment and Design) event and be absolutely assured of having an intellectual adrenaline rush, like the feeling that rips through you after a crucial accomplishment. Except for this time, the exhilaration is triggered by the imagination and not the act. </p><br><p>The philosophy of TED is all about simplified, authentic storytelling, which seems to fit well with its mission of, “ideas worth spreading”. Combine both with a remarkable TEDx speaker and organizer, and you get the deadly 18-minute presentation equivalent of a blockbuster movie.</p><br><p class=venue>Venue : KP Nautiyal Auditorium, Graphic Era Hill University, Dehradun Uttarakhand</p><br><p class=venue>Date : 30th May 2022</p><br /><p class='venue'>Reporting Time : 10:30 AM onwards</p>"
+							"<p>Watch any TED (Technology, Entertainment and Design) event and be absolutely assured of having an intellectual adrenaline rush, like the feeling that rips through you after a crucial accomplishment. Except for this time, the exhilaration is triggered by the imagination and not the act. </p><br><p>The philosophy of TED is all about simplified, authentic storytelling, which seems to fit well with its mission of, “ideas worth spreading”. Combine both with a remarkable TEDx speaker and organizer, and you get the deadly 18-minute presentation equivalent of a blockbuster movie.</p><br><p class=venue>Venue : KP Nautiyal Auditorium, Graphic Era Hill University, Dehradun Uttarakhand</p>"
 						}
 					/>
 					<About />
