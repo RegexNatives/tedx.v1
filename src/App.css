@@ -22,6 +22,10 @@ body {
 .cont {
   margin: 0 10%;
 }
+.color-grey{
+  color:#fff;
+  opacity: 70%;
+}
 .logo > img {
   width: 180px;
   margin-top: 20px;
@@ -920,6 +924,11 @@ ul li a:hover svg path {
   .red-container {
     right: 11%;
   }
+
+  .get-pass-wrapper{
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
   .contact-form-text-part h1 {
     font-size: 39px;
     line-height: 53px;
@@ -1559,6 +1568,9 @@ li .link-line {
     justify-content: center;
     align-items: center;
   }
+  .qr-code-container{
+    width: 100% !important;
+  }
 }
 @media (max-width: 1050px) {
   .entry-card {
@@ -1852,4 +1864,21 @@ li .link-line {
 }
 .first-secction-text>span{
   margin-top:10px
+}
+.get-pass-wrapper{
+  display: flex;
+  flex-direction: row;
+}
+
+.qr-code-container{
+  box-shadow: 2px 2px 20px 2px rgb(134 42 204);
+  padding : 40px 0px;
+  border-radius: 18px;
+  width:85%
+}
+
+.qr-parent{
+  display: flex;
+  justify-content: center;
+  margin-top:4%
 }
