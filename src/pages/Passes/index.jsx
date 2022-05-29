@@ -1,15 +1,6 @@
 import React, { useState } from "react";
-import { useFormik } from "formik";
-import { passFormValidation } from "../../utils/validators";
 import Heading from "../../components/Heading";
-import logo from "../../assets/Tedx-logo.svg";
 import Navbar from "../../components/Navbar";
-import qrcode from "../../assets/qr-code.png";
-import QR from "../../assets/qr.jpg";
-import logo2 from "../../assets/logo2.svg";
-// import { Formik, Form, Field } from 'formik';
-import * as yup from "yup";
-import Ticket from "../../components/Ticket.jsx";
 import TicketDemo from "../../components/TicketDemo";
 //  import { useFormik } from "formik";
 import Footer from "../../components/Footer";
