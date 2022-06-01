@@ -1885,3 +1885,15 @@ li .link-line {
 .team-heading{
   margin-top:50px
 }
+
+.team-heading{
+  justify-content: center;
+  color: #b8171a !important;
+}
+
+.team-heading >h1{
+  color:#b8171a !important
+}
+.team-desg{
+  font-size: 32px !important;
+}
