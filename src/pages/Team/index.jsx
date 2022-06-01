@@ -13,7 +13,7 @@ const Team = () =>{
                 <div className="team-heading">
                     <Heading
                         heading={'Team Members '}
-                        content={'<p>Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results.</p>'}
+                        content={"<p>When you're surrounded by people who share a passionate commitment around a common purpose, anything is possible. Did we just describe our amazing team? Oh, hell yeah!! None of us is as smart as all of us. Herein, carving our pulchritudinous trademarks.</p>"}
                     />
                     <div className="speaker-card-container">
                         <div className="speaker-heading team-heading" >
@@ -106,7 +106,7 @@ const Team = () =>{
                         <div className="speaker-card">
                             {team?.marketing.map((member) => (
                                 <div className="speaker-card-content">
-                                    <img src={Speaker} alt="Speaker Image" />
+                                    <img src={Speaker} alt="Speaker Image" fallback={Speaker}/>
                                     <h3>{member.name}</h3>
                                     {/* <p>{member.designation}</p> */}
                                 </div>
