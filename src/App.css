@@ -1910,4 +1910,7 @@ li .link-line {
 .speaker-card-content img:hover{filter: grayscale(1);}
 /* .gray-color{transition: all 0.6s ease-in-out;cursor: pointer;filter: grayscale(0); position: absolute;  width: 1px;height: 1px;border-radius: 50%;top: 30px;}
 .speaker-card-content:hover .gray-color{width: 280px;height: 340px;filter: grayscale(1); border-radius: 15px;} */
- 
+ .speaker-card-content >h3{
+   display: flex;
+   justify-content: center;
+ }

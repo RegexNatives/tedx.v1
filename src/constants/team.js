@@ -95,7 +95,7 @@ export const team={
     ],
     marketing:[
         {
-            name:"Ishita Gupta",
+            name:"Ishika Gupta",
             designation:"Marketing",
             cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/ishita.jpg'
         },
