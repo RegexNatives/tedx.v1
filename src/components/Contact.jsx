@@ -23,6 +23,7 @@ const Contact = () => {
 
 		onSubmit: async (values) => {
 			setLoading(true);
+			setSent(false);
 			const response = await makeQuery(values);
 			if (response.success) {
 				setSent(true);
@@ -51,7 +52,7 @@ const Contact = () => {
 								{/* <img src={ProfileImg} alt="" /> */}
 								<input
 									type="text"
-									placeholder="John Doe"
+									placeholder="Enter your name"
 									name="name"
 									id="name"
 									onChange={formik.handleChange}
@@ -69,7 +70,7 @@ const Contact = () => {
 								{/* <img src={EmailImg} style={{opacity:"0.8"}} alt="" /> */}
 								<input
 									type="email"
-									placeholder="johndoe@gmail.com"
+									placeholder="Enter your email"
 									name="email"
 									id="email"
 									onChange={formik.handleChange}

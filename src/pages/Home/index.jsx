@@ -219,13 +219,13 @@ function Home() {
 					<Heading
 						heading={"About this event"}
 						content={
-							"<p>Watch any TED (Technology, Entertainment and Design) event and be absolutely assured of having an intellectual adrenaline rush, like the feeling that rips through you after a crucial accomplishment. Except for this time, the exhilaration is triggered by the imagination and not the act. </p><br><p>The philosophy of TED is all about simplified, authentic storytelling, which seems to fit well with its mission of, “ideas worth spreading”. Combine both with a remarkable TEDx speaker and organizer, and you get the deadly 18-minute presentation equivalent of a blockbuster movie.</p><br><p class=venue>Venue : KP Nautiyal Auditorium, Graphic Era Hill University, Dehradun Uttarakhand</p>"
+							"<p>Watch any TED (Technology, Entertainment and Design) event and be absolutely assured of having an intellectual adrenaline rush, like the feeling that rips through you after a crucial accomplishment. Except for this time, the exhilaration is triggered by the imagination and not the act. </p><br><p>The philosophy of TED is all about simplified, authentic storytelling, which seems to fit well with its mission of, “ideas worth spreading”. Combine both with a remarkable TEDx speaker and organizer, and you get the deadly 18-minute presentation equivalent of a blockbuster movie.</p><br><p class=venue>Venue : KP Nautiyal Auditorium, Graphic Era Hill University, Dehradun Uttarakhand</p><br /><p class=venue>Date : 10th June 2022</p>"
 						}
 					/>
 					<About />
 				</div>
 				<Speakers />
-				<Contact />x
+				<Contact />
 			</div>
 			<Footer />
 		</>
