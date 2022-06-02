@@ -46,6 +46,22 @@ const Team = () =>{
 
                     <div className="speaker-card-container">
                         <div className="speaker-heading team-heading" >
+                            <h1  className="for-reference-heading team-desg ">{'Curator'}</h1>
+                        </div>
+                        <div className="speaker-card">
+                            {team?.curator.map((member) => (
+                                <div className="speaker-card-content">
+                                    <img src={member.cdn} alt="Speaker Image" />
+                                    <h3>{member.name}</h3>
+                                    {/* <p>{member.designation}</p> */}
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                   
+                    
+                    <div className="speaker-card-container">
+                        <div className="speaker-heading team-heading" >
                             <h1  className="for-reference-heading team-desg ">{'Operations'}</h1>
                         </div>
                         <div className="speaker-card">
@@ -86,22 +102,6 @@ const Team = () =>{
                             ))}
                         </div>
                     </div>
-                    <div className="speaker-card-container">
-                        <div className="speaker-heading team-heading" >
-                            <h1  className="for-reference-heading team-desg ">{'Curator'}</h1>
-                        </div>
-                        <div className="speaker-card">
-                            {team?.curator.map((member) => (
-                                <div className="speaker-card-content">
-                                    <img src={member.cdn} alt="Speaker Image" />
-                                    <h3>{member.name}</h3>
-                                    {/* <p>{member.designation}</p> */}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                   
-                    
                     
                     
                     <div className="speaker-card-container">
@@ -110,6 +110,20 @@ const Team = () =>{
                         </div>
                         <div className="speaker-card">
                             {team?.marketing.map((member) => (
+                                <div className="speaker-card-content">
+                                    <img src={member.cdn} alt="Speaker Image" fallback={Speaker}/>
+                                    <h3>{member.name}</h3>
+                                    {/* <p>{member.designation}</p> */}
+                                </div>
+                            ))}
+                        </div>
+                    </div> 
+                    <div className="speaker-card-container">
+                        <div className="speaker-heading team-heading" >
+                            <h1  className="for-reference-heading team-desg ">{'Content'}</h1>
+                        </div>
+                        <div className="speaker-card">
+                            {team?.writer.map((member) => (
                                 <div className="speaker-card-content">
                                     <img src={member.cdn} alt="Speaker Image" fallback={Speaker}/>
                                     <h3>{member.name}</h3>
