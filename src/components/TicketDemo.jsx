@@ -11,7 +11,7 @@ const TicketDemo = () => {
                 <img src={tickdemo} alt="" />
                 <h1>Get Your <br /> Pass Today</h1> 
                 <div className="venue-ticket">
-                    <p>May 30, 2022 </p>
+                    <p>June 10, 2022 </p>
                     <p><span>KP Nautiyal Auditorium </span> <br /> Graphic Era Hill University <br /> Dehradun, Uttarakhand</p>
                 </div>
                 <div className="logo-ticket">
