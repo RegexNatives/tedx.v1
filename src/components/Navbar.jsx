@@ -28,6 +28,7 @@ const Navbar = ()=> {
                         <a href="/#speaker-section" className="nav-a-tag"><li>Speakers</li> </a>
                         {/* <a href="#" className="nav-a-tag"><li>Team</li> </a> */}
                         <a href="/#contact-section" className="nav-a-tag"><li>Contact</li> </a>
+                        <a onClick={()=>navigate('/team')} className="nav-a-tag"><li>Team</li> </a>
                     </motion.ul>
                 </div>
             </div>

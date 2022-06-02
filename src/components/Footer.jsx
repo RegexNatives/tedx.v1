@@ -22,6 +22,7 @@ const Footer = () => {
                 <a href="/#speaker-section" className="nav-a-tag"><li>Speakers</li> </a>
                 {/* <a href="#" className="nav-a-tag"><li>Team</li> </a> */}
                 <a href="/#contact-section" className="nav-a-tag"><li>Contact</li> </a>
+                <a href="/team" className="nav-a-tag"><li>Team</li> </a>
               </ul>
             </div>
           </div>
