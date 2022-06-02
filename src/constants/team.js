@@ -11,7 +11,7 @@ export const team={
             cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/mr.sahib.jpg'
         },
         {
-            name:"Ms Sarsihma Dangi", 
+            name:"Ms. Sarishma Dangi", 
             designation:"Organizer",
             cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/ms.sarishma.jpg'
         }
@@ -110,7 +110,7 @@ export const team={
             cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/gaurangi.jpg'
         },
         {
-            name:"Priyank Tripathi",
+            name:"Priyank Gupta",
             designation:"Marketing",
             cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/priyank.jpg'
         },
