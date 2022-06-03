@@ -86,11 +86,6 @@ export const team={
             cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/manya.jpg'
         },
         {
-            name:"Ms. Sarishma Dangi", 
-            designation:"Content Writer",
-            cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/ms.sarishma.jpg'
-        },
-        {
             name:"Manasi Singh",
             designation:"Content Writer",
             cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/manasi.jpg'
