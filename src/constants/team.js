@@ -41,6 +41,11 @@ export const team={
             designation:"Curator",
             cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/pranjal.jpg'
         },
+        {
+            name:"Kashish Jaffery",
+            designation:"Curator",
+            cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/kashish.jpg'
+        }
     ],
     production:[
         {
