@@ -9,7 +9,6 @@ import Contact from "../../components/Contact";
 import Second from "../../components/Second";
 import About from "../../components/About";
 import Heading from "../../components/Heading";
-import Video from "../../assets/main.mp4";
 import { motion } from "framer-motion";
 import XX from "../../assets/xx.svg";
 import BlackSvg from "../../assets/black.svg";
