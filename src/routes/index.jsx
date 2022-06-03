@@ -7,7 +7,6 @@ import Home from "../pages/Home";
 import Passes from "../pages/Passes";
 import GetPasses from "../pages/Passes/Get-passes";
 import Team from "../pages/Team";
-// import {routesData} from '../constants/routes'
 
 export default function Navigation(){
     return(

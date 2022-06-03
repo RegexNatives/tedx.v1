@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Navbar from "../../components/Navbar";
@@ -138,6 +137,7 @@ function Home() {
 			},
 		});
 	}, []);
+
 	return (
 		<>
 			<div className="cont">
