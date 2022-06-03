@@ -154,7 +154,11 @@ function Home() {
 						</h1>
 						<h2>GraphicEraUniversity</h2>
 						<p>
-						Do not look to the ground for your next step; greatness lies with those who look to the horizon. No matter how far a person reach, the horizon will always be beyond them. Every stop here is transitory, like a pilgrim’s adjournment on a journey with destination still so far away. It keeps shifting, and invites all of us to keep moving too.<br />
+
+							"Hours, weeks, and months pass by;<br />
+							He starts to think it strange.<br />
+							So many steps passed under foot<br />
+							Yet the horizon never changed."<br /><br/>
 							Graphic Era University is over the moon as we pull together a punchy, wholesome event for you all. With TED, we aim to spark conversation, community, and connection in as many lives as possible.
 						</p>
 						<div
