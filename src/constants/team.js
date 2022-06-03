@@ -98,7 +98,7 @@ export const team={
     ],
     motion:[
         {
-            name:"Akshat Goel",
+            name:"Akshat Goel ",
             designation:"Desginer",
             cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/akshat.jpg'
         },
