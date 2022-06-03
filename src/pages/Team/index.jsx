@@ -13,7 +13,7 @@ const Team = () =>{
                 <div className="team-heading">
                     <Heading
                         heading={'Team Members '}
-                        content={"<p>When you're surrounded by people who share a passionate commitment around a common purpose, anything is possible. Did we just describe our amazing team? Oh, hell yeah!! None of us is as smart as all of us. Herein, carving our pulchritudinous trademarks.</p>"}
+                        content={"<p>A harmonious collaboration steering towards a common goal, that’s how we define our incredible team. Bound together by a single cause of sharing ideas worth  spreading, we’re the trailblazers holding the fort for this newfound journey. Meet our ingenious, passionate and zealous team.</p>"}
                     />
                     <div className="speaker-card-container">
                         <div className="speaker-heading team-heading" >
@@ -75,11 +75,25 @@ const Team = () =>{
                         </div>
                     </div>
                     <div className="speaker-card-container">
+                    <div className="speaker-card-container">
                         <div className="speaker-heading team-heading" >
                             <h1  className="for-reference-heading team-desg ">{'Technical'}</h1>
                         </div>
                         <div className="speaker-card">
                             {team?.technical.map((member) => (
+                                <div className="speaker-card-content">
+                                    <img src={member.cdn} alt="Speaker Image" />
+                                    <h3>{member.name}</h3>
+                                    {/* <p>{member.designation}</p> */}
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                        <div className="speaker-heading team-heading" >
+                            <h1  className="for-reference-heading team-desg ">{'Motion Designer'}</h1>
+                        </div>
+                        <div className="speaker-card">
+                            {team?.motion.map((member) => (
                                 <div className="speaker-card-content">
                                     <img src={member.cdn} alt="Speaker Image" />
                                     <h3>{member.name}</h3>

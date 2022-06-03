@@ -1,20 +1,22 @@
 export const team={
     organizer:[
         {
-            name:"Mr. Aditya Agnihotri", 
+            name:"Ms. Sarishma Dangi", 
             designation:"Organizer",
-            cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/mr.aditya.jpg'
+            cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/ms.sarishma2.jpg'
         },
+        
         {
             name:"Mr. Sahib Sablok", 
             designation:"Organizer",
             cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/mr.sahib.jpg'
         },
         {
-            name:"Ms. Sarishma Dangi", 
+            name:"Mr. Aditya Agnihotri", 
             designation:"Organizer",
-            cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/ms.sarishma.jpg'
-        }
+            cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/mr.aditya.jpg'
+        },
+        
     ],
     coOrganizer:[
         {
@@ -39,6 +41,11 @@ export const team={
             designation:"Curator",
             cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/pranjal.jpg'
         },
+        {
+            name:"Kashish Jaffery",
+            designation:"Curator",
+            cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/kashish.jpg'
+        }
     ],
     production:[
         {
@@ -75,11 +82,7 @@ export const team={
             designation:"Technical",
             cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/prakhar.jpg'
         },
-        {
-            name:"Akshat Goel",
-            designation:"Desginer",
-            cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/akshat.jpg'
-        },
+        
     ],
     writer:[
         {
@@ -88,9 +91,26 @@ export const team={
             cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/manya.jpg'
         },
         {
+            name:"Ms. Sarishma Dangi", 
+            designation:"Content Writer",
+            cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/ms.sarishma2.jpg'
+        },
+        {
             name:"Manasi Singh",
             designation:"Content Writer",
             cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/manasi.jpg'
+        },
+    ],
+    motion:[
+        {
+            name:"Akshat Goel ",
+            designation:"Desginer",
+            cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/akshat.jpg'
+        },
+        {
+            name:"Arya Pratap Singh",
+            designation:"Desginer",
+            cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/arya.jpg'
         },
     ],
     marketing:[
