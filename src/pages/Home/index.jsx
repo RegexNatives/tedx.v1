@@ -203,7 +203,7 @@ function Home() {
 						<div className="video-wrap">
 							<div className="dot">
 								<video
-									src={Video}
+									src={'https://d33nm4ccjcx4s8.cloudfront.net/main.mp4'}
 									autoPlay
 									loop
 									muted
