@@ -3,7 +3,7 @@ export const team={
         {
             name:"Ms. Sarishma Dangi", 
             designation:"Organizer",
-            cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/ms.sarishma.jpg'
+            cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/ms.sarishma2.jpg'
         },
         
         {
@@ -105,7 +105,7 @@ export const team={
         {
             name:"Arya Pratap Singh",
             designation:"Desginer",
-            cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/akshat.jpg'
+            cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/arya.jpg'
         },
     ],
     marketing:[
