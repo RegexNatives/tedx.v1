@@ -12,16 +12,16 @@ const Speakers = () => {
             />
             <div className="speaker-card-container">
                 <div className="speaker-card">
-                    {/* {speakers.map((speaker) => (
-                        <div className="speaker-card-content">
-                            <img src={Speaker} alt="Speaker Image" />
-                            <h3>{speaker.name}</h3>
-                            <p>{speaker.designation}</p>
+                    {speakers.map((speaker) => (
+                        <div className="speaker-card-content" style={{textAlign:'left'}}>
+                            <img src={speaker.image} alt="Speaker Image" fallback={Speaker}/>
+                            <h3 style={{width:300,justifyContent:'flex-start'}}>{speaker.name}</h3>
+                            <p style={{width:250}}>{speaker.designation}</p>
                         </div>
-                    ))} */}
-                    <div className="coming-soon ">
+                    ))}
+                    {/* <div className="coming-soon ">
                         <h3>{'Revealing Soon...'}</h3>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

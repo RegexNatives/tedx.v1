@@ -6,7 +6,7 @@ import {motion} from 'framer-motion'
 const Second = () => {
     return (
         <div className="home-page-wrapper">
-            <div className="home-page-second">
+            <div className="home-page-second cont">
                 <motion.div 
                   initial={{ opacity:0, x: -250 }}
                   animate={{opacity:1, x: 0 }}

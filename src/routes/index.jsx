@@ -14,8 +14,8 @@ export default function Navigation(){
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/team" element={<Team />} />
-                {/* <Route path="/book-passes" element={<Passes />} /> */}
-                {/* <Route path="/get-pass/:_id" element={<GetPasses />} /> */}
+                <Route path="/book-passes" element={<Passes />} />
+                <Route path="/get-pass/:_id" element={<GetPasses />} />
             </Routes>
         </>
     )

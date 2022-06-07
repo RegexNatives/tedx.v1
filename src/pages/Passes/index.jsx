@@ -31,7 +31,7 @@ const Passes = () => {
 					<Heading
 						heading={"Get Passes Now!"}
 						content={
-							"<p>Limited seats available, hurry up. Book your seat now.</p><p>Feel free to reach out to us for any queries or difficulties</p>"
+							"<p>Limited seats available, hurry up. Book your seat now. &nbsp;Feel free to reach out to us for any queries or difficulties.</p><h3 class=announcement>PASSES ON FIRST COME FIRST SERVE BASIS</h3>"
 						}
 					/>
 					<div
