@@ -2,8 +2,8 @@ const url = "https://d33nm4ccjcx4s8.cloudfront.net/Speakers/"
 import Chrairman from '../assets/chairman.jpg'
 export const speakers=[
     {
-        name:"Prof.(Dr) Kamal Ghanshala",
-        designation:"Chairman & Founder Graphic Era Deemed to be University ",
+        name:"Prof. Kamal Ghanshala",
+        designation:"Chairman & Founder, Graphic Era Group of Institutions",
         image:url+"chairman.jpg",
         // image:Chrairman
 
