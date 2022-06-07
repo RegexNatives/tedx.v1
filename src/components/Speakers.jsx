@@ -19,9 +19,9 @@ const Speakers = () => {
                             <p style={{width:250}}>{speaker.designation}</p>
                         </div>
                     ))}
-                    {/* <div className="coming-soon ">
-                        <h3>{'Revealing Soon...'}</h3>
-                    </div> */}
+                    <div className="coming-soon ">
+                        <h3>{'More Revealing Soon...'}</h3>
+                    </div>
                 </div>
             </div>
         </div>
