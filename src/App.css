@@ -215,6 +215,8 @@ ul li a:hover svg path {
   align-items: center;
   margin-top: 100px;
   margin-top: 60px;
+  position: relative;
+  left: -4%;
   /* margin-left:10%; */
 }
 .home-first-img {
@@ -1140,11 +1142,11 @@ ul li a:hover svg path {
     padding: 10px 0;
   }
 }
-@media screen and (max-width: 550px) {
+/* @media screen and (max-width: 550px) {
   .cont {
-    margin: 0 7%;
+    margin: 0 10%;
   }
-}
+} */
 
 .dot {
   left: unset !important;
@@ -1177,6 +1179,10 @@ ul li a:hover svg path {
 @media screen and (max-width: 850px) {
   .booking-info-container div:nth-child(2) {
     margin-bottom: 70px;
+  }
+  .contact-form{
+    position: relative;
+    left:-6%
   }
   .speakers-component > div {
     font-size: 13px;
