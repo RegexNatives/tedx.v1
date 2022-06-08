@@ -5,14 +5,22 @@ export const speakers=[
         name:"Prof. Kamal Ghanshala",
         designation:"Chairman & Founder, Graphic Era Group of Institutions",
         image:url+"chairman.jpg",
-        // image:Chrairman
-
     },
     {
         name:"Dr. Sudhanshu Trivedi",
         designation:"National Spokesperson for BJP, Member of Parliament from Rajya Sabha",
         image:url+"dr.sudhanshu.jpg"
     },
+    // {
+    //     name:"Anupam Kher",
+    //     designation:"Actor & Former Chairman of Film and Television Institute of India",
+    //     image:url+"anupam.jpg"
+    // },
+    // {
+    //     name:"Manushi Chillar",
+    //     designation:"Miss World 2017 & Actress",
+    //     image:url+"manushi.jpg"
+    // },  
     {
         name:"Dr. Shiv Kumar Sarin",
         designation:"Padma Bhushan awardee, Gastroenterologist",
@@ -67,11 +75,6 @@ export const speakers=[
         name:"Dr. Amit Verma",
         designation:"India’s leading Ayurveda specialist",
         image:url+"dr.amit.jpg"
-    },
-    {
-        name:"Vasavi Prakash",
-        designation:"IFS officer, Environmentalist",
-        image:url+"vasavi.jpg"
     },
     {
         name:"Samyak Chakraborty",
