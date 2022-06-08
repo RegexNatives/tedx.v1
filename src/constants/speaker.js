@@ -14,15 +14,35 @@ export const speakers=[
         image:url+"dr.sudhanshu.jpg"
     },
     {
-        name:"Samyak Chakraborty",
-        designation:"CTO @ X Billion Skills Lab",
-        image:url+"samyak.jpg"
+        name:"Dr. Shiv Kumar Sarin",
+        designation:"Padma Bhushan awardee, Gastroenterologist",
+        image:url+"shiv-kumar.jpg"
     },
-    // {
-    //     name:"Dr. Shiv Kumar Sarin",
-    //     designation:"Padma Bhushan awardee, Gastroenterologist",
-    //     image:url+"shiv-kumar.jpg"
-    // },
+    {
+        name:"Chandi Prasad Bhatt",
+        designation:"Indian Gandhian environmentalist",
+        image:url+"chandi.jpg"
+    },
+    {
+        name:"Rahul Sharma",
+        designation:"President, AWS India and South Asia",
+        image:url+"rahulSharma.png"
+    },
+    {
+        name:"Ashok Srivastava",
+        designation:"Journalist",
+        image:url+"ashokSrivastav.png"
+    },
+    {
+        name:"Aditya Satsangi",
+        designation:"Author",
+        image:url+"aditya.jpeg"
+    },
+    {
+        name:"Prof. M.M Pant",
+        designation:"Professor & Idealist",
+        image:url+"m-m-pant.jpeg"
+    },
     {
         name:"Dr. Sanjeev Chopra",
         designation:"Historian, Policy Analyst and former Director @ LBS National Academy of Administration",
@@ -43,19 +63,25 @@ export const speakers=[
         designation:"Secretary, Down Syndrome Parents Society, Delhi",
         image:url+"sameeksha.jpg"
     },
+    {
+        name:"Dr. Amit Verma",
+        designation:"India’s leading Ayurveda specialist",
+        image:url+"dr.amit.jpg"
+    },
     // {
     //     name:"Vasavi Prakash",
     //     designation:"IFS officer, Environmentalist",
     //     image:url+"vasavi.jpg"
     // },
-    // {
-    //     name:"Bobby Cash",
-    //     designation:"International Country Music Artist",
-    //     image:url+"bobby.jpg"
-    // },
-    // {
-    //     name:"Dr. Amit Verma",
-    //     designation:"India’s leading Ayurveda specialist",
-    //     image:url+"dr.amit.jpg"
-    // },
+    {
+        name:"Samyak Chakraborty",
+        designation:"CTO @ X Billion Skills Lab",
+        image:url+"samyak.jpg"
+    },
+    {
+        name:"Bobby Cash",
+        designation:"International Country Music Artist",
+        image:url+"bobby.jpg"
+    },
+    
 ]
