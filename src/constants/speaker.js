@@ -1,5 +1,4 @@
 const url = "https://d33nm4ccjcx4s8.cloudfront.net/Speakers/"
-import Chrairman from '../assets/chairman.jpg'
 export const speakers=[
     {
         name:"Prof. Kamal Ghanshala",
