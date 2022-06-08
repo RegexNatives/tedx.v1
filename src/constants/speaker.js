@@ -68,11 +68,11 @@ export const speakers=[
         designation:"India’s leading Ayurveda specialist",
         image:url+"dr.amit.jpg"
     },
-    // {
-    //     name:"Vasavi Prakash",
-    //     designation:"IFS officer, Environmentalist",
-    //     image:url+"vasavi.jpg"
-    // },
+    {
+        name:"Vasavi Prakash",
+        designation:"IFS officer, Environmentalist",
+        image:url+"vasavi.jpg"
+    },
     {
         name:"Samyak Chakraborty",
         designation:"CTO @ X Billion Skills Lab",
