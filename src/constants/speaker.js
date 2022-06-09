@@ -11,11 +11,6 @@ export const speakers=[
         image:url+"dr.sudhanshu.jpg"
     },
     {
-        name:"Anupam Kher",
-        designation:"Actor & Former Chairman of Film and Television Institute of India",
-        image:url+"anupam.jpg"
-    },
-    {
         name:"Manushi Chillar",
         designation:"Miss World 2017 & Actress",
         image:url+"manushi.jpg"
@@ -34,11 +29,6 @@ export const speakers=[
         name:"Aditya Satsangi",
         designation:"Author",
         image:url+"aditya.jpeg"
-    },
-    {
-        name:"Prof. M.M Pant",
-        designation:"Professor & Idealist",
-        image:url+"m-m-pant.jpeg"
     },
     {
         name:"Dr. Sanjeev Chopra",
