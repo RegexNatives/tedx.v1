@@ -10,30 +10,15 @@ export const speakers=[
         designation:"National Spokesperson for BJP, Member of Parliament from Rajya Sabha",
         image:url+"dr.sudhanshu.jpg"
     },
-    // {
-    //     name:"Anupam Kher",
-    //     designation:"Actor & Former Chairman of Film and Television Institute of India",
-    //     image:url+"anupam.jpg"
-    // },
-    // {
-    //     name:"Manushi Chillar",
-    //     designation:"Miss World 2017 & Actress",
-    //     image:url+"manushi.jpg"
-    // },  
     {
-        name:"Dr. Shiv Kumar Sarin",
-        designation:"Padma Bhushan awardee, Gastroenterologist",
-        image:url+"shiv-kumar.jpg"
-    },
+        name:"Manushi Chillar",
+        designation:"Miss World 2017 & Actress",
+        image:url+"manushi.jpg"
+    },  
     {
         name:"Chandi Prasad Bhatt",
         designation:"Indian Gandhian environmentalist",
         image:url+"chandi.jpg"
-    },
-    {
-        name:"Rahul Sharma",
-        designation:"President, AWS India and South Asia",
-        image:url+"rahulSharma.png"
     },
     {
         name:"Ashok Srivastava",
@@ -44,11 +29,6 @@ export const speakers=[
         name:"Aditya Satsangi",
         designation:"Author",
         image:url+"aditya.jpeg"
-    },
-    {
-        name:"Prof. M.M Pant",
-        designation:"Professor & Idealist",
-        image:url+"m-m-pant.jpeg"
     },
     {
         name:"Dr. Sanjeev Chopra",
@@ -79,11 +59,6 @@ export const speakers=[
         name:"Samyak Chakraborty",
         designation:"CTO @ X Billion Skills Lab",
         image:url+"samyak.jpg"
-    },
-    {
-        name:"Bobby Cash",
-        designation:"International Country Music Artist",
-        image:url+"bobby.jpg"
     },
     
 ]
