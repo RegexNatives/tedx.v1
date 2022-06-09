@@ -212,7 +212,7 @@ ul li a:hover svg path {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  align-items: center;
+  /* align-items: center; */
   margin-top: 100px;
   margin-top: 60px;
   position: relative;
@@ -818,7 +818,7 @@ ul li a:hover svg path {
   padding-bottom: 80px;
 }
 .pass-form {
-  padding: 70px 10%;
+  padding: 70px 10% 70px 0%;
 }
 .contact-form-text-part h1 {
   font-family: 'Manrope';

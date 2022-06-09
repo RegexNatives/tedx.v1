@@ -11,7 +11,7 @@ const GetPasses = () => {
 
     const navigate = useNavigate();
   const [qrCode, setQrCode] = useState(false);
-  const [invalid,setInvalid] = useState(false);
+  const [invalid,setInvalid] = useState(true);
   const [passDetails,setPassDetails] = useState({
     name:"Your Name",
     email:"Your Email",
@@ -28,6 +28,7 @@ const GetPasses = () => {
             console.log(res);
             if(res.data){
                 let data = res.data;
+                setInvalid(false);
                 setPassDetails(data)
             }
             else{
@@ -37,9 +38,6 @@ const GetPasses = () => {
         setQrCode
           (`http://api.qrserver.com/v1/create-qr-code/?data=${params._id}`);
   },[params._id])
-
-
-  
 
     return(
       <>
@@ -68,21 +66,21 @@ const GetPasses = () => {
                       </div>
                     </div>
                 </div>
-                <div className="for-graphians" style={{marginTop:'3%'}}>
-                    <div className="speaker-heading" >
-                      <h1  className="for-reference-heading ">
-                        Get Simplified Entry with QR
-                      </h1>
-                    </div>
-                    <p className="color-grey t-align">
-                      Get your QR Scanned at the entry for seemless entry.
-                    </p>
-                    <div className="qr-parent">
-                      <div className="qr-code-container">
-                        <img src={qrCode} alt="" />
-                      </div>
+                {!invalid?(<div className="for-graphians" style={{marginTop:'3%'}}>
+                  <div className="speaker-heading" >
+                    <h1  className="for-reference-heading ">
+                      Get Simplified Entry with QR
+                    </h1>
+                  </div>
+                  <p className="color-grey t-align">
+                    Get your QR Scanned at the entry for seemless entry.
+                  </p>
+                  <div className="qr-parent">
+                    <div className="qr-code-container">
+                      <img src={qrCode} alt="" />
                     </div>
                   </div>
+                </div>):(null)}
               </div>
           </div>
         </div>
