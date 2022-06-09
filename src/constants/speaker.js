@@ -26,11 +26,6 @@ export const speakers=[
         image:url+"chandi.jpg"
     },
     {
-        name:"Rahul Sharma",
-        designation:"President, AWS India and South Asia",
-        image:url+"rahulSharma.png"
-    },
-    {
         name:"Ashok Srivastava",
         designation:"Journalist",
         image:url+"ashokSrivastav.png"
@@ -74,11 +69,6 @@ export const speakers=[
         name:"Samyak Chakraborty",
         designation:"CTO @ X Billion Skills Lab",
         image:url+"samyak.jpg"
-    },
-    {
-        name:"Bobby Cash",
-        designation:"International Country Music Artist",
-        image:url+"bobby.jpg"
     },
     
 ]
