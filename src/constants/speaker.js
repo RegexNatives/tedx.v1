@@ -11,9 +11,14 @@ export const speakers=[
         image:url+"dr.sudhanshu.jpg"
     },
     {
-        name:"Manushi Chillar",
-        designation:"Miss World 2017 & Actress",
-        image:url+"manushi.jpg"
+        name:"Chetan Bhagat",
+        designation:"Author, Writer & Entrepreneur",
+        image:url+"chetan.jpg"
+    },  
+    {
+        name:"Urvashi Rautela",
+        designation:"Actress & Miss Diva Universe 2015 ",
+        image:url+"urvashi.jpg"
     },  
     {
         name:"Chandi Prasad Bhatt",
