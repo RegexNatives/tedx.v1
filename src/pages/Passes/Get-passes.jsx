@@ -29,7 +29,7 @@ const GetPasses = () => {
     //   console.log(passDetails);
     setLoading(true);
     setInvalid(false);
-    setQrCode(`http://api.qrserver.com/v1/create-qr-code/?data=${params._id}!&size=${size}x${size}&bgcolor=${bgColor}&color=${color}`);
+    setQrCode(`http://api.qrserver.com/v1/create-qr-code/?data=${params._id}&size=${size}x${size}&bgcolor=${bgColor}&color=${color}`);
     getSingleTransaction(params._id)
       .then(res => {
         console.log(res);
