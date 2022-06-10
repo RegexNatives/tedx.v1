@@ -1851,7 +1851,7 @@ li .link-line {
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
-  gap:1rem;
+  gap: 1rem;
 }
 .red-button {
   cursor: pointer;
@@ -1891,8 +1891,9 @@ li .link-line {
 .qr-code-container {
   box-shadow: 3px 4px 41px 4px rgb(132 0 0);
   border-radius: 1.8rem;
-  margin:0 1.4rem;
+  margin: 0 1.4rem;
   padding: 2rem;
+  width: 268px;
 }
 
 .qr-parent {
