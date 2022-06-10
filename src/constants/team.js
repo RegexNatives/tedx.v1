@@ -28,7 +28,12 @@ export const team={
             name:"Shivam Gupta",
             designation:"Co-Organizer",
             cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/shivam.jpg'
-        }
+        },
+        {
+            name:"Dhruv Jaiswal",
+            designation:"Post-Production",
+            cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/dhruv.jpg'
+        },
     ],
     curator:[
         {
@@ -53,11 +58,7 @@ export const team={
             designation:"Production",
             cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/jyoti.jpg'
         },
-        {
-            name:"Dhruv Jaiswal",
-            designation:"Post-Production",
-            cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/dhruv.jpg'
-        },
+        
     ],
     opeartions:[
         {
