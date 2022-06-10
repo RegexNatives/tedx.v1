@@ -21,8 +21,8 @@ const Speakers = () => {
                     ))}
                 </div>
             </div>
-{/* 
-            <div className="coming-soon ">
+
+            {/* <div className="coming-soon ">
                 <h3>{'More Revealing Soon...'}</h3>
             </div> */}
         </div>

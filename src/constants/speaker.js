@@ -1,12 +1,9 @@
 const url = "https://d33nm4ccjcx4s8.cloudfront.net/Speakers/"
-import Chrairman from '../assets/chairman.jpg'
 export const speakers=[
     {
         name:"Prof. Kamal Ghanshala",
         designation:"Chairman & Founder, Graphic Era Group of Institutions",
         image:url+"chairman.jpg",
-        // image:Chrairman
-
     },
     {
         name:"Dr. Sudhanshu Trivedi",
@@ -14,19 +11,19 @@ export const speakers=[
         image:url+"dr.sudhanshu.jpg"
     },
     {
-        name:"Dr. Shiv Kumar Sarin",
-        designation:"Padma Bhushan awardee, Gastroenterologist",
-        image:url+"shiv-kumar.jpg"
-    },
+        name:"Chetan Bhagat",
+        designation:"Author, Writer & Entrepreneur",
+        image:url+"chetan.jpg"
+    },  
+    {
+        name:"Urvashi Rautela",
+        designation:"Actress & Miss Diva Universe 2015 ",
+        image:url+"urvashi.jpg"
+    },  
     {
         name:"Chandi Prasad Bhatt",
         designation:"Indian Gandhian environmentalist",
         image:url+"chandi.jpg"
-    },
-    {
-        name:"Rahul Sharma",
-        designation:"President, AWS India and South Asia",
-        image:url+"rahulSharma.png"
     },
     {
         name:"Ashok Srivastava",
@@ -37,11 +34,6 @@ export const speakers=[
         name:"Aditya Satsangi",
         designation:"Author",
         image:url+"aditya.jpeg"
-    },
-    {
-        name:"Prof. M.M Pant",
-        designation:"Professor & Idealist",
-        image:url+"m-m-pant.jpeg"
     },
     {
         name:"Dr. Sanjeev Chopra",
@@ -69,19 +61,9 @@ export const speakers=[
         image:url+"dr.amit.jpg"
     },
     {
-        name:"Vasavi Prakash",
-        designation:"IFS officer, Environmentalist",
-        image:url+"vasavi.jpg"
-    },
-    {
         name:"Samyak Chakraborty",
         designation:"CTO @ X Billion Skills Lab",
         image:url+"samyak.jpg"
-    },
-    {
-        name:"Bobby Cash",
-        designation:"International Country Music Artist",
-        image:url+"bobby.jpg"
     },
     
 ]
