@@ -31,8 +31,13 @@ export const team={
         },
         {
             name:"Dhruv Jaiswal",
-            designation:"Post-Production",
+            designation:"Co-Organizer",
             cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/dhruv.jpg'
+        },
+        {
+            name:"Shashank Raturi",
+            designation:"Co-Organizer",
+            cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/shashank.jpg'
         },
     ],
     curator:[
@@ -107,11 +112,6 @@ export const team={
             name:"Akshat Goel ",
             designation:"Desginer",
             cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/akshat.jpg'
-        },
-        {
-            name:"Arya Pratap Singh",
-            designation:"Desginer",
-            cdn:'https://d33nm4ccjcx4s8.cloudfront.net/Tedx/arya.jpg'
         },
     ],
     marketing:[
