@@ -6,16 +6,17 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { useParams, useNavigate } from 'react-router-dom';
 import { getSingleTransaction, downloadPass } from '../../services/Passes';
+import CircularProgress from '@mui/material/CircularProgress';
 
 const GetPasses = () => {
 
   const navigate = useNavigate();
   const [qrCode, setQrCode] = useState(false);
-  const [invalid, setInvalid] = useState(false);
+  const [invalid, setInvalid] = useState(true);
   const [bgColor, setBgColor] = useState("000000");
   const [color, setColor] = useState("ffffff");
   const [size, setSize] = useState(200);
-
+  const [loading, setLoading] = useState(false);
   const [passDetails, setPassDetails] = useState({
     name: "Your Name",
     email: "Your Email",
@@ -26,21 +27,23 @@ const GetPasses = () => {
 
   useEffect(() => {
     //   console.log(passDetails);
+    setLoading(true);
     setInvalid(false);
+    setQrCode(`http://api.qrserver.com/v1/create-qr-code/?data=${params._id}!&size=${size}x${size}&bgcolor=${bgColor}&color=${color}`);
     getSingleTransaction(params._id)
       .then(res => {
         console.log(res);
         if (res.data) {
           let data = res.data;
-          setPassDetails(data)
+          setPassDetails(data);
+          setLoading(false);
         }
         else {
           setInvalid(true);
+          setLoading(false);
         }
       });
-    setQrCode
-      (`http://api.qrserver.com/v1/create-qr-code/?data=${params._id}!&size=${size}x${size}&bgcolor=${bgColor}&color=${color}`);
-  }, [params._id, bgColor, color,size]);
+  }, [params._id, bgColor, color, size]);
 
 
 
@@ -56,12 +59,15 @@ const GetPasses = () => {
               heading={invalid ? 'Not Booked Yet?' : 'Your Pass Details'}
               content={'<p></p>'}
             />
-            <div className="get-pass-wrapper">
+            {loading ? (
+              <div className="loader-holder">
+                <CircularProgress color="secondary" size={80} />
+              </div>
+            ) : (<div className="get-pass-wrapper">
               <div className="ticket final-ticket">
                 <div className="ticket-text">
 
                   <img src={tick} alt="" />
-
                   <h1>{passDetails?.name}</h1>
                   <p>@{passDetails?.email?.split('@')[0]}</p>
                   <h2>#{passDetails?.transactionId}</h2>
@@ -74,7 +80,7 @@ const GetPasses = () => {
                   </div> */}
                 </div>
               </div>
-              <div className="for-graphians" style={{ marginTop: '3%' }}>
+              {invalid ? (null) : (<div className="for-graphians" style={{ marginTop: '3%' }}>
                 <div className="speaker-heading" >
                   <h1 className="for-reference-heading ">
                     Get Simplified Entry with QR
@@ -88,8 +94,8 @@ const GetPasses = () => {
                     <img src={qrCode} alt="" />
                   </div>
                 </div>
-              </div>
-            </div>
+              </div>)}
+            </div>)}
           </div>
         </div>
 

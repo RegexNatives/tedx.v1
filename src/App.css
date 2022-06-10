@@ -1984,3 +1984,8 @@ textarea {
 .qr-parent {
   display: unset;
 }
+.loader-holder{
+  display: flex;
+  justify-content: center;
+  margin-top:40px
+}
