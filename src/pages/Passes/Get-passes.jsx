@@ -15,7 +15,7 @@ const GetPasses = () => {
   const [invalid, setInvalid] = useState(true);
   const [bgColor, setBgColor] = useState("000000");
   const [color, setColor] = useState("ffffff");
-  const [size, setSize] = useState(200);
+  const [size, setSize] = useState(250);
   const [loading, setLoading] = useState(false);
   const [passDetails, setPassDetails] = useState({
     name: "Your Name",
@@ -81,14 +81,14 @@ const GetPasses = () => {
                 </div>
               </div>
               {invalid ? (null) : (<div className="for-graphians" style={{ marginTop: '3%' }}>
-                <div className="speaker-heading" >
+                <div className="speaker-heading pass-heading-column" >
                   <h1 className="for-reference-heading ">
                     Get Simplified Entry with QR
                   </h1>
+                  <p className="color-grey t-align">
+                    Get your QR Scanned at the entry for seemless entry.
+                  </p>
                 </div>
-                <p className="color-grey t-align">
-                  Get your QR Scanned at the entry for seemless entry.
-                </p>
                 <div className="qr-parent">
                   <div className="qr-code-container">
                     <img src={qrCode} alt="" />

@@ -1050,9 +1050,23 @@ ul li a:hover svg path {
   border-bottom: 1px solid #fff;
   cursor: pointer;
 }
+@media screen and (min-width: 1050px) {
+  .footer-logo > img {
+    width: 100%;
+  }
+  .qr-code-container{
+    width: 85%;
+  }
+  
+}
 @media screen and (max-width: 750px) {
   .footer-logo > img {
     width: 300px;
+  }
+  .pass-heading-column{
+    width: 80%;
+    margin-left: 35px;
+    
   }
   .for-reference-heading {
     font-size: 1rem !important;
@@ -1875,7 +1889,7 @@ li .link-line {
   flex-direction: column;
 }
 .for-reference-heading {
-  font-size: 1.5rem !important;
+  font-size: 1.2rem !important;
 }
 .first-secction-text > span {
   margin-top: 10px;
@@ -1893,7 +1907,7 @@ li .link-line {
   border-radius: 1.8rem;
   margin: 0 1.4rem;
   padding: 2rem;
-  width: 268px;
+  /* width: 268px; */
 }
 
 .qr-parent {
@@ -1988,4 +2002,12 @@ textarea {
   display: flex;
   justify-content: center;
   margin-top:40px
+}
+@media (max-width:400px) {
+  .qr-code-container{    position: relative;
+    left: 7px;}
+}
+@media (max-width:370px) {
+  .qr-code-container{    position: relative;
+    left: 11px;}
 }
