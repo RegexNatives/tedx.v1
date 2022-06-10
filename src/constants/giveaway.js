@@ -50,11 +50,6 @@ const giveaway = [
         phone:"9129889256"
     },
     {
-        name:"Radhika tripathi",
-        email:"sradhikatripathi805@gmail.com",
-        phone:"9129889256"
-    },
-    {
         name:"Ariz Mohammad",
         email:"ariz.mohammad@yahoo.com",
         phone:"7618643507"
@@ -70,7 +65,7 @@ const giveaway = [
         phone:"9359422296"
     },
     {
-        name:"Kumar",
+        name:"Abhishek Pal",
         email:"isshuekumar@gmail.com",
         phone:"9027385767"
     },
@@ -88,5 +83,15 @@ const giveaway = [
         name:"Aishwarya tyagi",
         email:"aishwarya13tyagi@gmail.com",
         phone:"8979517124"
+    },
+    {
+        name:"Sankalp Rai",
+        email:"itsrai.sankalp357@gmail.com",
+        phone:"7310924149"
+    },
+    {
+        name:"Saksham Thakur",
+        email:"thakursaksham0007@gmail.com",
+        phone:"6006726970"
     },
 ]
