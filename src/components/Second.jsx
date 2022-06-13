@@ -6,15 +6,15 @@ import {motion} from 'framer-motion'
 const Second = () => {
     return (
         <div className="home-page-wrapper">
-            <div className="home-page-second">
+            <div className="home-page-second ">
                 <motion.div 
                   initial={{ opacity:0, x: -250 }}
                   animate={{opacity:1, x: 0 }}
                   transition={{ duration: 0.6,delay:1}}
                 className="sec-di">
                     <Heading
-                        heading={'What is TED?'}
-                        content={'TEDx is an elemental initiative, created in the spirit of TED’s overall mission to research and discover “ideas worth spreading.” TEDx brings the spirit of TED to local communities around the globe through TEDx events. These events are organised by passionate individuals who seek to unleash new ideas and to share the latest research in their local areas that spark conversations in their communities for their wholesome development.'}
+                        heading={'What is TEDx?'}
+                        content={'A TEDx event is a local gathering where live TED-like talks and performances are shared with the community. It is a suite of short, carefully prepared talks, demonstrations and performances that are idea-focused, covering a wide range of disciplines to foster learning, inspiration and wonder along with simultaneously provoking conversations that matter. It is organized by volunteers from the local community, and just like TED events, it lacks any commercial, religious or political agenda. All TEDx events present multiple issues and a diversity of voices from a plethora of topics. After all, what’s the fun without a little variety?                         '}
                     />
                     <Heading
                         heading={'About Graphic Era'}
