@@ -11,7 +11,7 @@ const Ticket = () => {
                 <p>@username</p>
                 <h2># TGEU2102</h2>
                 <div className="venue-ticket">
-                    <p>May 20, 2022 </p>
+                    <p>June 10, 2022 </p>
                     <p><span>KP Nautiyal Auditorium </span> <br /> Graphic Era Hill University <br /> Dehradun, Uttarakhand</p>
                 </div>
                 <div className="logo-ticket">
