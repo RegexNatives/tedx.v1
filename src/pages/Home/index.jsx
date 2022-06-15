@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 import XX from "../../assets/xx.svg";
 import BlackSvg from "../../assets/black.svg";
 import MotionDiv from "../../components/Motion-div";
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -23,50 +23,50 @@ function Home() {
   const ref4 = useRef(null);
   const navigate = useNavigate();
 
-if(window.innerWidth<=768){
-  useEffect(() => {
-    const element = ref4.current;
-    let secttion = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".home-page-wrapper",
-        start: "center 82%",
-        end: "+=" + window.innerHeight * 1,
-        scrub: true,
-        pin: true,
-      },
-    });
+  if (window.innerWidth <= 768) {
+    useEffect(() => {
+      const element = ref4.current;
+      let secttion = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".home-page-wrapper",
+          start: "center 82%",
+          end: "+=" + window.innerHeight * 1,
+          scrub: true,
+          pin: true,
+        },
+      });
       secttion
-          .from(".home-second-img", { opacity: 0.1, scale: 0.1 })
-          .to(".home-second-img", {
-            opacity: 1,
-            scale: 1,
-            duration: 2.5,
-            ease: "power3.inOut",
-          }) 
-  }, []);
-}
-else{
-  useEffect(() => {
-    const element = ref4.current;
-    let secttion = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".home-page-wrapper",
-        start: "center center",
-        end: "+=" + window.innerHeight * 1,
-        scrub: true,
-        pin: true,
-      },
-    });
-    secttion
-    .from(".home-second-img", { opacity: 0, scale: 0.1 })
-    .to(".home-second-img", {
-      opacity: 1,
-      scale: 1,
-      duration: 4.5,
-      ease: "power3.inOut",
-    });
-  }, []);
-}
+        .from(".home-second-img", { opacity: 0.1, scale: 0.1 })
+        .to(".home-second-img", {
+          opacity: 1,
+          scale: 1,
+          duration: 2.5,
+          ease: "power3.inOut",
+        })
+    }, []);
+  }
+  else {
+    useEffect(() => {
+      const element = ref4.current;
+      let secttion = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".home-page-wrapper",
+          start: "center center",
+          end: "+=" + window.innerHeight * 1,
+          scrub: true,
+          pin: true,
+        },
+      });
+      secttion
+        .from(".home-second-img", { opacity: 0, scale: 0.1 })
+        .to(".home-second-img", {
+          opacity: 1,
+          scale: 1,
+          duration: 4.5,
+          ease: "power3.inOut",
+        });
+    }, []);
+  }
 
 
 
@@ -160,17 +160,17 @@ else{
               TED <span>X</span>
             </h1>
             <h2>GraphicEraUniversity</h2>
-            <p className="t-align">
+            <p >
               It is always said that dreams can never be achieved in a
               comfortable way of living. To achieve your horizons, one needs to
               have difficulties as a cup of tea. On that note, Graphic Era
-              Deemed To Be University presents TedxGraphicEra. Upholding the
+              Deemed To Be University presents TedxGraphicEraUniversity. Upholding the
               roots of Tedx, we aim to provide a direction to the youth to excel
               in their domains.
             </p>
             <div className="first-section-btn">
-              <a href="#about-section">Learn More</a>
-              <button onClick={()=>navigate('/book-passes')}>Get Passes Now!</button>
+              <a onClick={() => navigate("/book-pass")}>Get Pass</a>
+              <a href="#about-section" rel="noopener noreferrer">Learn More</a>
             </div>
           </motion.div>
           <div className="right-border"></div>
